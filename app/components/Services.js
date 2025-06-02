@@ -40,7 +40,7 @@ export default function WhatsNew() {
   return (
     <section className="bg-white py-16 px-6 md:px-12 max-w-screen-xl mx-auto">
       {/* Section Title */}
-      <h1 className="text-5xl font-extrabold mb-10">What's new at Folio3</h1>
+      <h1 className="text-5xl font-extrabold mb-10">Whats new at Folio3</h1>
 
       {/* Top Banner Image */}
       <Swiper

@@ -1,6 +1,6 @@
 export default function Testimonials() {
   const testimonials = [
-    { quote: "Folio3 delivered beyond our expectations!", author: "Client A", company: "Company A" },
+    { quote: "Folio3 delivered beyond our expectations", author: "Client A", company: "Company A" },
     { quote: "Their expertise in AI transformed our business.", author: "Client B", company: "Company B" },
   ];
 
@@ -11,7 +11,7 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <p className="text-gray-600 mb-4">"{testimonial.quote}"</p>
+              <p className="text-gray-600 mb-4">{testimonial.quote}</p>
               <p className="font-semibold">{testimonial.author}</p>
               <p className="text-gray-500">{testimonial.company}</p>
             </div>
