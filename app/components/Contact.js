@@ -32,6 +32,7 @@ export default function ContactUsSection() {
           </div>
         </div>
 
+
         {/* Right form */}
         <div className="w-full lg:w-1/3 bg-white shadow-md rounded-lg p-6 sm:p-8 lg:p-14">
           <form className="space-y-4 sm:space-y-6" aria-label="Contact us form">
@@ -59,7 +60,7 @@ export default function ContactUsSection() {
               aria-label="Organization"
               className="w-full border-b border-gray-300 py-1 sm:py-2 text-sm sm:text-base outline-none"
             />
-            
+
             <textarea
               placeholder="Tell us about your project"
               aria-label="Project details"
