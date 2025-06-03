@@ -26,23 +26,23 @@ const row3 = [
 ];
 
 const LogoRow = ({ logos, direction }) => (
-  <div className="overflow-hidden whitespace-nowrap py-6">
+  <div className="overflow-hidden whitespace-nowrap py-4 sm:py-6">
     <div
-      className={`flex gap-12 ${
+      className={`flex gap-6 sm:gap-12 ${
         direction === "left" ? "scroll-left" : "scroll-right"
       }`}
     >
       {[...logos, ...logos].map((logo, idx) => (
         <div
           key={idx}
-          className="w-48 h-28 flex items-center justify-center shrink-0 bg-white rounded shadow-sm"
+          className="w-32 h-16 sm:w-48 sm:h-28 flex items-center justify-center shrink-0 bg-white rounded shadow-sm"
         >
           <Image
             src={logo}
             alt={`Logo ${logo}`}
-            width={220}
-            height={80}
-            className="object-contain"
+            width={140}
+            height={50}
+            className="object-contain sm:w-[220px] sm:h-[80px]"
           />
         </div>
       ))}
@@ -52,9 +52,9 @@ const LogoRow = ({ logos, direction }) => (
 
 export default function ScrollingLogos() {
   return (
-    <section className="bg-[#f5f5f5] py-14">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-left text-5xl font-bold text-gray-800 mb-3">
+    <section className="bg-[#f5f5f5] py-8 sm:py-14">
+      <div className="w-full max-w-7xl mx-auto px-2 sm:px-4">
+        <h1 className="text-left text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-2 sm:mb-3">
           Our portfolio of happy customers
         </h1>
 
@@ -82,11 +82,20 @@ export default function ScrollingLogos() {
           }
 
           .scroll-left {
-            animation: scrollLeft 25s linear infinite;
+            animation: scrollLeft 15s linear infinite;
           }
 
           .scroll-right {
-            animation: scrollRight 25s linear infinite;
+            animation: scrollRight 15s linear infinite;
+          }
+
+          @media (min-width: 640px) {
+            .scroll-left {
+              animation-duration: 25s;
+            }
+            .scroll-right {
+              animation-duration: 25s;
+            }
           }
 
           .scroll-left:hover,
@@ -96,4 +105,5 @@ export default function ScrollingLogos() {
         `}</style>
       </div>
     </section>
-  );}
+  );
+}

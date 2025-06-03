@@ -1,4 +1,3 @@
-
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -41,43 +40,41 @@ export default function HeroSlider() {
 
       {/* First slide full-width image */}
       {activeIndex === 0 && (
-        <div className="absolute h-188 inset-0 z-15">
+        <div className="absolute inset-0 z-15">
           <Image
             src={slides[0].image}
             alt={slides[0].label}
             fill
-            className="w-full  transition-opacity duration-500"
+            className="w-full h-full object-cover transition-opacity duration-500"
             priority
           />
         </div>
       )}
 
       {/* Main content */}
-      <div className="relative z-20 max-w-screen-xl mx-auto h-full px-10 grid grid-cols-2 items-center">
+      <div
+        className={clsx(
+          'relative z-20 max-w-screen-xl mx-auto h-full px-4 sm:px-10',
+          'grid grid-cols-1 sm:grid-cols-2 items-center'
+        )}
+      >
         {/* Left text */}
-        {activeIndex === 0 && (
-          <div className="text-white">
-            <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight whitespace-pre-line">
-              {slides[activeIndex].title}
-            </h1>
-            <p className="mt-6 text-lg font-semibold">
-              {slides[activeIndex].description}
-            </p>
-          </div>
-        )}
-        {activeIndex !== 0 && (
-          <div className="text-black">
-            <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight whitespace-pre-line">
-              {slides[activeIndex].title}
-            </h1>
-            <p className="mt-6 text-lg font-semibold">
-              {slides[activeIndex].description}
-            </p>
-          </div>
-        )}
+        <div className="text-white">
+          <h1
+            className={clsx(
+              'text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight whitespace-pre-line',
+              'px-4 sm:px-0'
+            )}
+          >
+            {slides[activeIndex].title}
+          </h1>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg font-semibold px-4 sm:px-0">
+            {slides[activeIndex].description}
+          </p>
+        </div>
         {/* Right image (for slides other than the first) */}
         {activeIndex !== 0 && (
-          <div className="relative h-[400px] w-full flex justify-center items-center z-20">
+          <div className="relative h-[200px] sm:h-[400px] w-full flex justify-center items-center z-20 mt-6 sm:mt-0">
             <Image
               src={slides[activeIndex].image}
               alt={slides[activeIndex].label}
@@ -95,25 +92,33 @@ export default function HeroSlider() {
       {/* Navigation dots with labels */}
       <div
         className={clsx(
-          'absolute left-1/2 -translate-x-1/2 z-20 flex space-x-6',
-          activeIndex === 0 ? 'bottom-10' : 'bottom-10'
+          'absolute left-1/2 -translate-x-1/2 z-20 flex flex-wrap justify-center space-x-3 sm:space-x-6',
+          'bottom-6 sm:bottom-10'
         )}
       >
         {slides.map((slide, index) => (
           <button
             key={slide.label}
             onClick={() => setActiveIndex(index)}
-            className="flex items-center space-x-1 text-md"
+            className="flex items-center space-x-1 text-sm sm:text-md"
           >
             <span
               className={clsx(
-                'h-3 w-3 rounded-full',
-                index===0 &&index === activeIndex ? 'bg-red-600' :    index===1 &&index === activeIndex ? 'bg-yellow-600':    index===2 &&index === activeIndex ? 'bg-blue-600':   index===3 &&index === activeIndex ? 'bg-green-600': 'bg-gray-400'
+                'h-2 w-2 sm:h-3 sm:w-3 rounded-full',
+                index === 0 && index === activeIndex
+                  ? 'bg-red-600'
+                  : index === 1 && index === activeIndex
+                  ? 'bg-yellow-600'
+                  : index === 2 && index === activeIndex
+                  ? 'bg-blue-600'
+                  : index === 3 && index === activeIndex
+                  ? 'bg-green-600'
+                  : 'bg-gray-400'
               )}
             />
             <span
               className={clsx(
-                'ml-1 font-extrabold',
+                'ml-1 font-extrabold text-sm sm:text-base',
                 index === activeIndex ? 'text-black' : 'text-gray-300'
               )}
             >
@@ -130,10 +135,9 @@ export default function HeroSlider() {
           alt="Wave Overlay"
           width={1920}
           height={200}
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-cover"
         />
       </div>
     </section>
   );
 }
-
