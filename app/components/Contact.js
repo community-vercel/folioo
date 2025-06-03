@@ -59,6 +59,7 @@ export default function ContactUsSection() {
               aria-label="Organization"
               className="w-full border-b border-gray-300 py-1 sm:py-2 text-sm sm:text-base outline-none"
             />
+            
             <textarea
               placeholder="Tell us about your project"
               aria-label="Project details"
