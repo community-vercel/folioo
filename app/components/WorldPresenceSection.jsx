@@ -156,9 +156,9 @@ export default function WorldPresenceSection() {
       </div>
 
       {/* Optional globe */}
-      <div className="absolute right-0 top-0 bottom-0 w-1/2 z-0 opacity-10 pointer-events-none hidden md:block">
+      <div className="absolute right-0 top-0 bottom-0 -mb-10 w-1/2 z-0 opacity-10 pointer-events-none hidden md:block">
         <Image
-          src="/locations/globe-overlay.png"
+          src="/locations/globe.gif"
           alt="globe background"
           fill
           className="object-contain"
