@@ -8,6 +8,9 @@ import Footer from './components/Footer';
 import PartnersAwards from './components/Awardsection';
 import WhoWeWorkWith from './components/WhoWeWorkWith';
 
+import ScrollingLogo from './components/CustomerCarousel';
+import WorldPresenceSection from './components/WorldPresenceSection';
+import MilestonesSection from './components/MilestonesSection'
 export default function Home() {
   return (
     <div>
@@ -16,8 +19,11 @@ export default function Home() {
       < PartnersAwards />
       <Services />
       <WhoWeWorkWith />
-      <Clients />
+      <ScrollingLogo />
+      {/* <Clients /> */}
       <Testimonials />
+      <WorldPresenceSection />
+      <MilestonesSection />
       <Contact />
       <Footer />
     </div>

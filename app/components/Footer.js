@@ -1,32 +1,33 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Folio3</h3>
-            <p>Amado Nervo #2200, Zapopan, Jalisco, Mexico</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul>
-              <li><Link href="/services" className="hover:text-blue-300">Services</Link></li>
-              
-              <li><Link href="/about" className="hover:text-blue-300">About</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-300">Contact</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-300">Twitter</a>
-              <a href="#" className="hover:text-blue-300">LinkedIn</a>
-            </div>
-          </div>
-        </div>
+    <footer className="border-t border-gray-300 pt-16 pb-16 text-center bg-white">
+      {/* Social Buttons */}
+      <div className="flex justify-center space-x-4 mb-4">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#3b5998] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2d4373] transition"
+        >
+          <i className="fab fa-facebook-f mr-2"></i> Facebook
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#0077b5] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#005983] transition"
+        >
+          <i className="fab fa-linkedin-in mr-2"></i> Linkedin
+        </a>
       </div>
+
+      {/* Copyright */}
+      <p className="text-sm font-semibold text-black">
+        © 2025, Folio3 Software Inc., All Rights Reserved.
+      </p>
+
+      {/* Optional space for CAPTCHA positioning */}
+      {/* For real implementation, insert the reCAPTCHA widget script here */}
     </footer>
   );
 }

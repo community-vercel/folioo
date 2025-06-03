@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useCallback } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -237,51 +237,47 @@ const Navbar = () => {
       href: "/agtech",
       submenu: [
         {
-          name: "Precision Farming",
-          href: "/agtech/precision-farming",
-          subItems: null,
-        },
-        {
-          name: "AI Drones",
-          href: "/agtech/drones",
-          subItems: null,
-        },
-        {
-          name: "Predictive Analytics",
-          href: "/agtech/predictive-analytics",
-          subItems: null,
-        },
-        {
-          name: "Machine Learning",
-          href: "/agtech/machine-learning",
-          subItems: null,
-        },
-        {
-          name: "Industries",
+          name: "Custom Software Solution",
           href: "#",
           subItems: [
-            { name: "Crop Management", href: "/agtech/industries/crop-management" },
-            { name: "Livestock Monitoring", href: "/agtech/industries/livestock-monitoring" },
-            { name: "Supply Chain", href: "/agtech/industries/supply-chain" },
-            { name: "Sustainability", href: "/agtech/industries/sustainability" },
+            { name: "ERP for Agriculture", href: "/agtech/industries/crop-management" },
+            { name: "Cattle Management Software", href: "/agtech/industries/livestock-monitoring" },
+            { name: "Cattle Record Keeping Software", href: "/agtech/industries/supply-chain" },
+            { name: "Feedlot Management Software", href: "/agtech/industries/sustainability" },
+            { name: "Poultry Farm Management Software", href: "/agtech/industries/crop-management" },
+            { name: "Swine Management Software", href: "/agtech/industries/livestock-monitoring" },
+            { name: "Goat Management Software", href: "/agtech/industries/supply-chain" },
+            { name: "Sheep Management Software", href: "/agtech/industries/sustainability" },
+            { name: "Cattle Counting Software", href: "/agtech/industries/livestock-monitoring" },
+            { name: "Sheep Record Keeping Software", href: "/agtech/industries/supply-chain" },
+            { name: "Horse Management Software", href: "/agtech/industries/sustainability" },
           ],
         },
         {
-          name: "AI Drones Details",
+          name: "Products",
           href: "#",
           subItems: [
-            { name: "Crop Health Monitoring", href: "/agtech/drones/crop-health" },
-            { name: "Soil Analysis", href: "/agtech/drones/soil-analysis" },
-            { name: "Livestock Tracking", href: "/agtech/drones/livestock-tracking" },
-            { name: "Irrigation Mapping", href: "/agtech/drones/irrigation-mapping" },
+            { name: "AgriERP", href: "/agtech/areas-of-focus/software-as-medical-device" },
+            { name: "Cattlytics", href: "/agtech/areas-of-focus/telemedicine-solution" },
           ],
         },
         {
-          name: "Predictive Analytics Details",
+          name: "Ecodocs",
           href: "#",
           subItems: [
-            { name: "Yield Forecasting", href: "/agtech/predictive-analytics/yield-forecasting" },
-            { name: "Weather Impact Analysis", href: "/agtech/predictive-analytics/weather-impact" },
+            { name: "Crop Management Software", href: "/agtech/services/app-development" },
+            { name: "Food Safety Software", href: "/agtech/services/ux-design" },
+            { name: "USDA Compliance Software", href: "/agtech/services/integration" },
+            { name: "Audit Management Software", href: "/agtech/services/compliance" },
+            { name: "Livestock Facility Software", href: "/agtech/services/compliance" },
+          ],
+        },
+        {
+          name: "Resource Augmentation",
+          href: "#",
+          subItems: [
+            { name: "Hire AgTech Software Developers", href: "/agtech/services/app-development" },
+            { name: "Hire AgTech App Developers", href: "/agtech/services/ux-design" },
           ],
         },
       ],
@@ -291,47 +287,126 @@ const Navbar = () => {
       href: "/data-cloud",
       submenu: [
         {
-          name: "Cloud Solutions",
-          href: "/data-cloud/cloud-solutions",
-          subItems: null,
-        },
-        {
-          name: "Data Analytics",
-          href: "/data-cloud/data-analytics",
-          subItems: null,
-        },
-        {
-          name: "Big Data",
-          href: "/data-cloud/big-data",
-          subItems: null,
-        },
-        {
-          name: "Industries",
+          name: "Cloud Migration",
           href: "#",
           subItems: [
-            { name: "Finance", href: "/data-cloud/industries/finance" },
-            { name: "Healthcare", href: "/data-cloud/industries/healthcare" },
-            { name: "Retail", href: "/data-cloud/industries/retail" },
-            { name: "Manufacturing", href: "/data-cloud/industries/manufacturing" },
+            { name: "Cloud Strategy & Change Management", href: "/data-cloud/cloud-migration/strategy" },
+            { name: "Cloud Optimization & Management", href: "/data-cloud/cloud-migration/optimization" },
+            { name: "Platform Migration", href: "/data-cloud/cloud-migration/platform" },
+            { name: "Database Migration", href: "/data-cloud/cloud-migration/database" },
+            { name: "App Migration", href: "/data-cloud/cloud-migration/app" },
           ],
         },
         {
-          name: "Cloud Solutions Details",
+          name: "Managed Cloud",
           href: "#",
           subItems: [
-            { name: "AWS Integration", href: "/data-cloud/cloud-solutions/aws" },
-            { name: "Azure Integration", href: "/data-cloud/cloud-solutions/azure" },
-            { name: "Google Cloud Integration", href: "/data-cloud/cloud-solutions/google-cloud" },
-            { name: "Hybrid Cloud", href: "/data-cloud/cloud-solutions/hybrid-cloud" },
+            { name: "Cloud Monitoring & Reporting", href: "/data-cloud/managed-cloud/monitoring" },
+            { name: "Cloud Deployment", href: "/data-cloud/managed-cloud/deployment" },
+            { name: "Cloud Infrastructure Setup", href: "/data-cloud/managed-cloud/infrastructure" },
+            { name: "Cloud Migration", href: "/data-cloud/managed-cloud/migration" },
+            { name: "Network & Storage", href: "/data-cloud/managed-cloud/network" },
+            { name: "Cloud Security", href: "/data-cloud/managed-cloud/security" },
+            { name: "Uninterrupted Business Operations", href: "/data-cloud/managed-cloud/operations" },
+            { name: "Disaster Recovery & Backup", href: "/data-cloud/managed-cloud/recovery" },
           ],
         },
         {
-          name: "Data Analytics Details",
+          name: "Data Engineering Services",
           href: "#",
           subItems: [
-            { name: "Real-Time Analytics", href: "/data-cloud/data-analytics/real-time" },
-            { name: "Predictive Modeling", href: "/data-cloud/data-analytics/predictive-modeling" },
-            { name: "Data Visualization", href: "/data-cloud/data-analytics/data-visualization" },
+            { name: "Data Architecture", href: "/data-cloud/data-engineering/architecture" },
+            { name: "Data Lake Implementation", href: "/data-cloud/data-engineering/lake" },
+            { name: "Data Pipelines", href: "/data-cloud/data-engineering/pipelines" },
+            { name: "Data Integration", href: "/data-cloud/data-engineering/integration" },
+            { name: "Data Analytics", href: "/data-cloud/data-engineering/analytics" },
+          ],
+        },
+        {
+          name: "DevOps Consulting",
+          href: "#",
+          subItems: [
+            { name: "ML Engineering", href: "/data-cloud/dataops/ml" },
+            { name: "DevOps Consulting", href: "/data-cloud/dataops/devops" },
+            { name: "Continuous Integration & Continuous Delivery (CI/CD)", href: "/data-cloud/dataops/cicd" },
+            { name: "Infrastructure Management & Monitoring", href: "/data-cloud/dataops/infrastructure" },
+            { name: "Infrastructure as Code (IaC)", href: "/data-cloud/dataops/iac" },
+            { name: "Site Reliability Engineering (SRE)", href: "/data-cloud/dataops/sre" },
+            { name: "Testing Automation", href: "/data-cloud/dataops/testing" },
+          ],
+        },
+        {
+          name: "Kubernetes Consulting",
+          href: "#",
+          subItems: [
+            { name: "Kubernetes Cloud Migration", href: "/data-cloud/kubernetes/migration" },
+            { name: "Kubernetes Architecture Design", href: "/data-cloud/kubernete" },
+            { name: "K8s Consultation", href: "/data-cloud/kubernetes" },
+            { name: "Kubernetes Configuration", href: "/data-cloud/kubernetes/configuration" },
+            { name: "Cost Optimization", href: "/data-cloud/kubernetes/cost" },
+            { name: "Maintenance", href: "/data-cloud/kubernetes/maintenance" },
+          ],
+        },
+        {
+          name: "Data Strategy Services",
+          href: "#",
+          subItems: [
+            { name: "Data Strategy Assessment", href: "/data-cloud/data-strategy/assessment" },
+            {
+              name: "Data Strategy Optimization and Execution",
+              href: "/data-cloud/data-strategy/optimization",
+            },
+            { name: "Gen AI Readiness and Strategy", href: "/data-cloud/data-strategy/genai" },
+            { name: "Data Ecosystem Set-up", href: "/data-cloud/data-strategy/ecosystem" },
+            { name: "Data Governance", href: "/data-cloud/data-strategy/governance" },
+            { name: "Advisory Services", href: "/data-cloud/data-strategy/advisory" },
+          ],
+        },
+        {
+          name: "Data Analytics Consulting Services",
+          href: "#",
+          subItems: [
+            {
+              name: "Business Intelligence (BI) Solutions",
+              href: "/data-cloud/data-analytics/bi",
+            },
+            { name: "Big Data Analytics", href: "/data-cloud/data-analytics/big-data" },
+            { name: "Data Visualization", href: "/data-cloud/data-analytics/visualization" },
+            { name: "Text and Sentiment Analysis", href: "/data-cloud/data-analytics/sentiment" },
+            { name: "Predictive Analysis", href: "/data-cloud/data-analytics/predictive" },
+          ],
+        },
+        {
+          name: "Snowflake Consulting",
+          href: "#",
+          subItems: [
+            { name: "Migration", href: "/data-cloud/snowflake/migration" },
+            { name: "Implementation", href: "/data-cloud/snowflake/implementation" },
+            { name: "Modernization", href: "/data-cloud/snowflake/modernization" },
+            { name: "Warehousing", href: "/data-cloud/snowflake/warehousing" },
+            { name: "Architecture", href: "/data-cloud/snowflake/architecture" },
+          ],
+        },
+        {
+          name: "Databricks Consulting",
+          href: "#",
+          subItems: [
+            { name: "Data Architecture", href: "/data-cloud/databricks/architecture" },
+            { name: "Data Migration", href: "/data-cloud/databricks/migration" },
+            { name: "Cloud Readiness Assessment", href: "/data-cloud/databricks/readiness" },
+            { name: "Databricks Health Check", href: "/data-cloud/databricks/health" },
+          ],
+        },
+        {
+          name: "BigQuery Consulting",
+          href: "#",
+          subItems: [
+            { name: "BigQuery Setup", href: "/data-cloud/bigquery/setup"},
+            { name: "BigQuery Data Modeling", href: "/data-cloud/bigquery/modeling" },
+            { name: "Data Visualization", href: "/data-cloud/bigquery/visualization" },
+            { name: "BigQuery Optimization", href: "/data-cloud/bigquery/optimization" },
+            { name: "Migration", href: "/data-cloud/bigquery/migration" },
+            { name: "Warehousing", href: "/data-cloud/bigquery/warehousing" },
           ],
         },
       ],
@@ -340,19 +415,63 @@ const Navbar = () => {
       name: "Digital Health",
       href: "/digital-health",
       submenu: [
-        { name: "Telemedicine", href: "/telemedicine" },
-        { name: "Health Records", href: "/health-records" },
-        { name: "Medical Analytics", href: "/medical-analytics" },
+        {
+          name: "Areas of Focus",
+          href: "#",
+          subItems: [
+            {
+              name: "Software as Medical Device",
+              href: "/digital-health/areas-of-focus/software-as-medical-device",
+            },
+            {
+              name: "Telemedicine Solution",
+              href: "/digital-health/areas-of-focus/telemedicine-solution",
+            },
+            {
+              name: "Practice Management",
+              href: "/digital-health/areas-of-focus/practice-management",
+            },
+            {
+              name: "Healthcare Intelligence & Analytics",
+              href: "/digital-health/areas-of-focus/healthcare-intelligence-analytics",
+            },
+          ],
+        },
+        {
+          name: "Services",
+          href: "#",
+          subItems: [
+            { name: "App Development", href: "/digital-health/services/app-development" },
+            { name: "UX Design", href: "/digital-health/services/ux-design" },
+            { name: "Integration", href: "/digital-health/services/integration" },
+            { name: "Compliance", href: "/digital-health/services/compliance" },
+          ],
+        },
+        {
+          name: "Solutions",
+          href: "#",
+          subItems: [
+            { name: "ClinicLive", href: "/digital-health/solutions/clinic-live"},
+            
+            { name: "Clinically", href: "/digital-health/solutions/clinicically" },
+          
+            { name: "EcoDocs", href: "/digital-health/solutions/eco-docs" },
+          ],
+        },
       ],
     },
     {
       name: "Company",
       href: "/company",
       submenu: [
-        { name: "About Us", href: "/about" },
-        { name: "Team", href: "/team" },
+        { name: "Blog", href: "/blog" },
+        { name: "eLearning", href: "/elearning" },
         { name: "Careers", href: "/careers" },
+        { name: "About Us", href: "/about" },
+        { name: "Clients", href: "/clients" },
+        { name: "Portfolio", href: "/portfolio" },
       ],
+      
     },
     {
       name: "Contact Us",
@@ -375,20 +494,20 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-lg sticky z-50 font-sans">
       {/* Main Navbar Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-18">
+        <div className="flex justify-between items-center h-22">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" onClick={closeAllDropdowns} className="flex-shrink-0 flex items-center">
-              <Image
-                src="/logo.webp"
-                alt="YourBrand Logo"
-                width={60}
-                height={60}
-                className="h-10 w-auto"
-              />
-            </Link>
-          </div>
+       <div className="flex items-center">
+  <Link href="/" onClick={closeAllDropdowns} className="flex items-center">
+    <Image
+      src="/logo.webp"
+      alt="YourBrand Logo"
+      width={120}
+      height={180}
+      className="w-auto h-14 object-contain"
+    />
+  </Link>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-4">
@@ -403,8 +522,7 @@ const Navbar = () => {
                   <>
                     <Link
                       href={item.href}
-                      className="text-gray-700 hover:bg-[#F1F1F1] rounded-md text-base font-semibold flex items-center transition-colors duration-200"
-                    >
+                      className="text-gray-700 hover:bg-[#F1F1F1] rounded-md text-base font-semibold flex items-center transition-colors duration-200">
                       {item.name}
                       <svg
                         className="ml-2 h-4 w-4 text-gray-700 transition-transform duration-200"
@@ -415,7 +533,7 @@ const Navbar = () => {
                         <circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" stroke-width="1" />
                         <path
                           fillRule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 0 010-1.414z"
                           clipRule="evenodd"
                         />
                       </svg>
@@ -429,13 +547,13 @@ const Navbar = () => {
                           initial="hidden"
                           animate="visible"
                           exit="exit"
-                          className="fixed left-40 right-28 bg-[#F1F1F1] shadow-lg border-t border-gray-200 z-40 mt-3 "
+                          className="fixed left-40 right-28 bg-[#F1F1F1] shadow-lg border-t border-gray-200 z-40 mt-3"
                         >
                           <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-4 py-2">
                             {item.name === "Ecommerce" ? (
-                              <div className="grid grid-cols-2">
-                                {/* Left Column: Buttons */}
-                                <div className="flex flex-col space-y-0 mr-72 ">
+                              <div className="flex flex-row gap-4">
+                                {/* Left Column: Buttons (Vertical) */}
+                                <div className="flex flex-col space-y-2 w-1/4">
                                   {item.submenu
                                     .filter((subItem) =>
                                       ["Magento", "Shopify", "BigCommerce", "WooCommerce", "B2B", "Salesforce Commerce Cloud"].includes(subItem.name)
@@ -444,7 +562,7 @@ const Navbar = () => {
                                       <div key={subItem.name}>
                                         <Link
                                           href={subItem.href}
-                                          className="block text-lg font-semibold text-gray-900 py-2 px-4 hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 "
+                                          className="block text-[16px] font-semibold text-gray-900 py-2 px-4 hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200"
                                           onClick={closeAllDropdowns}
                                         >
                                           {subItem.name}
@@ -453,27 +571,27 @@ const Navbar = () => {
                                       </div>
                                     ))}
                                 </div>
-                                {/* Right Side: Industries and Sections */}
-                                <div className="grid grid-cols-2 gap-1  ">
+                                {/* Right Side: Horizontal Sections */}
+                                <div className="grid grid-cols-4 gap-1 w-3/4">
                                   {/* Industries Section */}
-                                  <div className="flex flex-col space-y-4 ">
+                                  <div className="flex flex-col space-y-2">
                                     {item.submenu
                                       .filter((subItem) => subItem.name === "Industries")
                                       .map((subItem) => (
                                         <div key={subItem.name} className="flex flex-col">
-                                          <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
                                             {subItem.name}
                                           </span>
                                           <hr className="border-gray-300 mb-4" />
-                                          <ul className="grid grid-cols-2 gap-1 list-disc pl-4">
+                                          <ul className="list-disc pl-4">
                                             {subItem.subItems?.map((nestedItem) => (
                                               <li
                                                 key={nestedItem.name}
-                                                className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
                                               >
                                                 <Link
                                                   href={nestedItem.href}
-                                                  className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
                                                   onClick={closeAllDropdowns}
                                                 >
                                                   {nestedItem.name}
@@ -484,66 +602,179 @@ const Navbar = () => {
                                         </div>
                                       ))}
                                   </div>
-                                  {/* Sections: Magento, Shopify, WooCommerce, Salesforce, BigCommerce, B2B */}
-                                  <div className="flex flex-col space-y-4">
-                                    <div className="grid grid-cols-3 gap-4">
-                                      {["Magento", "Shopify", "WooCommerce"].map((sectionName) => {
-                                        const subItem = item.submenu.find((sub) => sub.name === sectionName);
-                                        return subItem ? (
-                                          <div key={subItem.name} className="flex flex-col">
-                                            <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
-                                              {subItem.name}
-                                            </span>
-                                            <hr className="border-gray-300 mb-4" />
-                                            <ul className="list-disc pl-4">
-                                              {subItem.subItems?.map((nestedItem) => (
-                                                <li
-                                                  key={nestedItem.name}
-                                                  className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                  {/* Magento Section */}
+                                  <div className="flex flex-col space-y-2">
+                                    {item.submenu
+                                      .filter((subItem) => subItem.name === "Magento")
+                                      .map((subItem) => (
+                                        <div key={subItem.name} className="flex flex-col">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                            {subItem.name}
+                                          </span>
+                                          <hr className="border-gray-300 mb-4" />
+                                          <ul className="list-disc pl-4">
+                                            {subItem.subItems?.map((nestedItem) => (
+                                              <li
+                                                key={nestedItem.name}
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                              >
+                                                <Link
+                                                  href={nestedItem.href}
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  onClick={closeAllDropdowns}
                                                 >
-                                                  <Link
-                                                    href={nestedItem.href}
-                                                    className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
-                                                    onClick={closeAllDropdowns}
-                                                  >
-                                                    {nestedItem.name}
-                                                  </Link>
-                                                </li>
-                                              ))}
-                                            </ul>
-                                          </div>
-                                        ) : null;
-                                      })}
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-4 mt-6">
-                                      {["Salesforce Commerce Cloud", "BigCommerce", "B2B"].map((sectionName) => {
-                                        const subItem = item.submenu.find((sub) => sub.name === sectionName);
-                                        return subItem ? (
-                                          <div key={subItem.name} className="flex flex-col">
-                                            <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
-                                              {subItem.name}
-                                            </span>
-                                            <hr className="border-gray-300 mb-4" />
-                                            <ul className="list-disc pl-4">
-                                              {subItem.subItems?.map((nestedItem) => (
-                                                <li
-                                                  key={nestedItem.name}
-                                                  className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                                  {nestedItem.name}
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                  </div>
+                                  {/* Shopify Section */}
+                                  <div className="flex flex-col space-y-2">
+                                    {item.submenu
+                                      .filter((subItem) => subItem.name === "Shopify")
+                                      .map((subItem) => (
+                                        <div key={subItem.name} className="flex flex-col">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                            {subItem.name}
+                                          </span>
+                                          <hr className="border-gray-300 mb-4" />
+                                          <ul className="list-disc pl-4">
+                                            {subItem.subItems?.map((nestedItem) => (
+                                              <li
+                                                key={nestedItem.name}
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                              >
+                                                <Link
+                                                  href={nestedItem.href}
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  onClick={closeAllDropdowns}
                                                 >
-                                                  <Link
-                                                    href={nestedItem.href}
-                                                    className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
-                                                    onClick={closeAllDropdowns}
-                                                  >
-                                                    {nestedItem.name}
-                                                  </Link>
-                                                </li>
-                                              ))}
-                                            </ul>
-                                          </div>
-                                        ) : null;
-                                      })}
-                                    </div>
+                                                  {nestedItem.name}
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                  </div>
+                                  {/* WooCommerce Section */}
+                                  <div className="flex flex-col space-y-2">
+                                    {item.submenu
+                                      .filter((subItem) => subItem.name === "WooCommerce")
+                                      .map((subItem) => (
+                                        <div key={subItem.name} className="flex flex-col">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                            {subItem.name}
+                                          </span>
+                                          <hr className="border-gray-300 mb-4" />
+                                          <ul className="list-disc pl-4">
+                                            {subItem.subItems?.map((nestedItem) => (
+                                              <li
+                                                key={nestedItem.name}
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                              >
+                                                <Link
+                                                  href={nestedItem.href}
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  onClick={closeAllDropdowns}
+                                                >
+                                                  {nestedItem.name}
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                  </div>
+                                  {/* Salesforce Commerce Cloud Section */}
+                                  <div className="flex flex-col space-y-2">
+                                    {item.submenu
+                                      .filter((subItem) => subItem.name === "Salesforce Commerce Cloud")
+                                      .map((subItem) => (
+                                        <div key={subItem.name} className="flex flex-col">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                            {subItem.name}
+                                          </span>
+                                          <hr className="border-gray-300 mb-4" />
+                                          <ul className="list-disc pl-4">
+                                            {subItem.subItems?.map((nestedItem) => (
+                                              <li
+                                                key={nestedItem.name}
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                              >
+                                                <Link
+                                                  href={nestedItem.href}
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  onClick={closeAllDropdowns}
+                                                >
+                                                  {nestedItem.name}
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                  </div>
+                                  {/* BigCommerce Section */}
+                                  <div className="flex flex-col space-y-2">
+                                    {item.submenu
+                                      .filter((subItem) => subItem.name === "BigCommerce")
+                                      .map((subItem) => (
+                                        <div key={subItem.name} className="flex flex-col">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                            {subItem.name}
+                                          </span>
+                                          <hr className="border-gray-300 mb-4" />
+                                          <ul className="list-disc pl-4">
+                                            {subItem.subItems?.map((nestedItem) => (
+                                              <li
+                                                key={nestedItem.name}
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                              >
+                                                <Link
+                                                  href={nestedItem.href}
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  onClick={closeAllDropdowns}
+                                                >
+                                                  {nestedItem.name}
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                  </div>
+                                  {/* B2B Section */}
+                                  <div className="flex flex-col space-y-2">
+                                    {item.submenu
+                                      .filter((subItem) => subItem.name === "B2B")
+                                      .map((subItem) => (
+                                        <div key={subItem.name} className="flex flex-col">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                            {subItem.name}
+                                          </span>
+                                          <hr className="border-gray-300 mb-4" />
+                                          <ul className="list-disc pl-4">
+                                            {subItem.subItems?.map((nestedItem) => (
+                                              <li
+                                                key={nestedItem.name}
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                              >
+                                                <Link
+                                                  href={nestedItem.href}
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  onClick={closeAllDropdowns}
+                                                >
+                                                  {nestedItem.name}
+                                                </Link>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
                                   </div>
                                 </div>
                               </div>
@@ -551,7 +782,7 @@ const Navbar = () => {
                               <div className="flex justify-start">
                                 <div className="grid grid-cols-2 w-full">
                                   <div className="flex flex-col">
-                                    <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
+                                    <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
                                       Industries
                                     </span>
                                     <hr className="border-gray-300 mb-4" />
@@ -561,11 +792,11 @@ const Navbar = () => {
                                         ?.subItems.map((nestedItem) => (
                                           <li
                                             key={nestedItem.name}
-                                            className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                            className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
                                           >
                                             <Link
                                               href={nestedItem.href}
-                                              className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                              className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
                                               onClick={closeAllDropdowns}
                                             >
                                               {nestedItem.name}
@@ -579,7 +810,7 @@ const Navbar = () => {
                                       .filter((subItem) => subItem.name !== "Industries")
                                       .map((subItem) => (
                                         <div key={subItem.name} className="flex flex-col">
-                                          <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
+                                          <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
                                             {subItem.name}
                                           </span>
                                           <hr className="border-gray-300 mb-4" />
@@ -587,11 +818,11 @@ const Navbar = () => {
                                             {subItem.subItems.map((nestedItem) => (
                                               <li
                                                 key={nestedItem.name}
-                                                className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                                className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
                                               >
                                                 <Link
                                                   href={nestedItem.href}
-                                                  className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                  className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
                                                   onClick={closeAllDropdowns}
                                                 >
                                                   {nestedItem.name}
@@ -604,18 +835,74 @@ const Navbar = () => {
                                   </div>
                                 </div>
                               </div>
-                            ) : ["AI", "AgTech", "Data & Cloud"].includes(item.name) ? (
-                              <div className="grid grid-cols-3 gap-8">
-                                <div className="flex flex-col space-y-0">
+                            ) : item.name === "AgTech" ? (
+                              <div className="flex flex-row gap-4">
+                                {/* Horizontal Sections */}
+                                <div className="grid grid-cols-3 gap-4 w-full">
+                                  {item.submenu.map((subItem) => (
+                                    <div key={subItem.name} className="flex flex-col">
+                                      <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                        {subItem.name}
+                                      </span>
+                                      <hr className="border-gray-300 mb-4" />
+                                      <ul className="grid grid-cols-2 gap-1 list-disc pl-4">
+                                        {subItem.subItems?.map((nestedItem) => (
+                                          <li
+                                            key={nestedItem.name}
+                                            className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                          >
+                                            <Link
+                                              href={nestedItem.href}
+                                              className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                              onClick={closeAllDropdowns}
+                                            >
+                                              {nestedItem.name}
+                                            </Link>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            ) : item.name === "Data & Cloud" ? (
+                              <div className="grid grid-cols-3 gap-[1px]">
+                                {item.submenu.map((subItem) => (
+                                  <div key={subItem.name} className="flex flex-col">
+                                    <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                      {subItem.name}
+                                    </span>
+                                    <hr className="border-gray-300 mb-4" />
+                                    <ul className="grid grid-cols-2 gap-1 list-disc pl-4">
+                                      {subItem.subItems?.map((nestedItem) => (
+                                        <li
+                                          key={nestedItem.name}
+                                          className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B] mb-1"
+                                        >
+                                          <Link
+                                            href={nestedItem.href}
+                                            className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                            onClick={closeAllDropdowns}
+                                          >
+                                            {nestedItem.name}
+                                          </Link>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : item.name === "Company" ? (
+                              <div className="flex flex-row gap-8">
+                                {/* Left Side: Vertical Buttons */}
+                                <div className="flex flex-col space-y-2 w-1/4">
                                   {item.submenu
-                                    .filter((subItem) =>
-                                      ["Computer Vision", "AI Drones", "Predictive Analytics", "Machine Learning", "Natural Language Processing", "Precision Farming", "Cloud Solutions", "Data Analytics", "Big Data"].includes(subItem.name)
-                                    )
+                                    .filter((subItem) => ["Blog", "eLearning", "Careers"].includes(subItem.name))
                                     .map((subItem) => (
                                       <div key={subItem.name}>
                                         <Link
                                           href={subItem.href}
-                                          className="block text-lg font-semibold text-gray-900 py-2 px-4 hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200"
+                                          className="block text-[16px] font-semibold text-gray-900 py-2 px-4 hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200"
                                           onClick={closeAllDropdowns}
                                         >
                                           {subItem.name}
@@ -624,36 +911,105 @@ const Navbar = () => {
                                       </div>
                                     ))}
                                 </div>
-                                <div className="flex flex-col">
-                                  <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
-                                    Industries
-                                  </span>
-                                  <hr className="border-gray-300 mb-4" />
-                                  <ul className="grid grid-cols-2 gap-1 list-disc pl-4">
-                                    {item.submenu
-                                      .find((subItem) => subItem.name === "Industries")
-                                      ?.subItems.map((nestedItem) => (
-                                        <li
-                                          key={nestedItem.name}
-                                          className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                {/* Right Side: Horizontal Buttons */}
+                                <div className="flex flex-row space-x-10 gap-50 w-3/4">
+                                  {item.submenu
+                                    .filter((subItem) => ["About Us", "Clients", "Portfolio"].includes(subItem.name))
+                                    .map((subItem) => (
+                                      <div key={subItem.name} className="flex flex-col items-end">
+                                        <Link
+                                          href={subItem.href}
+                                          className="block text-[16px] font-semibold text-gray-900 py-2 px-4 hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200"
+                                          onClick={closeAllDropdowns}
                                         >
-                                          <Link
-                                            href={nestedItem.href}
-                                            className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
-                                            onClick={closeAllDropdowns}
-                                          >
-                                            {nestedItem.name}
-                                          </Link>
-                                        </li>
-                                      ))}
-                                  </ul>
+                                          {subItem.name}
+                                        </Link>
+                                        <hr className="border-gray-300 w-full my-2" />
+                                      </div>
+                                    ))}
+                                </div>
+                              </div>
+                            ) : ["AI", "Digital Health"].includes(item.name) ? (
+                              <div className="grid grid-cols-3 gap-8">
+                                <div className="flex flex-col space-y-0">
+                                  {item.submenu
+                                    .filter((subItem) =>
+                                      ["Computer Vision", "AI Drones", "Predictive Analytics", "Machine Learning", "Natural Language Processing", "Precision Farming", "Areas of Focus"].includes(subItem.name)
+                                    )
+                                    .map((subItem) => (
+                                      <div key={subItem.name}>
+                                        {subItem.subItems ? (
+                                          <div className="flex flex-col">
+                                            <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                              {subItem.name}
+                                            </span>
+                                            <hr className="border-gray-300 mb-4" />
+                                            <ul className="grid grid-cols-2 gap-1 list-disc pl-4">
+                                              {subItem.subItems.map((nestedItem) => (
+                                                <li
+                                                  key={nestedItem.name}
+                                                  className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
+                                                >
+                                                  <Link
+                                                    href={nestedItem.href}
+                                                    className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                    onClick={closeAllDropdowns}
+                                                  >
+                                                    {nestedItem.name}
+                                                  </Link>
+                                                </li>
+                                              ))}
+                                            </ul>
+                                          </div>
+                                        ) : (
+                                          <>
+                                            <Link
+                                              href={subItem.href}
+                                              className="block text-[16px] font-semibold text-gray-900 py-2 px-4 hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200"
+                                              onClick={closeAllDropdowns}
+                                            >
+                                              {subItem.name}
+                                            </Link>
+                                            <hr className="border-gray-300 my-2" />
+                                          </>
+                                        )}
+                                      </div>
+                                    ))}
+                                </div>
+                                <div className="flex flex-col">
+                                  {item.submenu
+                                    .filter((subItem) => ["Industries", "Services"].includes(subItem.name))
+                                    .map((subItem) => (
+                                      <div key={subItem.name} className="flex flex-col mb-6">
+                                        <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
+                                          {subItem.name}
+                                        </span>
+                                        <hr className="border-gray-300 mb-4" />
+                                        <ul className="grid grid-cols-2 gap-1 list-disc pl-4">
+                                          {subItem.subItems?.map((nestedItem) => (
+                                            <li
+                                              key={nestedItem.name}
+                                              className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
+                                            >
+                                              <Link
+                                                href={nestedItem.href}
+                                                className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                onClick={closeAllDropdowns}
+                                              >
+                                                {nestedItem.name}
+                                              </Link>
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    ))}
                                 </div>
                                 <div className="flex flex-col space-y-6">
                                   {item.submenu
-                                    .filter((subItem) => !["Computer Vision", "AI Drones", "Predictive Analytics", "Machine Learning", "Natural Language Processing", "Industries", "Precision Farming", "Cloud Solutions", "Data Analytics", "Big Data"].includes(subItem.name))
+                                    .filter((subItem) => !["Computer Vision", "AI Drones", "Predictive Analytics", "Machine Learning", "Natural Language Processing", "Industries", "Precision Farming", "Areas of Focus", "Services"].includes(subItem.name))
                                     .map((subItem) => (
                                       <div key={subItem.name} className="flex flex-col">
-                                        <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
+                                        <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
                                           {subItem.name}
                                         </span>
                                         <hr className="border-gray-300 mb-4" />
@@ -661,11 +1017,11 @@ const Navbar = () => {
                                           {subItem.subItems.map((nestedItem) => (
                                             <li
                                               key={nestedItem.name}
-                                              className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                              className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
                                             >
                                               <Link
                                                 href={nestedItem.href}
-                                                className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                                className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
                                                 onClick={closeAllDropdowns}
                                               >
                                                 {nestedItem.name}
@@ -681,7 +1037,7 @@ const Navbar = () => {
                               <ul className="grid grid-cols-3 gap-8">
                                 {item.submenu.map((subItem) => (
                                   <li key={subItem.name} className="flex flex-col">
-                                    <span className="text-lg font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#EE2938] hover:text-white rounded-md">
+                                    <span className="text-[16px] font-semibold text-gray-900 mb-2 py-2 px-1 hover:bg-[#558A8B] hover:text-white rounded-md">
                                       {subItem.name}
                                     </span>
                                     <hr className="border-gray-300 mb-4" />
@@ -689,11 +1045,11 @@ const Navbar = () => {
                                       {subItem.subItems?.map((nestedItem) => (
                                         <li
                                           key={nestedItem.name}
-                                          className="list-disc text-[12px] font-sm text-black marker:text-red-600"
+                                          className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
                                         >
                                           <Link
                                             href={nestedItem.href}
-                                            className="hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
+                                            className="hover:bg-[#558A8B] hover:text-white rounded-md transition-colors duration-200 px-2 py-1 inline-block w-full"
                                             onClick={closeAllDropdowns}
                                           >
                                             {nestedItem.name}
@@ -714,7 +1070,7 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     onClick={closeAllDropdowns}
-                    className="bg-white text-black border border-black hover:bg-black hover:text-white text-base font-semibold transition-colors duration-200 px-4 py-2 rounded-full"
+                    className="bg-white text-black border border-black hover:bg-[#558A8B] hover:text-white text-base font-semibold transition-colors duration-200 px-4 py-2 rounded-full"
                   >
                     {item.name}
                   </Link>
@@ -724,7 +1080,16 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center space-x-2">
+            {isMobileMenuOpen && (
+              <Link
+                href="/contact"
+                className="bg-white text-black border border-black hover:bg-[#558A8B] hover:text-white text-sm font-semibold transition-colors duration-200 px-3 py-1.5 rounded-md"
+                onClick={closeAllDropdowns}
+              >
+                Contact Us
+              </Link>
+            )}
             <button
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               className="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none transition-colors duration-200"
@@ -747,96 +1112,98 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-gray-100 overflow-hidden"
+            className="lg:hidden bg-white border-t border-gray-200 overflow-hidden"
           >
-            <div className="px-4 pt-4 pb-6 space-y-3">
-              {navItems.map((item) => (
-                <div key={item.name}>
-                  {item.submenu ? (
-                    <>
-                      <button
-                        onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
-                        className="w-full text-left text-gray-700 hover:text-blue-600 text-base font-semibold flex justify-between items-center py-3 px-4 rounded-md transition-colors duration-200"
+            <div className="px-4 pt-4 pb-6 space-y-0">
+              {navItems
+                .filter((item) => item.name !== "Contact Us")
+                .map((item) => (
+                  <div key={item.name}>
+                    {item.submenu ? (
+                      <>
+                        <button
+                          onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                          className="w-full text-left text-gray-700 hover:text-blue-600 text-base font-semibold flex justify-between items-center py-2 px-4 rounded-md transition-colors duration-200"
+                        >
+                          {item.name}
+                          <svg
+                            className={`h-5 w-5 transform transition-transform duration-200 ${
+                              activeDropdown === item.name ? "rotate-180" : ""
+                            }`}
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" stroke-width="1" />
+                            <path
+                              fillRule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </button>
+
+                        {/* Mobile Dropdown */}
+                        <AnimatePresence>
+                          {activeDropdown === item.name && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.2 }}
+                              className="pl-6 space-y-0 mt-1"
+                            >
+                              {item.submenu.map((subItem) => (
+                                <div key={subItem.name}>
+                                  {subItem.subItems?.length > 0 ? (
+                                    <>
+                                      <span className="block px-4 py-1 text-[16px] font-semibold text-gray-900 hover:bg-gray-50 rounded">
+                                        {subItem.name}
+                                      </span>
+                                      <hr className="border-gray-300 mb-2" />
+                                      <ul className="list-disc pl-4">
+                                        {subItem.subItems.map((nestedItem) => (
+                                          <li
+                                            key={nestedItem.name}
+                                            className="list-disc text-[12px] font-medium text-black marker:text-[#558A8B]"
+                                          >
+                                            <Link
+                                              href={nestedItem.href}
+                                              className="block px-2 py-1 text-[12px] font-medium text-black hover:bg-[#558A8B] hover:text-white rounded transition-colors duration-200"
+                                              onClick={closeAllDropdowns}
+                                            >
+                                              {nestedItem.name}
+                                            </Link>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </>
+                                  ) : (
+                                    <Link
+                                      href={subItem.href}
+                                      className="block px-4 py-1 text-[16px] font-semibold text-gray-900 hover:bg-gray-50 rounded transition-colors duration-200"
+                                      onClick={closeAllDropdowns}
+                                    >
+                                      {subItem.name}
+                                    </Link>
+                                  )}
+                                </div>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="block px-4 py-2 text-base font-semibold text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+                        onClick={closeAllDropdowns}
                       >
                         {item.name}
-                        <svg
-                          className={`h-5 w-5 transform transition-transform duration-200 ${
-                            activeDropdown === item.name ? "rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" stroke-width="1" />
-                          <path
-                            fillRule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </button>
-
-                      {/* Mobile Dropdown */}
-                      <AnimatePresence>
-                        {activeDropdown === item.name && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="pl-6 space-y-2 mt-2"
-                          >
-                            {item.submenu.map((subItem) => (
-                              <div key={subItem.name}>
-                                {subItem.subItems?.length > 0 ? (
-                                  <>
-                                    <span className="block px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-[#EE2938] hover:text-white rounded-md">
-                                      {subItem.name}
-                                    </span>
-                                    <hr className="border-gray-300 mb-2" />
-                                    <ul className="list-disc pl-4">
-                                      {subItem.subItems.map((nestedItem) => (
-                                        <li
-                                          key={nestedItem.name}
-                                          className="list-disc text-[12px] font-sm text-black marker:text-red-600"
-                                        >
-                                          <Link
-                                            href={nestedItem.href}
-                                            className="block px-2 py-1 text-sm font-medium text-black hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200"
-                                            onClick={closeAllDropdowns}
-                                          >
-                                            {nestedItem.name}
-                                          </Link>
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  </>
-                                ) : (
-                                  <Link
-                                    href={subItem.href}
-                                    className="block px-4 py-2 text-sm font-medium text-black hover:bg-[#EE2938] hover:text-white rounded-md transition-colors duration-200"
-                                    onClick={closeAllDropdowns}
-                                  >
-                                    {subItem.name}
-                                  </Link>
-                                )}
-                              </div>
-                            ))}
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className="block px-4 py-3 text-base font-semibold text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
-                      onClick={closeAllDropdowns}
-                    >
-                      {item.name}
-                    </Link>
-                  )}
-                </div>
-              ))}
+                      </Link>
+                    )}
+                  </div>
+                ))}
             </div>
           </motion.div>
         )}
