@@ -4,10 +4,8 @@ import { useRef } from 'react';
 
 // Updated stats data
 const stats = [
-
   { value: '10K+', label: 'Clients Empowered', color: 'bg-[#6d28d9]' },
   { value: '50+', label: 'Countries Served', color: 'bg-[#dc2626]' },
-
   { value: '30+', label: 'Industry Awards', color: 'bg-[#2563eb]' },
   { value: '1M+', label: 'Users Impacted', color: 'bg-[#f59e0b]' },
   { value: '20+', label: 'Years Innovating', color: 'bg-[#14b8a6]' },
