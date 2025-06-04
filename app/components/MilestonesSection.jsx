@@ -8,7 +8,8 @@ const stats = [
   { value: '50+', label: 'Countries Served', color: 'bg-[#dc2626]' },
   { value: '30+', label: 'Industry Awards', color: 'bg-[#2563eb]' },
   { value: '1M+', label: 'Users Impacted', color: 'bg-[#f59e0b]' },
-  { value: '20+', label: 'Years Innovating', color: 'bg-[#14b8a6]' },
+  { value: '20+', label: 'Years Innovating', color: 'bg-[#14b8a6]' }
+
 ];
 
 export default function MilestonesSection() {
