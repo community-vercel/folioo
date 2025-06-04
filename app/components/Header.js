@@ -505,7 +505,7 @@ const Navbar = () => {
       width={120}
       height={180}
       className="w-auto h-14 object-contain"
-    />
+    />  
   </Link>
 </div>
 

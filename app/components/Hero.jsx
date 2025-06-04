@@ -5,9 +5,9 @@ import clsx from 'clsx';
 
 const slides = [
   {
-    label: 'Folio3',
-    title: 'Folio3 is your trusted,\nfull-service digital &\nsoftware company.',
-    description: 'From infancy to growth, we are your growth partners',
+    label: 'Nova Bloom',
+    title: 'Nova Bloom is your trusted,\nfull-service digital &\nsoftware company.',
+    description: 'From  infancy to growth, we are your growth partners',
     image: '/home-slide-1-bg.webp',
   },
   {
@@ -63,25 +63,39 @@ export default function HeroSlider() {
           <h1
             className={clsx(
               'text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight whitespace-pre-line',
-              'px-4 sm:px-0'
+              'px-4 sm:px-0',
+              // Change text color for slides 2-4 on small screens
+              activeIndex !== 0 && 'text-gray-800'
             )}
           >
             {slides[activeIndex].title}
           </h1>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg font-semibold px-4 sm:px-0">
+          <p 
+            className={clsx(
+              "mt-4 sm:mt-6 text-base sm:text-lg font-semibold px-4 sm:px-0",
+              // Change text color for slides 2-4 on small screens
+              activeIndex !== 0 && 'text-gray-700'
+            )}
+          >
             {slides[activeIndex].description}
           </p>
         </div>
         {/* Right image (for slides other than the first) */}
         {activeIndex !== 0 && (
-          <div className="relative h-[200px] sm:h-[400px] w-full flex justify-center items-center z-20 mt-6 sm:mt-0">
+        <div
+className={clsx(
+  'relative w-full flex justify-center items-center z-20 mt-6 sm:mt-0',
+  'h-[200px] sm:h-[500px]' // Mobile first - base style comes before responsive variant
+)}
+>
             <Image
               src={slides[activeIndex].image}
               alt={slides[activeIndex].label}
               fill
               className={clsx(
-                'object-contain',
-                'transition-opacity duration-500'
+                'object-contain sm:object-contain', // Maintain object-contain for consistency
+                'transition-opacity duration-500',
+                'px-4' // Add padding on small screens for better spacing
               )}
               priority
             />
@@ -138,6 +152,4 @@ export default function HeroSlider() {
           className="w-full h-auto object-cover"
         />
       </div>
-    </section>
-  );
-}
+    </section>)}

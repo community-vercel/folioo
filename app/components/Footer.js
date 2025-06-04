@@ -23,7 +23,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <p className="text-sm font-semibold text-black">
-        © 2025, Folio3 Software Inc., All Rights Reserved.
+        © 2025, Nova Bloom Software Inc., All Rights Reserved.
       </p>
 
       {/* Optional space for CAPTCHA positioning */}

@@ -10,7 +10,7 @@ export default function TestimonialsSlider() {
     {
       logo: '/logos/progresive.png',
       content:
-        'I am happy to recognize the work that was done by the Folio3 team. Our end users are very satisfied with the user interface and the performance of the app – and are excited to be more mobile. I appreciate the hard work and commitment to deliver a top quality solution.',
+        'I am happy to recognize the work that was done by the Nova Bloom team. Our end users are very satisfied with the user interface and the performance of the app – and are excited to be more mobile. I appreciate the hard work and commitment to deliver a top quality solution.',
       name: 'Sandy Kabat',
       title: 'Systems Administrator',
     },
@@ -31,21 +31,21 @@ export default function TestimonialsSlider() {
     {
       logo: '/logos/Twin.png',
       content:
-        'Twinstrata has partnered with Folio3 for several years since the very early days of our company. We have been able to offload a significant portion of our development effort to their team. They have been reliable and responsive to our needs.',
+        'Twinstrata has partnered with Nova Bloom for several years since the very early days of our company. We have been able to offload a significant portion of our development effort to their team. They have been reliable and responsive to our needs.',
       name: 'Mark Aldred',
       title: 'Director, Product Development',
     },
     {
       logo: '/logos/Truetrac-1.png',
       content:
-        'The Folio3 team has consistently exceeded our expectations. It felt as if we were working with an onshore team. It was their ability to understand our needs and keep us engaged throughout the entire process that has resulted in an exceptional product and a valued partner.',
+        'The Nova Bloom team has consistently exceeded our expectations. It felt as if we were working with an onshore team. It was their ability to understand our needs and keep us engaged throughout the entire process that has resulted in an exceptional product and a valued partner.',
       name: 'Johnny McGuire',
       title: 'Product Manager',
     },
     {
       logo: '/logos/maestro.webp',
       content:
-        'Folio3 nails it again and again. Their development & QA work is absolutely flawless, couldn’t have asked for a better technology partner.',
+        'Nova Bloom nails it again and again. Their development & QA work is absolutely flawless, couldn’t have asked for a better technology partner.',
       name: 'Thais Forneret',
       title: 'Back Office Manager',
     },

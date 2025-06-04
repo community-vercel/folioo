@@ -8,7 +8,7 @@ const locations = [
     image: '/locations/usa.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -20,7 +20,7 @@ const locations = [
     image: '/locations/canada.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -32,7 +32,7 @@ const locations = [
     image: '/locations/united-kingdom-new.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -44,7 +44,7 @@ const locations = [
     image: '/locations/UAE.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -56,7 +56,7 @@ const locations = [
     image: '/locations/australia-new.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -68,7 +68,7 @@ const locations = [
     image: '/locations/Mexico.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -80,7 +80,7 @@ const locations = [
     image: '/locations/bulgaria-image-2.webp',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -92,7 +92,7 @@ const locations = [
     image: '/locations/Paskistan.jpg',
     address: (
       <>
-        Folio3 FZ LLC Dubai, UAE – Dubai Internet City,<br />
+        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
         1st Floor, Building Number 14,<br />
         Premises 105, Dubai, UAE<br />
         <strong>Tel:</strong> +971 (04) 575 7041
@@ -156,7 +156,7 @@ export default function WorldPresenceSection() {
       </div>
 
       {/* Optional globe */}
-      <div className="absolute right-0 top-0 bottom-0 -mb-10 w-1/2 z-0 opacity-10 pointer-events-none hidden md:block">
+      <div className="absolute right-0 top-0 bottom-0 -mb-16 w-1/2 z-0 opacity-10 pointer-events-none hidden md:block">
         <Image
           src="/locations/globe.gif"
           alt="globe background"

@@ -98,6 +98,7 @@ export default function ScrollingLogos() {
             }
           }
 
+          
           .scroll-left:hover,
           .scroll-right:hover {
             animation-play-state: paused;
