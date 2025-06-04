@@ -2,6 +2,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+
 // Updated stats data
 const stats = [
   { value: '10K+', label: 'Clients Empowered', color: 'bg-[#6d28d9]' },
