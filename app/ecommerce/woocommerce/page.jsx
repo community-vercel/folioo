@@ -1,8 +1,5 @@
 'use client';
-import CaseStudies from '@/app/components/ecommerece/shopify/CaseStudies';
-import PartnersSection from '@/app/components/ecommerece/shopify/PartnersSection';
-import ShopifyHero from '@/app/components/ecommerece/shopify/ShopifyHero';
-import ShopifyServicesSection from '@/app/components/ecommerece/shopify/ShopifyServicesSection';
+
 import TestimonialSlider from '@/app/components/ecommerece/woocommerce/TestimonialSlider';
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
