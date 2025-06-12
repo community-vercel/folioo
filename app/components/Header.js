@@ -212,7 +212,7 @@ const Navbar = () => {
         },
         {
           name: "Salesforce Commerce Cloud",
-          href: "/ecommerce/salesforce-commerce-cloud",
+          href: "/ecommerce/salesforce",
           subItems: [
             { name: "Commerce Cloud B2C", href: "/ecommerce/salesforce-commerce-cloud/b2c" },
             { name: "Commerce Cloud B2B", href: "/ecommerce/salesforce-commerce-cloud/b2b" },
