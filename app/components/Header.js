@@ -19,9 +19,9 @@ const Navbar = () => {
           name: "Industries",
           href: "#",
           subItems: [
-            { name: "Automotive", href: "/industries/automotive" },
+            { name: "Automotive", href: "/apps/industries/automotive" },
             { name: "Retail", href: "/industries/retail" },
-            { name: "Healthcare", href: "/industries/healthcare" },
+            { name: "Healthcare", href: "/apps/industries/healthcare" },
             { name: "Logistics", href: "/industries/logistics" },
             { name: "Agriculture", href: "/industries/agriculture" },
             { name: "Education", href: "/industries/education" },
