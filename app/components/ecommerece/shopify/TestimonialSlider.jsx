@@ -9,9 +9,10 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const testimonials = [
  {
+    
  name: "Terri Anne Meyer",
  role: "VP",
- 
+
  company: "BoardOfDecor",
  text: "We’ve been working with Nova Bloom since 2016...",
  stars: 5,
