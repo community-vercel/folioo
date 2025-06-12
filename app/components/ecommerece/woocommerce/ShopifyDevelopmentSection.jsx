@@ -20,7 +20,7 @@ const AnimatedText = ({ text, className }) => {
   );
 };
 
-export default function ShopifyDevelopmentSection() {
+export default function WoocommerceDevelopmentSection() {
   const logos = [
     "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-bird-b-gone.webp",
     "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-easilocks.webp",
@@ -78,7 +78,7 @@ const cardVariants = {
         className="mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
-          Trusted by <span className="text-teal-600">150+ Fast-Growing Brands</span> for Shopify Development
+          Trusted by <span className="text-teal-600">150+ Fast-Growing Brands</span> for Woocmommerce Development
         </h2>
         <div className="mt-4">
           <AnimatedText
@@ -139,13 +139,13 @@ const cardVariants = {
             >
            
             </button>
-           
+          
           </motion.div>
         ))}
       </div>
 
-      {/* CTA Section */}
-      <motion.div
+  
+      {/* <motion.div
 className="bg-gradient-to-r from-teal-800 to-teal-600 max-w-6xl mx-auto text-center text-white p-8 md:p-12 rounded-2xl mb-16 text-left shadow-xl relative overflow-hidden"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -164,9 +164,9 @@ className="bg-gradient-to-r from-teal-800 to-teal-600 max-w-6xl mx-auto text-cen
         >
           Let’s Build & Scale Your eCommerce Store
         </button>
-      </motion.div>
+      </motion.div> */}
 
-      {/* Features Grid */}
+{/*      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -176,64 +176,10 @@ className="bg-gradient-to-r from-teal-800 to-teal-600 max-w-6xl mx-auto text-cen
         <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
           Why Choose <span className="text-teal-600">Nova Bloom</span> for Shopify Development?
         </h3>
-      </motion.div>
+      </motion.div> */}
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8 px-6 md:px-0 max-w-6xl mx-auto">
-      {features.map((feature, idx) => (
-        <motion.div
-          key={idx}
-          className={clsx(
-            "relative border border-gray-200 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300",
-            idx === 2
-              ? "bg-gradient-to-br from-teal-50 to-teal-100"
-              : "bg-gradient-to-br from-white to-gray-50",
-            "overflow-hidden"
-          )}
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          whileHover="hover"
-          transition={{ duration: 0.5, delay: idx * 0.2 }}
-          role="region"
-          aria-labelledby={`feature-title-${idx}`}
-        >
-          {/* Decorative Border Glow */}
-          <div
-            className={clsx(
-              "absolute inset-0 border-2 border-transparent rounded-2xl",
-              "hover:border-teal-400/50 hover:transition-all hover:duration-300"
-            )}
-          ></div>
 
-          {/* Icon */}
-          <motion.div
-            className="mb-5 relative z-10 flex items-center justify-center w-12 h-12 bg-teal-100 rounded-full"
-            variants={iconVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover="hover"
-          >
-            <feature.icon className="w-6 h-6 text-teal-600" aria-hidden="true" />
-          </motion.div>
-
-          {/* Title */}
-          <h4
-            id={`feature-title-${idx}`}
-            className="font-bold text-xl md:text-2xl text-gray-900 mb-3 tracking-tight"
-          >
-            {feature.title}
-          </h4>
-
-          {/* Description */}
-          <p className="text-sm md:text-base text-gray-600 leading-relaxed relative z-10">
-            {feature.description}
-          </p>
-
-          {/* Decorative Element */}
-          <div className="absolute top-0 right-0 w-24 h-24 bg-teal-200/20 rounded-full -translate-y-12 translate-x-12 blur-2xl"></div>
-        </motion.div>
-      ))}
-    </div>
+    
     </section>
   );
 }
