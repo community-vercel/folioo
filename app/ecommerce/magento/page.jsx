@@ -1,15 +1,15 @@
 'use client';
 import BadgeSection from "@/app/components/ecommerece/BadgeSection";
 import PixelPerfectSection from "@/app/components/ecommerece/ecommercefaqs";
-import Footer from "@/app/components/ecommerece/ecommerceFooter";
 import TopQuoteBanner from "@/app/components/ecommerece/ecommerceTopQuoteBanner";
 import TrustedEcommercecustomer from "@/app/components/ecommerece/ecommerceTrustedcustomer";
 import WhyChooseUs from "@/app/components/ecommerece/ecommerceWhyChooseUs";
+import Footer from "@/app/components/ecommerece/Footer";
+import Header from "@/app/components/ecommerece/Header";
 import MagentoProjects from "@/app/components/ecommerece/MagentoProjects";
 import MagentoServices from "@/app/components/ecommerece/MagentoServices";
 import Head from "next/head";
 import { useState } from "react";
-import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 // import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Home() {
@@ -25,80 +25,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        {/* Navbar */}
-        <nav className="sticky top-0 z-50 bg-[#2a4a4b]/90 backdrop-blur-md shadow-md">
-          <div className="flex items-center justify-between px-6 md:px-12 py-4 max-w-7xl mx-auto">
-            {/* Logo */}
-            <a href="/" className="flex items-center space-x-3">
-              <img src="/logo.webp" alt="Nova Bloom Logo" className="h-10 md:h-12 transition-transform hover:scale-105" />
-              <span className="text-xl md:text-2xl font-semibold text-white/95 tracking-tight">eCommerce</span>
-            </a>
-
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-12 text-base font-medium text-white/90">
-              <a href="#" className="hover:text-white hover:underline underline-offset-4 transition-all duration-300">Case Studies</a>
-
-              {/* Services Dropdown */}
-              <div className="relative group">
-                <button className="flex items-center hover:text-white transition-all duration-300">
-                  Services <FiChevronDown className="ml-1 h-4 w-4" />
-                </button>
-                <div className="absolute top-full left-0 mt-4 w-56 bg-white text-gray-800 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform -translate-y-4 invisible group-hover:visible p-3 space-y-2">
-                  {["Consulting", "Development", "Support"].map((item) => (
-                    <a key={item} href="#" className="block px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200 text-sm font-medium">{item}</a>
-                  ))}
-                </div>
-              </div>
-
-              {/* Industry Dropdown */}
-              <div className="relative group">
-                <button className="flex items-center hover:text-white transition-all duration-300">
-                  Industry <FiChevronDown className="ml-1 h-4 w-4" />
-                </button>
-                <div className="absolute top-full left-0 mt-4 w-56 bg-white text-gray-800 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform -translate-y-4 invisible group-hover:visible p-3 space-y-2">
-                  {["Retail", "Healthcare", "Automotive"].map((item) => (
-                    <a key={item} href="#" className="block px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200 text-sm font-medium">{item}</a>
-                  ))}
-                </div>
-              </div>
-
-              {/* Platforms Dropdown */}
-              <div className="relative group">
-                <button className="flex items-center hover:text-white transition-all duration-300">
-                  Platforms <FiChevronDown className="ml-1 h-4 w-4" />
-                </button>
-                <div className="absolute top-full left-0 mt-4 w-56 bg-white text-gray-800 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform -translate-y-4 invisible group-hover:visible p-3 space-y-2">
-                  {["Shopify", "Magento", "BigCommerce"].map((item) => (
-                    <a key={item} href="#" className="block px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200 text-sm font-medium">{item}</a>
-                  ))}
-                </div>
-              </div>
-
-              <a href="#" className="hover:text-white hover:underline underline-offset-4 transition-all duration-300">About</a>
-              <a href="#" className="hover:text-white hover:underline underline-offset-4 transition-all duration-300">Blog</a>
-            </div>
-
-            {/* Right Actions */}
-            <div className="flex items-center space-x-6">
-              <span className="hidden sm:inline text-white/90 text-sm font-medium">📞 408 365 4638</span>
-              <button className="bg-gradient-to-r from-[#446f70] to-[#446f70] text-white font-semibold text-sm px-6 py-2.5 rounded-full hover:from-amber-500 hover:to-orange-600 transition-all duration-300 shadow-md hover:shadow-xl transform hover:scale-105">
-                Start a Project
-              </button>
-              <button className="lg:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                {isMobileMenuOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-            <div className="lg:hidden bg-white text-gray-800 px-6 py-4 shadow-lg">
-              {["Case Studies", "Services", "Industry", "Platforms", "About", "Blog"].map((item) => (
-                <a key={item} href="#" className="block py-2 text-sm font-medium hover:bg-gray-100 rounded-md transition-all duration-200">{item}</a>
-              ))}
-            </div>
-          )}
-        </nav>
+                <Header />
 
         {/* Hero Section */}
         <main className="px-6 md:px-16 py-20 relative">
@@ -181,6 +108,7 @@ export default function Home() {
         }
       `}</style>
       </div>
+      
       <BadgeSection />
       <MagentoServices />
       <MagentoProjects />
@@ -188,8 +116,7 @@ export default function Home() {
       <WhyChooseUs />
       <TopQuoteBanner />
       <PixelPerfectSection />
-      <Footer />
-
+<Footer />
 
 
     </>

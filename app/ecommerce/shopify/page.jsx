@@ -8,7 +8,8 @@ import TestimonialSlider from '@/app/components/ecommerece/shopify/TestimonialSl
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import Footer from '@/app/components/ecommerece/ecommerceFooter';
+import Footer from '@/app/components/ecommerece/Footer';
+import Header from '@/app/components/ecommerece/Header';
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -202,98 +203,7 @@ export default function Shopify() {
         animate={{ transition: { delay: 1.5 } }}
       />
 
-      {/* Header */}
-      <motion.header
-        className={`max-w-[1440px] mx-auto px-6 py-4 flex justify-between items-center border border-[#3f4d45]/20 bg-[#1a2e28]/30 backdrop-blur-lg transition-all duration-300 rounded-full ${
-          isHeaderSticky ? 'sticky top-4 z-50 shadow-lg' : ''
-        }`}
-        initial={{ y: 0 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="flex items-center gap-2">
-          <motion.span
-            className="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#6BE18F] to-[#4CAF50]"
-            whileHover={{ scale: 1.05 }}
-          >
-            Nova Bloom
-          </motion.span>
-          <span className="text-sm text-gray-300">eCommerce</span>
-        </div>
-        <nav className="hidden lg:flex items-center gap-6 text-xs font-medium">
-          {['Case Studies', 'Services', 'Platforms', 'About', 'Blog'].map((item) => (
-            <motion.a
-              key={item}
-              href="#"
-              className="text-gray-200 hover:text-[#6BE18F] transition-colors"
-              whileHover={{ y: -2 }}
-            >
-              {item}
-              <motion.span
-                className="absolute left-0 bottom-[-4px] h-[1px] w-full bg-[#6BE18F] scale-x-0"
-                whileHover={{ scaleX: 1 }}
-                transition={{ duration: 0.2 }}
-              />
-            </motion.a>
-          ))}
-          <a href="tel:4083654638" className="text-gray-200 hover:text-[#6BE18F]">
-            📞 (408) 365-4638
-          </a>
-          <GlowingButton>Start Free Consultation</GlowingButton>
-        </nav>
-        <motion.button
-          className="lg:hidden text-gray-200"
-          onClick={() => setIsMenuOpen(true)}
-          whileHover={{ scale: 1.1 }}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </motion.button>
-      </motion.header>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <motion.div
-          className="lg:hidden fixed inset-0 bg-[#071218]/95 backdrop-blur-lg z-60 p-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <div className="flex justify-between items-center mb-6">
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#6BE18F] to-[#4CAF50]">
-              Nova Bloom
-            </span>
-            <motion.button
-              className="text-gray-200"
-              onClick={() => setIsMenuOpen(false)}
-              whileHover={{ scale: 1.1 }}
-              aria-label="Close menu"
-            >
-              ✕
-            </motion.button>
-          </div>
-          <nav className="flex flex-col gap-4">
-            {['Case Studies', 'Services', 'Platforms'].map((item) => (
-              <motion.a
-                key={item}
-                href="#"
-                className="text-gray-200 text-sm hover:text-[#6BE18F] py-2"
-                onClick={() => setIsMenuOpen(false)}
-                variants={fadeIn}
-              >
-                {item}
-              </motion.a>
-            ))}
-            <a href="tel:4083654638" className="text-gray-200 text-sm py-2">
-              📞 (408) 365-4638
-            </a>
-            <GlowingButton onClick={() => setIsMenuOpen(false)}>
-              Start Free Consultation
-            </GlowingButton>
-          </nav>
-        </motion.div>
-      )}
-
+     <Header />
       {/* Hero Section */}
       <motion.main
         className="max-w-[1440px] mx-auto px-6 py-20 lg:py-12 relative"

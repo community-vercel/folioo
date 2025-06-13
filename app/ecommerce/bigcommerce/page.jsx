@@ -4,13 +4,19 @@ import TestimonialSlider from '@/app/components/ecommerece/woocommerce/Testimoni
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import WoocommerceDevelopmentSection from '@/app/components/ecommerece/woocommerce/ShopifyDevelopmentSection';
-import WooCommerceHero from '@/app/components/ecommerece/woocommerce/WooCommerceHero';
-import WooCommerceExpertise from '@/app/components/ecommerece/woocommerce/WooCommerceExpertise';
-import WooCommerceServices from '@/app/components/ecommerece/woocommerce/WooCommerceServices';
-import WooCommerceWhy from '@/app/components/ecommerece/woocommerce/woocommercewhy';
-import Header from '@/app/components/ecommerece/Header';
 import Footer from '@/app/components/ecommerece/Footer';
+
+import BigCommerceHero from '@/app/components/ecommerece/bigCommerce/igCommerceHero';
+import WoocommerceDevelopmentSection from '@/app/components/ecommerece/bigCommerce/igDevelopmentSection';
+import WooCommerceHero from '@/app/components/ecommerece/bigCommerce/bigCommerceHero';
+import PublicBigCommerceApps from '@/app/components/ecommerece/bigCommerce/ublicBigCommerceApps';
+import CommerceSolutions from '@/app/components/ecommerece/bigCommerce/bigCommerceServices';
+import WhyChooseBigCommerce from '@/app/components/ecommerece/bigCommerce/WhyChooseBigCommerce';
+import CommercebigWhy from '@/app/components/ecommerece/bigCommerce/CommercebigWhy';
+import CommercebigExpertise from '@/app/components/ecommerece/bigCommerce/CommercebigExpertise';
+import CaseStudySlider from '@/app/components/ecommerece/bigCommerce/CaseStudySlider';
+import FaqAndContactSection from '@/app/components/ecommerece/bigCommerce/FaqAndContactSection';
+import Header from '@/app/components/ecommerece/Header';
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -182,93 +188,26 @@ export default function Woocommerce() {
 
   return (
     <>
-    <div className=" bg-gradient-to-br from-[#071218] via-[#0a1f15] to-[#012a1a] text-white font-[Inter] overflow-x-hidden">
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
-        body {
-          font-family: 'Inter', sans-serif;
-        }
-        h1, h2, h3 {
-          font-family: 'Manrope', sans-serif;
-        }
-      `}</style>
-
-      {/* Particle Background */}
-      <ParticleBackground />
-
-      {/* Floating Elements */}
-      <motion.div
-        className="absolute top-1/4 left-1/4 w-20 h-20 rounded-full bg-[#6BE18F]/15 blur-xl"
-        animate={floating}
-      />
-      <motion.div
-        className="absolute top-2/3 right-1/3 w-28 h-28 rounded-full bg-[#4CAF50]/10 blur-xl"
-        animate={{ transition: { delay: 1.5 } }}
-      />
-
     <Header />
-
-      {/* Hero Section */}
- <div className="min-h-screen bg-gradient-to-r from-[#099f70] to-[#382556] text-white px-6 py-12">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center">
-        {/* Left Section */}
-        <div className="lg:w-1/2 space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            WooCommerce<br />Development Services
-          </h1>
-          <p className="text-lg text-gray-300">
-            Fast-growing eCommerce brands trust Nova Bloom’s WooCommerce website
-            development services to help them:
-          </p>
-          <ul className="space-y-3 text-base text-gray-200">
-            {[
-              'Migrate to WooCommerce from other legacy or hosted platforms',
-              'Maintain WooCommerce stores to ensure performance & security',
-              'Build complex functionality using custom plugins for superior customer experience',
-              'Integrate with 3rd party systems to simplify complex commerce'
-            ].map((item, idx) => (
-              <li key={idx} className="flex items-start gap-2">
-                <span className="text-white text-xl">✔</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-          <button className="bg-white text-[#446f70] font-semibold px-6 py-3 rounded-full hover:bg-purple-100 transition">
-            Book A Free Consultation
-          </button>
-        </div>
-
-        {/* Right Section */}
-        <div className="mt-12 lg:mt-0 grid grid-cols-2 gap-6 text-center lg:w-1/2">
-          {[
-            { value: '50+', label: 'eCommerce Experts' },
-            { value: '10+', label: 'Years of Expertise' },
-            { value: '20+', label: 'WooCommerce projects' },
-            { value: 'Top 5%', label: 'Tech Talent' }
-          ].map((stat, idx) => (
-            <div
-              key={idx}
-              className="border border-gray-500 rounded-lg p-6 text-white"
-            >
-              <div className="text-3xl font-bold text-white">{stat.value}</div>
-              <div className="text-sm mt-2">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-        
-
-       
-        </div>
+    <BigCommerceHero />
 
 {/* <ShopifyHero /> */}
       {/* <CaseStudies /> */}
-            <WoocommerceDevelopmentSection />
+<WoocommerceDevelopmentSection />
+
             <WooCommerceHero />
-                              <WooCommerceExpertise />
-      <WooCommerceServices />
-<WooCommerceWhy />
+      <PublicBigCommerceApps />
+      <CommerceSolutions />
+      <WhyChooseBigCommerce />
+<CommercebigWhy />
+                              <CommercebigExpertise />
+
+      <CaseStudySlider />
+
+                              <TestimonialSlider />
+
+                                    <FaqAndContactSection />
+
                 
 
 
