@@ -92,7 +92,7 @@ logo: '/logos/progresive.png',
                   className="mx-auto mb-6 h-10 object-contain"
                 />
                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 text-center">
-                  "{t.content}"
+                  {t.content}
                 </p>
                 <div className="text-center">
                   <p className="font-semibold text-base text-navy-900">{t.name}</p>
