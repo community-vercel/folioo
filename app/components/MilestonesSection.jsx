@@ -64,6 +64,9 @@ export default function MilestonesSection() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
   };
 
+
+
+  
   return (
     <section className="bg-gradient-to-br from-navy-50 to-teal-50 py-16 sm:py-24 lg:py-16">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
