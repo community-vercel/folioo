@@ -119,7 +119,7 @@ export default function PartnersAwards() {
         }
       `}</style>
 
-      <ScrollSection items={partners} title="Our Partners" scrollDirection="right-to-left" />
-      <ScrollSection items={awards} title="Our Awards" scrollDirection="left-to-right" />
-    </section>
+         <ScrollSection items={partners} title="Trusted by Global Technology Leaders" scrollDirection="right-to-left" />
+      <ScrollSection items={awards} title="Award-Winning Excellence" scrollDirection="left-to-right" />
+     </section>
   )}

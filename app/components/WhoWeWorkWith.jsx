@@ -1,29 +1,32 @@
-'use client';
-import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+"use client";
 
+import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { FaBuilding, FaRocket, FaBriefcase } from "react-icons/fa";
+
+// Updated categories for Sharplogicians.com
 const categories = [
   {
-    title: 'Global Enterprises',
-    description: 'Partnering to enhance your teams with cutting-edge solutions.',
-    icon: '/logos/enterprise.svg', // Ensure these icons exist in /public
+    title: "Global Enterprises",
+    description: "Delivering scalable software solutions to Fortune 500 companies, enhancing efficiency and innovation.",
+    icon: <FaBuilding className="w-12 h-12 text-teal-500" />,
   },
   {
-    title: 'Growing Businesses',
-    description: 'Empowering SMEs to scale with innovative digital strategies.',
-    icon: '/logos/business.svg',
+    title: "Tech Startups",
+    description: "Partnering with innovative startups to build cutting-edge apps and AI-driven platforms.",
+    icon: <FaRocket className="w-12 h-12 text-coral-500" />,
   },
   {
-    title: 'Innovative Startups',
-    description: 'Building your vision from concept to reality with tech expertise.',
-    icon: '/logos/Startup-Solo-16.svg',
+    title: "Growing SMBs",
+    description: "Empowering small and medium businesses with tailored digital strategies for growth.",
+    icon: <FaBriefcase className="w-12 h-12 text-navy-800" />,
   },
 ];
 
 export default function WhoWeWorkWith() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Animation variants
   const containerVariants = {
@@ -32,108 +35,89 @@ export default function WhoWeWorkWith() {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        duration: 0.8,
-        ease: 'easeOut',
+        duration: 0.6,
+        ease: "easeOut",
       },
     },
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.95 },
+    hidden: { opacity: 0, y: 20, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
   const titleVariants = {
-    hidden: { opacity: 0, y: -30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
   };
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#446f70] via-[#16213e] to-[#446f70] py-10 sm:py-24 lg:py-10 overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#446f70]/20 to-[#446f70]/20 opacity-50 z-0" />
-      <div className="absolute top-10 left-10 w-72 h-72 bg-[#e94560]/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#446f70]/10 rounded-full blur-3xl animate-pulse" />
+    <section className="bg-white py-16 sm:py-24 lg:py-12">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Title */}
+        <motion.div
+          variants={titleVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="text-center mb-12 sm:mb-16 lg:mb-20"
+        >
+          <h1         className="text-5xl sm:text-5xl md:text-5xl font-extrabold text-navy-900 text-center mb-8 sm:mb-16 lg:mb-8"
+>
+            Who We Work With
+          </h1>
+          <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-600 font-medium max-w-4xl mx-auto">
+            Partnering with innovative organizations to drive digital transformation at Nova Bloom .
+          </p>
+        </motion.div>
 
-      {/* Section Title */}
-      <motion.h1
-        variants={titleVariants}
-        initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-        className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white text-center px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16 lg:mb-20 relative"
-      >
-        <span className="relative z-10">
-          Our Valued Partners
-          <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#446f70] to-[#446f70] rounded-full" />
-        </span>
-      </motion.h1>
-
-      {/* Grid of Cards */}
-      <motion.div
-        ref={ref}
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
-      >
-        {categories.map((item, idx) => (
-          <motion.div
-            key={item.title}
-            variants={cardVariants}
-            custom={idx}
-            className="relative group bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-72 sm:h-80 lg:h-96"
-            whileHover={{ y: -10, transition: { duration: 0.3 } }}
-          >
-            {/* Card Background Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#446f70]/10 to-[#446f70]/10 opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
-
-            {/* Icon */}
+        {/* Grid of Cards */}
+        <motion.div
+          ref={ref}
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12"
+        >
+          {categories.map((item, idx) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: idx * 0.2 + 0.2, duration: 0.5 }}
-              className="absolute top-6 left-6 w-12 h-12 sm:w-16 sm:h-16"
+              key={item.title}
+              variants={cardVariants}
+              className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+              role="listitem"
+              whileHover={{ scale: 1.03 }}
             >
-              <Image
-                src={item.icon}
-                alt={`${item.title} icon`}
-                width={64}
-                height={64}
-                className="object-contain"
-              />
-            </motion.div>
-
-            {/* Hover Overlay */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileHover={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="absolute inset-0 bg-gradient-to-t from-[#446f70]/90 to-[#e94560]/50 flex flex-col justify-end p-6 sm:p-8 text-white z-20"
-            >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3">{item.title}</h3>
-              <p className="text-sm sm:text-base lg:text-lg max-w-xs mb-4">{item.description}</p>
-              <motion.button
-                whileHover={{ scale: 1.05, backgroundColor: '#446f70' }}
+              <div className="flex justify-center mb-6">{item.icon}</div>
+              <h3 className="text-xl sm:text-2xl font-semibold text-navy-900 mb-3">
+                {item.title}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                {item.description}
+              </p>
+              <motion.a
+                href="#"
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#446f70] text-white px-6 py-2.5 rounded-full text-sm sm:text-base font-semibold transition-colors duration-300 shadow-md hover:shadow-lg"
-                aria-label={`Explore more about ${item.title}`}
+                className="mt-6 inline-block bg-teal-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-teal-600 transition-colors duration-200"
+                aria-label={`Learn more about ${item.title}`}
               >
-                Explore Now
-              </motion.button>
+                Learn More
+              </motion.a>
             </motion.div>
+          ))}
+        </motion.div>
+      </div>
 
-            {/* Default Content */}
-            <div className="absolute inset-0 flex items-center justify-center text-white text-xl sm:text-2xl lg:text-3xl font-bold bg-black/30 group-hover:opacity-0 transition-opacity duration-500">
-              {item.title}
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
+      <style jsx global>{`
+        section {
+          position: relative;
+          z-index: 1;
+        }
+      `}</style>
     </section>
   );
 }

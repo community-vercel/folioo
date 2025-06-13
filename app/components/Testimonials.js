@@ -1,129 +1,178 @@
-'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
-import Image from 'next/image';
-import 'swiper/css';
-import 'swiper/css/pagination';
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function TestimonialsSlider() {
   const testimonials = [
     {
-      logo: '/logos/progresive.png',
+logo: '/logos/progresive.png',
+
       content:
-        'I am happy to recognize the work that was done by the Nova Bloom team. Our end users are very satisfied with the user interface and the performance of the app – and are excited to be more mobile. I appreciate the hard work and commitment to deliver a top quality solution.',
-      name: 'Sandy Kabat',
-      title: 'Systems Administrator',
+        "Nova Bloom transformed our vision into a stunning mobile app. Their team’s expertise and dedication ensured a seamless user experience that our customers love. We couldn’t be happier with the results!",
+      name: "Emma Larson",
+      title: "Chief Product Officer",
+      company: "TechWave Solutions",
     },
-    {
-      logo: '/logos/air-med.png',
-      content:
-        'We have successfully been able to accept orders via Magento, sync to AX, create manual orders in AX, send the shipping files to EGS, receive back the confirmation file and update Magento with shipping information. Thank you to the entire team!',
-      name: 'Maridee Lemieux',
-      title: 'IT Project Manager',
-    },
+
     {
       logo: '/logos/achelois.png',
+
       content:
-        'I would like to give a special shout-out to the team. You are doing a great job as a team. I’m very proud of you guys. You all are making my ideas come to life. All your efforts are highly appreciated.',
-      name: 'Robin Mehdee',
-      title: 'Manager Web Development Team',
+        "Nova Bloom’s AI expertise helped us optimize our supply chain like never before. Their team was responsive, creative, and delivered a solution that’s driving real business impact.",
+      name: "Sophie Nguyen",
+      title: "Operations Manager",
+      company: "GreenPulse Logistics",
     },
     {
       logo: '/logos/Twin.png',
+
       content:
-        'Twinstrata has partnered with Nova Bloom for several years since the very early days of our company. We have been able to offload a significant portion of our development effort to their team. They have been reliable and responsive to our needs.',
-      name: 'Mark Aldred',
-      title: 'Director, Product Development',
+        "Our e-commerce platform saw a 40% increase in conversions after Nova Bloom revamped our Shopify store. Their design and development skills are top-notch, and they’re a pleasure to work with!",
+      name: "Liam Carter",
+      title: "E-commerce Strategist",
+      company: "BrightCart",
     },
     {
       logo: '/logos/Truetrac-1.png',
+
       content:
-        'The Nova Bloom team has consistently exceeded our expectations. It felt as if we were working with an onshore team. It was their ability to understand our needs and keep us engaged throughout the entire process that has resulted in an exceptional product and a valued partner.',
-      name: 'Johnny McGuire',
-      title: 'Product Manager',
+        "Nova Bloom’s cloud migration services were flawless. They made a complex process feel effortless, and our team is now more productive thanks to their robust infrastructure solutions.",
+      name: "Olivia Mendes",
+      title: "IT Director",
+      company: "CloudSpire Technologies",
     },
     {
       logo: '/logos/maestro.webp',
+
       content:
-        'Nova Bloom nails it again and again. Their development & QA work is absolutely flawless, couldn’t have asked for a better technology partner.',
-      name: 'Thais Forneret',
-      title: 'Back Office Manager',
+        "The Nova Bloom team brought our e-learning platform to life with a vibrant, intuitive design. Their commitment to quality and user experience has made our platform a student favorite!",
+      name: "Noah Kim",
+      title: "Founder",
+      company: "LearnVibe Academy",
     },
   ];
 
   return (
-    <section className="bg-white py-8 sm:py-14">
-      <div className="w-full max-w-6xl mx-auto px-2 sm:px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-6 sm:mb-10 text-center">
-          Customer Testimonials
+    <section className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-navy-900 mb-8 sm:mb-12 text-center">
+          What Our Clients Say
         </h2>
 
         <Swiper
-          modules={[Pagination, Autoplay]}
-          spaceBetween={10}
+          modules={[Pagination, Autoplay, Navigation]}
+          spaceBetween={16}
           slidesPerView={1}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          breakpoints={{
-            640: { spaceBetween: 20, slidesPerView: 1 },
-            768: { spaceBetween: 30, slidesPerView: 2 },
-            1024: { spaceBetween: 30, slidesPerView: 3 },
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           }}
-          className="pb-8 sm:pb-12"
+          breakpoints={{
+            640: { slidesPerView: 1, spaceBetween: 16 },
+            768: { slidesPerView: 2, spaceBetween: 24 },
+            1024: { slidesPerView: 3, spaceBetween: 32 },
+          }}
+          className="pb-12"
         >
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-white border border-gray-200 shadow-sm rounded-md p-4 sm:p-6 h-full flex flex-col justify-between text-center">
+              <div className="bg-white border border-gray-100 shadow-lg rounded-2xl p-6 sm:p-8 h-full flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <Image
                   src={t.logo}
-                  alt={`${t.name} company logo`}
-                  width={100}
+                  alt={`${t.company} logo`}
+                  width={120}
                   height={40}
-                  className="mx-auto mb-4 h-8 sm:h-10 object-contain"
+                  className="mx-auto mb-6 h-10 object-contain"
                 />
-                <p className="text-gray-700 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed text-left">
-                  {t.content}
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 text-center">
+                  "{t.content}"
                 </p>
-                <div className="text-left">
-                  <p className="font-bold text-xs sm:text-sm text-black">{t.name}</p>
-                  <p className="text-[0.65rem] sm:text-xs text-gray-500">{t.title}</p>
+                <div className="text-center">
+                  <p className="font-semibold text-base text-navy-900">{t.name}</p>
+                  <p className="text-xs text-gray-500">{t.title}, {t.company}</p>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
+        <div className="flex justify-center items-center mt-8 space-x-4">
+          <button
+            className="swiper-button-prev w-10 h-10 flex items-center justify-center bg-navy-900 text-white rounded-full hover:bg-coral-500 transition-colors duration-200"
+            aria-label="Previous slide"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <div className="swiper-pagination !static" />
+          <button
+            className="swiper-button-next w-10 h-10 flex items-center justify-center bg-navy-900 text-white rounded-full hover:bg-coral-500 transition-colors duration-200"
+            aria-label="Next slide"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
         <style jsx global>{`
-          .swiper {
-            margin-left: auto;
-            position: relative;
-            overflow: hidden;
-            list-style: none;
-            padding: revert-layer !important;
-            z-index: 2;
-            display: block;
-          }
           .swiper-pagination-bullet {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             background: #d1d5db; /* gray-300 */
-            opacity: 0.5;
+            opacity: 0.4;
+            transition: all 0.3s ease;
           }
           .swiper-pagination-bullet-active {
-            background: #1f2937; /* gray-800 */
+            width: 12px;
+            height: 12px;
+            background: #446f70; /* navy-900 */
             opacity: 1;
+          }
+          .swiper-button-prev,
+          .swiper-button-next {
+            outline: none;
+          }
+          .swiper-button-prev:after,
+          .swiper-button-next:after {
+            display: none;
           }
           @media (max-width: 639px) {
             .swiper-pagination-bullet {
-              width: 6px;
-              height: 6px;
+              width: 8px;
+              height: 8px;
+            }
+            .swiper-pagination-bullet-active {
+              width: 10px;
+              height: 10px;
             }
           }
         `}</style>
-        <div className="flex justify-center mt-4">
-          <div className="swiper-pagination !static" />
-        </div>
       </div>
     </section>
-  );
-}
+  
+
+
+
+
+)}
