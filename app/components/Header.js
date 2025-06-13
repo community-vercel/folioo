@@ -398,6 +398,7 @@ const Navbar = () => {
                                     .filter((subItem) =>
                                       ["Magento", "Shopify", "BigCommerce", "WooCommerce", "B2B", "Salesforce Commerce Cloud"].includes(subItem.name)
                                     )
+                                    
                                     .map((subItem) => (
                                       <div key={subItem.name}>
                                         <Link
