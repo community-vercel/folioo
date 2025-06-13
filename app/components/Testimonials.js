@@ -81,7 +81,6 @@ logo: '/logos/progresive.png',
           }}
           className="pb-12"
         >
-
           
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
