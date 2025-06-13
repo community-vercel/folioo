@@ -14,52 +14,52 @@ const Navbar = () => {
     {
       name: "App Development",
       href: "/app-development",
-      submenu: [
-        {
-          name: "Industries",
-          href: "#",
-          subItems: [
-            { name: "Automotive", href: "/apps/industries/automotive" },
-            { name: "Retail", href: "/industries/retail" },
-            { name: "Healthcare", href: "/apps/industries/healthcare" },
-            { name: "Logistics", href: "/industries/logistics" },
-            { name: "Agriculture", href: "/industries/agriculture" },
-            { name: "Education", href: "/industries/education" },
-            { name: "Pharmaceuticals & Life Sciences", href: "/industries/pharmaceuticals" },
-          ],
-        },
-        {
-          name: "Cross Platform Apps",
-          href: "#",
-          subItems: [
-            { name: "Flutter App Development", href: "/cross-platform/flutter" },
-            { name: "React Native App Development", href: "/cross-platform/react-native" },
-            { name: "Ionic App Development", href: "/cross-platform/ionic" },
-            { name: "Xamarin App Development", href: "/cross-platform/xamarin" },
-            { name: "Sencha App Development", href: "/cross-platform/sencha" },
-            { name: "Nativescript App Development", href: "/cross-platform/nativescript" },
-            { name: "Html5 App Development", href: "/cross-platform/html5" },
-            { name: "Elearning Development Services", href: "/elearning-development" },
-          ],
-        },
-        {
-          name: "Native Mobile Apps",
-          href: "#",
-          subItems: [
-            { name: "iOS App Development", href: "/native/ios" },
-            { name: "Android App Development", href: "/native/android" },
-          ],
-        },
-        {
-          name: "Emerging Technologies",
-          href: "#",
-          subItems: [
-            { name: "AR/VR App Development", href: "/emerging-technologies/ar-vr" },
-            { name: "IOT App Development", href: "/emerging-technologies/iot" },
-            { name: "Wearable App Development", href: "/emerging-technologies/wearable" },
-          ],
-        },
-      ],
+      // submenu: [
+      //   {
+      //     name: "Industries",
+      //     href: "#",
+      //     subItems: [
+      //       { name: "Automotive", href: "/apps/industries/automotive" },
+      //       { name: "Retail", href: "/industries/retail" },
+      //       { name: "Healthcare", href: "/apps/industries/healthcare" },
+      //       { name: "Logistics", href: "/industries/logistics" },
+      //       { name: "Agriculture", href: "/industries/agriculture" },
+      //       { name: "Education", href: "/industries/education" },
+      //       { name: "Pharmaceuticals & Life Sciences", href: "/industries/pharmaceuticals" },
+      //     ],
+      //   },
+      //   {
+      //     name: "Cross Platform Apps",
+      //     href: "#",
+      //     subItems: [
+      //       { name: "Flutter App Development", href: "/cross-platform/flutter" },
+      //       { name: "React Native App Development", href: "/cross-platform/react-native" },
+      //       { name: "Ionic App Development", href: "/cross-platform/ionic" },
+      //       { name: "Xamarin App Development", href: "/cross-platform/xamarin" },
+      //       { name: "Sencha App Development", href: "/cross-platform/sencha" },
+      //       { name: "Nativescript App Development", href: "/cross-platform/nativescript" },
+      //       { name: "Html5 App Development", href: "/cross-platform/html5" },
+      //       { name: "Elearning Development Services", href: "/elearning-development" },
+      //     ],
+      //   },
+      //   {
+      //     name: "Native Mobile Apps",
+      //     href: "#",
+      //     subItems: [
+      //       { name: "iOS App Development", href: "/native/ios" },
+      //       { name: "Android App Development", href: "/native/android" },
+      //     ],
+      //   },
+      //   {
+      //     name: "Emerging Technologies",
+      //     href: "#",
+      //     subItems: [
+      //       { name: "AR/VR App Development", href: "/emerging-technologies/ar-vr" },
+      //       { name: "IOT App Development", href: "/emerging-technologies/iot" },
+      //       { name: "Wearable App Development", href: "/emerging-technologies/wearable" },
+      //     ],
+      //   },
+      // ],
     },
     {
       name: "AI",
@@ -158,78 +158,78 @@ const Navbar = () => {
         {
           name: "Magento",
           href: "/ecommerce/magento",
-          subItems: [
-            { name: "Development", href: "/ecommerce/magento/development" },
-            { name: "B2B", href: "/ecommerce/magento/b2b" },
-            { name: "Design", href: "/ecommerce/magento/design" },
-            { name: "Magento Migration", href: "/ecommerce/magento/migration" },
-            { name: "Extension Development", href: "/ecommerce/magento/extension-development" },
-            { name: "Integration", href: "/ecommerce/magento/integration" },
-            { name: "Customization", href: "/ecommerce/magento/customization" },
-            { name: "Support", href: "/ecommerce/magento/support" },
-            { name: "Optimization", href: "/ecommerce/magento/optimization" },
-            { name: "Magento to Shopify Migration", href: "/ecommerce/magento/magento-to-shopify-migration" },
-          ],
+          // subItems: [
+          //   { name: "Development", href: "/ecommerce/magento/development" },
+          //   { name: "B2B", href: "/ecommerce/magento/b2b" },
+          //   { name: "Design", href: "/ecommerce/magento/design" },
+          //   { name: "Magento Migration", href: "/ecommerce/magento/migration" },
+          //   { name: "Extension Development", href: "/ecommerce/magento/extension-development" },
+          //   { name: "Integration", href: "/ecommerce/magento/integration" },
+          //   { name: "Customization", href: "/ecommerce/magento/customization" },
+          //   { name: "Support", href: "/ecommerce/magento/support" },
+          //   { name: "Optimization", href: "/ecommerce/magento/optimization" },
+          //   { name: "Magento to Shopify Migration", href: "/ecommerce/magento/magento-to-shopify-migration" },
+          // ],
         },
         {
           name: "Shopify",
           href: "/ecommerce/shopify",
-          subItems: [
-            { name: "Design", href: "/ecommerce/shopify/design" },
-            { name: "Development", href: "/ecommerce/shopify/development" },
-            { name: "Migration", href: "/ecommerce/shopify/migration" },
-            { name: "App Development", href: "/ecommerce/shopify/app-development" },
-            { name: "Support", href: "/ecommerce/shopify/support" },
-            { name: "Integration", href: "/ecommerce/shopify/integration" },
-          ],
+          // subItems: [
+          //   { name: "Design", href: "/ecommerce/shopify/design" },
+          //   { name: "Development", href: "/ecommerce/shopify/development" },
+          //   { name: "Migration", href: "/ecommerce/shopify/migration" },
+          //   { name: "App Development", href: "/ecommerce/shopify/app-development" },
+          //   { name: "Support", href: "/ecommerce/shopify/support" },
+          //   { name: "Integration", href: "/ecommerce/shopify/integration" },
+          // ],
         },
         {
           name: "BigCommerce",
           href: "/ecommerce/bigcommerce",
-          subItems: [
-            { name: "Design", href: "/ecommerce/bigcommerce/design" },
-            { name: "Development", href: "/ecommerce/bigcommerce/development" },
-            { name: "Support", href: "/ecommerce/bigcommerce/support" },
-            { name: "Integration", href: "/ecommerce/bigcommerce/integration" },
-          ],
+          // subItems: [
+          //   { name: "Design", href: "/ecommerce/bigcommerce/design" },
+          //   { name: "Development", href: "/ecommerce/bigcommerce/development" },
+          //   { name: "Support", href: "/ecommerce/bigcommerce/support" },
+          //   { name: "Integration", href: "/ecommerce/bigcommerce/integration" },
+          // ],
         },
         {
           name: "WooCommerce",
           href: "/ecommerce/woocommerce",
-          subItems: [
-            { name: "Design", href: "/ecommerce/woocommerce/design" },
-            { name: "Development", href: "/ecommerce/woocommerce/development" },
-            { name: "Migration", href: "/ecommerce/woocommerce/migration" },
-          ],
+          // subItems: [
+          //   { name: "Design", href: "/ecommerce/woocommerce/design" },
+          //   { name: "Development", href: "/ecommerce/woocommerce/development" },
+          //   { name: "Migration", href: "/ecommerce/woocommerce/migration" },
+          // ],
         },
-        {
-          name: "B2B",
-          href: "/ecommerce/b2b",
-          subItems: [
-            { name: "B2B Web Development", href: "/ecommerce/b2b/web-development" },
-            { name: "B2B Store Demo", href: "/ecommerce/b2b/store-demo" },
-          ],
-        },
+        // {
+        //   name: "B2B",
+        //   href: "/ecommerce/b2b",
+        //   subItems: [
+        //     { name: "B2B Web Development", href: "/ecommerce/b2b/web-development" },
+        //     { name: "B2B Store Demo", href: "/ecommerce/b2b/store-demo" },
+        //   ],
+        // },
         {
           name: "Salesforce Commerce Cloud",
           href: "/ecommerce/salesforce",
-          subItems: [
-            { name: "Commerce Cloud B2C", href: "/ecommerce/salesforce-commerce-cloud/b2c" },
-            { name: "Commerce Cloud B2B", href: "/ecommerce/salesforce-commerce-cloud/b2b" },
-            { name: "Commerce Cloud Order Management", href: "/ecommerce/salesforce-commerce-cloud/order-management" },
-            { name: "Commerce Cloud Implementation", href: "/ecommerce/salesforce-commerce-cloud/implementation" },
-          ],
+          // subItems: [
+          //   { name: "Commerce Cloud B2C", href: "/ecommerce/salesforce-commerce-cloud/b2c" },
+          //   { name: "Commerce Cloud B2B", href: "/ecommerce/salesforce-commerce-cloud/b2b" },
+          //   { name: "Commerce Cloud Order Management", href: "/ecommerce/salesforce-commerce-cloud/order-management" },
+          //   { name: "Commerce Cloud Implementation", href: "/ecommerce/salesforce-commerce-cloud/implementation" },
+          // ],
         },
-        {
-          name: "Industries",
-          href: "#",
-          subItems: [
-            { name: "Health", href: "/ecommerce/industries/health" },
-            { name: "Automotive", href: "/ecommerce/industries/automotive" },
-            { name: "Fashion", href: "/ecommerce/industries/fashion" },
-            { name: "B2B", href: "/ecommerce/industries/b2b" },
-          ],
-        },
+        // {
+        //   name: "Industries",
+        //   href: "#",
+        //   subItems: [
+        //     { name: "Health", href: "/ecommerce/industries/health" },
+        //     { name: "Automotive", href: "/ecommerce/industries/automotive" },
+        //     { name: "Fashion", href: "/ecommerce/industries/fashion" },
+        //     { name: "B2B", href: "/ecommerce/industries/b2b" },
+        //   ],
+        // },
       ],
     },
     {
