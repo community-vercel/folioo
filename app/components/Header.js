@@ -13,10 +13,10 @@ const Navbar = () => {
   const navItems = [
     {
       name: "App Development",
-      href: "/app-development",
+      href: "/apps",
       submenu: [
-        { name: "Cross Platform Apps", href: "#" },
-        { name: "Native Mobile Apps", href: "#" },
+        { name: "Cross Platform Apps", href: "/apps/cross-platform" },
+        { name: "Native Mobile Apps", href: "/apps/native-platform" },
         { name: "Emerging Technologies", href: "#" },
       ],
     },
@@ -25,8 +25,8 @@ const Navbar = () => {
       href: "/ai",
       submenu: [
         { name: "Computer Vision", href: "/ai/computer-vision" },
-        { name: "AI Drones", href: "/ai/drones" },
-        { name: "Predictive Analytics", href: "/ai/predictive-analytics" },
+        { name: "AI Drones", href: "#" },
+        { name: "Predictive Analytics", href: "#" },
         { name: "Machine Learning", href: "/ai/machine-learning" },
         { name: "Natural Language Processing", href: "/ai/nlp" },
       ],

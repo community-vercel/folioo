@@ -1,120 +1,172 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-import { FaPhone, FaHeadset } from "react-icons/fa";
+import { useState, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { FaPhone, FaHeadset } from 'react-icons/fa';
 
-export default function ContactUsSection() {
+export default function AppContactUs() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  // Animation variants
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    organization: '',
+    message: '',
+  });
+
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   };
 
   const formVariants = {
     hidden: { opacity: 0, x: 20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.3, ease: "easeOut" } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.3, ease: 'easeOut' } },
   };
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.5, ease: "easeOut" } },
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validateForm = () => {
+    if (!formData.name.trim()) return 'Name is required';
+    if (!formData.email.trim()) return 'Email is required';
+    if (!/\S+@\S+\.\S+/.test(formData.email)) return 'Invalid email format';
+    if (!formData.message.trim()) return 'Message is required';
+    return null;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ type: '', message: '' });
+    const error = validateForm();
+    if (error) {
+      setStatus({ type: 'error', message: error });
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus({ type: 'success', message: 'Message sent successfully!' });
+        setFormData({ name: '', email: '', phone: '', organization: '', message: '' });
+      } else {
+        setStatus({ type: 'error', message: data.message || 'Failed to send message' });
+      }
+    } catch (err) {
+      setStatus({ type: 'error', message: 'An error occurred. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <section className="bg-white py-16 sm:py-24 lg:py-32 relative">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-gradient-to-b from-[#f8fafc] to-[#e0f0ff] py-16 sm:py-24 lg:py-32 overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
+        <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full blur-4xl animate-pulse-slow"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full blur-4xl animate-pulse"></div>
+      </div>
+
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
           {/* Left Content */}
           <motion.div
             ref={ref}
             initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
+            animate={isInView ? 'visible' : 'hidden'}
             variants={containerVariants}
             className="w-full lg:w-1/2"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-navy-900 mb-4 sm:mb-6 leading-tight">
-              Let’s Build Together
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 mb-6 leading-tight">
+              Let’s Build Your App
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-lg mb-6 sm:mb-8">
-              At Sharplogicians, we partner with startups, SMBs, and enterprises to create innovative software and AI solutions. Ready to transform your ideas into reality? Reach out today!
+            <p className="text-lg text-gray-700 max-w-lg mb-8">
+              At Novabloom, we craft innovative mobile and web apps for startups, SMBs, and enterprises. Ready to transform your ideas into reality? Contact us today!
             </p>
-            <div className="space-y-4 text-gray-900 text-base sm:text-lg">
+            <div className="space-y-4 text-gray-900 text-base">
               <div className="flex items-center">
-                <FaPhone className="w-5 h-5 text-teal-500 mr-3" aria-hidden="true" />
-                <span>
-                  <strong>Tel:</strong> +1 (415) 789-1234
-                </span>
+                <FaPhone className="text-cyan-600 mr-3" />
+                <span><strong>Tel:</strong> +1 (800) 123-4567</span>
               </div>
               <div className="flex items-center">
-                <FaHeadset className="w-5 h-5 text-teal-500 mr-3" aria-hidden="true" />
-                <span>
-                  <strong>Support:</strong> +1 (415) 789-5678
-                </span>
+                <FaHeadset className="text-cyan-600 mr-3" />
+                <span><strong>Support:</strong> +1 (800) 123-7890</span>
               </div>
             </div>
-          
           </motion.div>
 
           {/* Right Form */}
           <motion.div
             initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
+            animate={isInView ? 'visible' : 'hidden'}
             variants={formVariants}
             className="w-full lg:w-1/2 bg-white shadow-xl rounded-2xl p-6 sm:p-8 lg:p-10"
           >
-            <form className="space-y-6" aria-label="Contact Sharplogicians form">
+            <form onSubmit={handleSubmit} className="space-y-6">
               {[
-                { type: "text", name: "name", placeholder: "Your Name", ariaLabel: "Your name" },
-                { type: "email", name: "email", placeholder: "Your Email", ariaLabel: "Your email" },
-                { type: "tel", name: "phone", placeholder: "Your Phone", ariaLabel: "Your phone number" },
-                { type: "text", name: "organization", placeholder: "Your Organization", ariaLabel: "Your organization" },
-              ].map((input, index) => (
-                <div key={index}>
-                  <input
-                    type={input.type}
-                    name={input.name}
-                    placeholder={input.placeholder}
-                    aria-label={input.ariaLabel}
-                    className="w-full border border-gray-200 rounded-lg py-3 px-4 text-sm sm:text-base text-gray-900 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-all duration-300"
-                    required={input.type === "email"}
-                  />
-                </div>
-              ))}
-              <div>
-                <textarea
-                  name="message"
-                  placeholder="Tell us about your project"
-                  aria-label="Project details"
-                  rows={5}
-                  className="w-full border border-gray-200 rounded-lg py-3 px-4 text-sm sm:text-base text-gray-900 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none resize-none transition-all duration-300"
-                  required
+                { type: 'text', name: 'name', placeholder: 'Your Name', required: true },
+                { type: 'email', name: 'email', placeholder: 'Your Email', required: true },
+                { type: 'tel', name: 'phone', placeholder: 'Your Phone (optional)', required: false },
+                { type: 'text', name: 'organization', placeholder: 'Your Organization (optional)', required: false },
+              ].map((field, index) => (
+                <input
+                  key={index}
+                  type={field.type}
+                  name={field.name}
+                  placeholder={field.placeholder}
+                  value={formData[field.name] ?? ''}
+                  onChange={handleChange}
+                  required={field.required}
+                  className="w-full border border-cyan-200 rounded-lg py-3 px-4 text-gray-900 focus:ring-2 focus:ring-cyan-200 outline-none transition-all"
                 />
-              </div>
+              ))}
+
+              <textarea
+                name="message"
+                placeholder="Tell us about your project"
+                rows={5}
+                value={formData.message ?? ''}
+                onChange={handleChange}
+                required
+                className="w-full border border-cyan-200 rounded-lg py-3 px-4 text-gray-900 focus:ring-2 focus:ring-cyan-200 outline-none resize-none transition-all"
+              />
+
+              {status.message && (
+                <p className={`text-sm ${status.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>
+                  {status.message}
+                </p>
+              )}
+
               <motion.button
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-teal-500 text-white font-semibold text-base sm:text-lg py-3 px-6 rounded-full w-full hover:bg-teal-600 transition-colors duration-300 shadow-md hover:shadow-lg"
-                aria-label="Submit contact form"
+                disabled={isSubmitting}
+                className={`w-full bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </motion.button>
             </form>
           </motion.div>
         </div>
       </div>
-
-      <style jsx global>{`
-        section {
-          position: relative;
-          z-index: 1;
-        }
-      `}</style>
     </section>
   );
-}
+} 
