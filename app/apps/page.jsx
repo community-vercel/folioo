@@ -16,18 +16,17 @@ import Footer from "../components/ai/Footer";
 export default function App() {
 
   return (
-<>
-<Header />
-<AppHeroSections />
-<AppIndustriesSlider />
-<GlobalReach />
-<InnovationSection />
-<TechStack />
+    <>
+      <Header />
+      <AppHeroSections />
+      <AppIndustriesSlider />
+      <GlobalReach />
+      <InnovationSection />
+      <TechStack />
       <MethodologyAndEngagement />
       <Clients />
-
       <ContactForm />
       <Footer />
-</>
+    </>
   );
 }

@@ -36,6 +36,7 @@ export default function AppPortfolio() {
   }, []);
 
   return (<>
+  
   <Header />
     <section className="relative bg-gradient-to-b from-[#f8fafc] to-[#446f70] py-20 px-6 md:px-20 overflow-hidden">
       {/* Background Decorative Elements */}
@@ -50,7 +51,7 @@ export default function AppPortfolio() {
           Our  Development Portfolio
         </h2>
         <p className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto animate-slide-up delay-100">
-          Explore Novabloom’s showcase of innovative mobile,ai and web app projects, crafted to drive success across industries.
+          Explore Novabloom’s  showcase of innovative mobile,ai and web app projects, crafted to drive success across industries.
         </p>
       </div>
 
