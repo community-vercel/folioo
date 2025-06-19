@@ -568,6 +568,7 @@ export default function AppCrossPlatform() {
             variants={sectionVariants}
             className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50"
           >
+            
             <div className="absolute inset-0 bg-[url('/grid-pattern.png')] bg-[length:40px_40px] opacity-5"></div>
             
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
