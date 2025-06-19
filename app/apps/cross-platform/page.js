@@ -559,8 +559,6 @@ export default function AppCrossPlatform() {
             </Link>
           </motion.div>
         </section>
-
-
         {/* CTA Section */}
     <section ref={ctaRef} className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 mt-24 sm:mt-32 pb-24">
           <motion.div
