@@ -560,6 +560,7 @@ export default function AppCrossPlatform() {
           </motion.div>
         </section>
 
+
         {/* CTA Section */}
     <section ref={ctaRef} className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 mt-24 sm:mt-32 pb-24">
           <motion.div
@@ -568,7 +569,7 @@ export default function AppCrossPlatform() {
             variants={sectionVariants}
             className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl overflow-hidden shadow-2xl border border-gray-700/50"
           >
-            
+
             <div className="absolute inset-0 bg-[url('/grid-pattern.png')] bg-[length:40px_40px] opacity-5"></div>
             
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
