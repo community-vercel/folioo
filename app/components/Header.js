@@ -17,7 +17,7 @@ const Navbar = () => {
       submenu: [
         { name: "Cross Platform Apps", href: "/apps/cross-platform" },
         { name: "Native Mobile Apps", href: "/apps/native-platform" },
-        { name: "Emerging Technologies", href: "#" },
+        { name: "Emerging Technologies", href: "/apps/emerging" },
       ],
     },
     {
