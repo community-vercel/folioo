@@ -1,15 +1,14 @@
 'use client';
 import { useState } from 'react';
+import { BsCarFront } from 'react-icons/bs';
+import { FaStore } from 'react-icons/fa';
 import {
   FiShoppingCart,
-  FiStore,
-  FiSprout,
-  FiDrone,
   FiTool,
   FiHeart,
   FiPlayCircle,
   FiActivity,
-  FiCar,
+ 
   FiMapPin,
 } from 'react-icons/fi';
 import { GiPlantWatering } from 'react-icons/gi';
@@ -25,7 +24,7 @@ const useCases = [
   {
     title: 'Retail',
     description: 'Boost store efficiency with smart shelves, customer analytics, and cashier-less checkouts for a modern retail experience.',
-    icon: FiStore,
+    icon: FaStore,
   },
   {
     title: 'Agritech',
@@ -60,7 +59,7 @@ const useCases = [
   {
     title: 'Automotive',
     description: 'Enhance safety with driver monitoring, object detection, and AI-assisted driving systems.',
-    icon: FiCar,
+    icon: BsCarFront,
   },
   {
     title: 'Transportation',

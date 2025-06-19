@@ -547,7 +547,7 @@ export default function NativeMobileApps() {
               </h2>
               
               <p className="text-xl text-white max-w-3xl mx-auto mb-10">
-                Let's discuss how we can create a high-performance mobile experience for your users.
+                Lets discuss how we can create a high-performance mobile experience for your users.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4">
