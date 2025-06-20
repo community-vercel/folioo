@@ -25,8 +25,6 @@ export default function Home() {
       <MilestonesSection />
       <Contact />
       <Footer />
-
-      
     </div>
   );
 }
