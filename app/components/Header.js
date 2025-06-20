@@ -44,9 +44,9 @@ const Navbar = () => {
     },
     {
       name: "Data & Cloud",
-      href: "/data-cloud",
+      href: "/datacloud",
       submenu: [
-        { name: "Cloud Migration", href: "#" },
+        { name: "Cloud Migration", href: "/datacloud/cloud-migration" },
         { name: "Managed Cloud", href: "#" },
         { name: "Data Engineering Services", href: "#" },
         { name: "DevOps Consulting", href: "#" },

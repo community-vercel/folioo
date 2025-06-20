@@ -4,7 +4,7 @@ import Services from './components/Services';
 import Clients from './components/Clients';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Footer from './components/ai/Footer';
 import PartnersAwards from './components/Awardsection';
 import WhoWeWorkWith from './components/WhoWeWorkWith';
 

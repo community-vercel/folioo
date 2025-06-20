@@ -138,7 +138,7 @@ export default function EmergingTechnologiesPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
-      <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen overflow-hidden">
+      <div className="relative bg-gradient-to-b from-[#446f70] to-gray-800 min-h-screen overflow-hidden">
         {/* Particle Background */}
         <ParticleBackground />
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/30 via-blue-900/20 to-indigo-900/10 z-0"></div>

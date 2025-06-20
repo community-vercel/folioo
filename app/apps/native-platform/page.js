@@ -126,7 +126,7 @@ export default function NativeMobileApps() {
   return (
     <>
       <Header />
-      <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen overflow-hidden">
+      <div className="relative bg-gradient-to-b from-[#446f70] to-gray-800 min-h-screen overflow-hidden">
         {/* Particle Background */}
         <ParticleBackground />
         
