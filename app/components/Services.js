@@ -72,6 +72,7 @@ export default function WhatsNew() {
         What’s New at Nova Bloom
       </motion.h1>
 
+
       {/* Swiper Slider */}
       <motion.div
         ref={ref}
@@ -133,6 +134,7 @@ export default function WhatsNew() {
               </div>
             </SwiperSlide>
           ))}
+
 
           <div className="flex justify-center items-center mt-6 space-x-4">
             <button
