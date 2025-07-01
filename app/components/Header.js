@@ -73,9 +73,9 @@ const Navbar = () => {
       submenu: [
         { name: "Blog", href: "/blog" },
         { name: "eLearning", href: "/elearning" },
-        { name: "Careers", href: "/careers" },
+        // { name: "Careers", href: "/careers" },
         { name: "About Us", href: "/about" },
-        { name: "Clients", href: "/clients" },
+        // { name: "Clients", href: "/clients" },
         { name: "Portfolio", href: "/portfolio" },
       ],
     },
