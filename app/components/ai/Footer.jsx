@@ -21,9 +21,8 @@ const officeData = {
       country: 'USA',
       flag: '/salesforce/USA.webp',
       offices: [
-        { icon: <FaMapMarkerAlt />, text: 'Belmont, CA – 1301 Shoreway Road, Suite 160, Belmont, CA 94002' },
-        { icon: <FaMapMarkerAlt />, text: 'Pleasanton, CA – 6701 Koll Center Parkway, #250, Pleasanton, CA 94566' },
-        { icon: <FaPhoneAlt />, text: '+1-408-365-4638 | Support: +1-866-512-1812' },
+        { icon: <FaMapMarkerAlt />, text: '2457 Lancaster Street East Meadow, NY 11554' },
+        { icon: <FaPhoneAlt />, text: '+1 (347) 716-9944 ' },
       ],
     },
   ],
