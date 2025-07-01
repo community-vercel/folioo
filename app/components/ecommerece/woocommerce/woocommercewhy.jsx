@@ -65,7 +65,7 @@ export default function ECommerceWhy() {
 
   return (
     <main className=" text-gray-800">
-      {/* Section 1 - Choose Folio3 with Dot Slider */}
+      {/* Section 1 - Choose Nova Bloom with Dot Slider */}
       <section className="py-20 text-center bg-gradient-to-b from-gray-50 to-white">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-8">
           Why Choose Nova Bloom for Your E-Commerce Success?

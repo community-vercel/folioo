@@ -215,7 +215,7 @@ export default function Shopify() {
       >
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-[#071218]/80">
           <motion.img
-            src="https://ecommerce.folio3.com/wp-content/uploads/hero-bg.webp"
+            src="https://ecommerce.Nova Bloom.com/wp-content/uploads/hero-bg.webp"
             alt="Hero Background"
             className="w-full h-full object-cover opacity-20"
             loading="lazy"

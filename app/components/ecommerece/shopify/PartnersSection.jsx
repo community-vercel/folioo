@@ -5,10 +5,10 @@ import clsx from "clsx";
 import Link from "next/link";
 export default function PartnersSection() {
   const partners = [
-    { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/aws-partner-logo.webp?text=WooCommerce", alt: "Salesforce" },
-    { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/image-2.webp?text=WooCommerce", alt: "Shopify" },
-    { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/image-4.webp?text=BigCommerce", alt: "BigCommerce" },
-    { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/image-5.webp?text=WooCommerce", alt: "WooCommerce" },
+    { src: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/aws-partner-logo.webp?text=WooCommerce", alt: "Salesforce" },
+    { src: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/image-2.webp?text=WooCommerce", alt: "Shopify" },
+    { src: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/image-4.webp?text=BigCommerce", alt: "BigCommerce" },
+    { src: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/image-5.webp?text=WooCommerce", alt: "WooCommerce" },
   ];
    const faqs = [
     {

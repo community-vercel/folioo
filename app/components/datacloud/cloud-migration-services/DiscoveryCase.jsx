@@ -98,7 +98,7 @@ export default function DiscoveryCase() {
               <p className="text-5xl font-bold text-blue-600 mb-4">“</p>
               <h4 className="font-semibold text-lg text-blue-900 mb-2">Transformative Partnership</h4>
               <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-                Folio3’s cloud solution revolutionized our animal welfare tracking, replacing inefficient paper records with a streamlined platform. Their expertise ensured compliance with the Progressive Beef program, saving us time and resources.
+                Nova Bloom’s cloud solution revolutionized our animal welfare tracking, replacing inefficient paper records with a streamlined platform. Their expertise ensured compliance with the Progressive Beef program, saving us time and resources.
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">

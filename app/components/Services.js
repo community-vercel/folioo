@@ -134,8 +134,6 @@ export default function WhatsNew() {
             </SwiperSlide>
           ))}
 
-
-          
           <div className="flex justify-center items-center mt-6 space-x-4">
             <button
               className="swiper-button-prev w-10 h-10 flex items-center justify-center bg-navy-900 text-white rounded-full hover:bg-teal-500 transition-colors duration-200"

@@ -12,7 +12,7 @@ to launch this Phase I and continue to work with you and your team on future pha
     name: "Omar bin Ali-Masoud",
     title: "Co-Chief Executive Officer, PureLife Dental",
     image:
-      "https://ecommerce.folio3.com/wp-content/uploads/2020/04/pure-life.jpg",
+      "https://ecommerce.Nova Bloom.com/wp-content/uploads/2020/04/pure-life.jpg",
   },
     {
     text: `“As you know our project is quite complicated & involves some fairly
@@ -22,7 +22,7 @@ to launch this Phase I and continue to work with you and your team on future pha
     name: "Omar bin Ali-Masoud",
     title: "Co-Chief Executive Officer, PureLife Dental",
     image:
-      "https://ecommerce.folio3.com/wp-content/uploads/2020/04/pure-life.jpg",
+      "https://ecommerce.Nova Bloom.com/wp-content/uploads/2020/04/pure-life.jpg",
   }, 
   // Add more items here if needed
 ];
@@ -131,7 +131,7 @@ export default function PixelPerfectSection() {
       </div>
 
       {/* Contact form */}
-      <div className="bg-[url('https://ecommerce.folio3.com/wp-content/uploads/2023/09/contactus-1.webp')] bg-cover bg-center py-16">
+      <div className="bg-[url('https://ecommerce.Nova Bloom.com/wp-content/uploads/2023/09/contactus-1.webp')] bg-cover bg-center py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h3 className="text-xl font-semibold text-white mb-10">
             Let’s Get Your Magento Store Up and Running By Contacting Us!

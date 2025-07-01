@@ -4,21 +4,21 @@ import Link from "next/link";
 
 const projects = [
   {
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/tjm-portfolio-600x400-new.webp",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/tjm-portfolio-600x400-new.webp",
     title: "TJM",
     subtitle: "B2B B2C Customization, Dynamics Integration",
     description:
       "Design & implementation of a Magento 2-based web store integrated with the Dynamics AX ERP and Magento customization, helps boost sales & enhances operational efficiency",
   },
   {
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2021/11/thumbnail.png",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2021/11/thumbnail.png",
     title: "PureLife Dental",
     subtitle: "Magento 2 website design and development",
     description:
       "Magento 2 website design for PureLife Dental helped with the seamless customer experience and increased product sales.",
   },
   {
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/maraval-portfolio-600x400-new.webp",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/maraval-portfolio-600x400-new.webp",
     title: "Maravai Life Science",
     subtitle:
       "Customization, Migration, NetSuite Integration, Website Creation",
@@ -26,21 +26,21 @@ const projects = [
       "Magento 2 Migration from OSCommerce and Magento customization helps enhance eCommerce revenue and streamline shopping experience.",
   },
   {
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/agribeef-600x400-new.webp",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/agribeef-600x400-new.webp",
     title: "Agri Beef",
     subtitle: "Customization, Dynamics Integration",
     description:
       "Magento 2 Migration and Magento customization helps streamline ecommerce operations and reduce order turnaround time.",
   },
   {
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2022/02/trilink_featured-1.png",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2022/02/trilink_featured-1.png",
     title: "TriLink",
     subtitle: "Custom B2B Magento Integration",
     description:
       "Nova Bloom enhanced TriLink’s customer satisfaction via Magento integration with group pricing for personalized rates.",
   },
   {
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2021/12/Bermuda.png",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2021/12/Bermuda.png",
     title: "BermudaSands",
     subtitle: "B2B Magento Integration and Customization",
     description:

@@ -33,23 +33,23 @@ const categories = [
 ];
 
 const integrations = [
-  { name: "JSON based REST API", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-son-based-rest-api.jpg" },
-  { name: "Magento Marketplace", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-marketplace-percent-fpl-integration.jpg" },
-  { name: "Google Fonts", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-google-fonts.jpg" },
-  { name: "Mercent", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-mercent.jpg" },
-  { name: "ExactTarget", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-exactarget-integration.jpg" },
-  { name: "jQuery", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-jQuery-zoom-integration.jpg" },
-  { name: "DevExpress", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-express-checkout.jpg" },
-  { name: "GPS", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-gps-integration.jpg" },
-  { name: "Cloud Integration", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-custom-communication.jpg" },
-  { name: "Twilio", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-twilio-Message-sending-API.jpg" },
-  { name: "iDevAffiliate", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-shopping-cart-integration.jpg" },
-  { name: "Print Menu Extension", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-print-menu-extension.jpg" },
-  { name: "Google Tag Manager", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-lime-light-CRM-API.jpg" },
-  { name: "Google Translate", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-google-translator.jpg" },
-  { name: "Cin7", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-free-gift-module.jpg" },
-  { name: "Brightpearl", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-brightpearl.jpg" },
-  { name: "Blogengine.net", logo: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/logo-ei-custom-media-player.jpg" },
+  { name: "JSON based REST API", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-son-based-rest-api.jpg" },
+  { name: "Magento Marketplace", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-marketplace-percent-fpl-integration.jpg" },
+  { name: "Google Fonts", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-google-fonts.jpg" },
+  { name: "Mercent", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-mercent.jpg" },
+  { name: "ExactTarget", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-exactarget-integration.jpg" },
+  { name: "jQuery", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-jQuery-zoom-integration.jpg" },
+  { name: "DevExpress", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-express-checkout.jpg" },
+  { name: "GPS", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-gps-integration.jpg" },
+  { name: "Cloud Integration", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-custom-communication.jpg" },
+  { name: "Twilio", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-twilio-Message-sending-API.jpg" },
+  { name: "iDevAffiliate", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-shopping-cart-integration.jpg" },
+  { name: "Print Menu Extension", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-print-menu-extension.jpg" },
+  { name: "Google Tag Manager", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-lime-light-CRM-API.jpg" },
+  { name: "Google Translate", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-google-translator.jpg" },
+  { name: "Cin7", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-free-gift-module.jpg" },
+  { name: "Brightpearl", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-brightpearl.jpg" },
+  { name: "Blogengine.net", logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2019/07/logo-ei-custom-media-player.jpg" },
 ].filter((item, index, self) => // Remove duplicates
   index === self.findIndex((t) => t.name === item.name && t.logo === item.logo)
 );
@@ -100,7 +100,7 @@ export default function TopQuoteBanner() {
           </motion.div>
           <motion.div className="mt-10 md:mt-0" variants={itemVariants}>
             <img
-              src="https://ecommerce.folio3.com/wp-content/uploads/2023/09/floral_fantasy_screenshot.png"
+              src="https://ecommerce.Nova Bloom.com/wp-content/uploads/2023/09/floral_fantasy_screenshot.png"
               alt="Magento Quote Banner"
               width={320}
               height={240}

@@ -92,7 +92,7 @@ export default function AdataMigrationService() {
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4 leading-relaxed">
-            Partner with Folio3 for secure, tailored cloud migrations with expert support at every step.
+            Partner with Nova Bloom for secure, tailored cloud migrations with expert support at every step.
           </p>
         </motion.div>
 
@@ -135,7 +135,7 @@ export default function AdataMigrationService() {
                   <li>Comprehensive SAP services from audit to optimization</li>
                 </ul>
                 <p className="mt-4 text-base text-gray-600">
-                  Migrate SAP to Azure, AWS, GCP, or hybrid cloud with Folio3’s expertise and precision.
+                  Migrate SAP to Azure, AWS, GCP, or hybrid cloud with Nova Bloom’s expertise and precision.
                 </p>
               </>
             ) : (
@@ -176,7 +176,7 @@ export default function AdataMigrationService() {
             <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
               Elevate Your Business with <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-                Folio3 Cloud Experts
+                Nova Bloom Cloud Experts
               </span>
             </h3>
             <p className="text-base text-gray-600 mt-4 leading-relaxed">

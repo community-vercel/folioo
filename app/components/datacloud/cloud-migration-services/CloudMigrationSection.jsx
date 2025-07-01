@@ -81,13 +81,13 @@ export default function CloudMigrationSection7() {
           variants={textVariants}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900">
-            Why Choose Folio3 for{' '}
+            Why Choose Nova Bloom for{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
               Cloud Migration?
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4 leading-relaxed">
-            At Folio3, we deliver a tailored cloud migration framework to empower your business with seamless, secure solutions.
+            At Nova Bloom, we deliver a tailored cloud migration framework to empower your business with seamless, secure solutions.
           </p>
         </motion.div>
 

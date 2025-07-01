@@ -15,7 +15,7 @@ const testimonials = [
     company: "TrendyThreads",
     text: "Nova Bloom transformed our online store, boosting our sales by 45% in just three months. Their expertise in Shopify development is unmatched!",
     stars: 5,
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
   },
   {
     name: "Michael Chen",
@@ -23,7 +23,7 @@ const testimonials = [
     company: "FreshMart",
     text: "With Nova Bloom's custom eCommerce solutions, we streamlined our operations and doubled our conversion rates. Highly recommend their team!",
     stars: 5,
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1711682403792-300x300.jpeg",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1711682403792-300x300.jpeg",
   },
   {
     name: "Emma Davis",
@@ -31,7 +31,7 @@ const testimonials = [
     company: "LuxeJewels",
     text: "Nova Bloom's team delivered a stunning Shopify store that elevated our brand. Their support has been crucial to our 30% revenue growth.",
     stars: 5,
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1517691942415.jpeg",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1517691942415.jpeg",
   },
   {
     name: "James Patel",
@@ -39,7 +39,7 @@ const testimonials = [
     company: "TechTrend",
     text: "Nova Bloom's expertise in eCommerce development helped us launch a scalable store, increasing our customer retention by 25%.",
     stars: 5,
-    image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
+    image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
   },
 ];
 

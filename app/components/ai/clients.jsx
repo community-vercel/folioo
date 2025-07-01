@@ -11,7 +11,7 @@ export default function Clients() {
   const testimonials = [
     {
       logo: '/salesforce/barnes-and-noble.webp',
-      text: 'Folio3’s AI solutions transformed our operations, delivering innovative tools with unmatched speed and precision.',
+      text: 'Nova Bloom’s AI solutions transformed our operations, delivering innovative tools with unmatched speed and precision.',
       name: 'Mike Do',
       company: 'BARNES & NOBLE',
     },
@@ -23,13 +23,13 @@ export default function Clients() {
     },
     {
       logo: '/salesforce/autocomplete-2.webp',
-      text: 'Folio3’s expertise in AI accelerated our startup’s growth, providing scalable solutions tailored to our needs.',
+      text: 'Nova Bloom’s expertise in AI accelerated our startup’s growth, providing scalable solutions tailored to our needs.',
       name: 'Andrew Clarkson',
       company: 'LOCKED IN LACROSSE',
     },
     {
       logo: '/salesforce/fair-square.webp',
-      text: 'The AI chatbot Folio3 built for us boosted engagement by 50%, revolutionizing our customer support.',
+      text: 'The AI chatbot Nova Bloom built for us boosted engagement by 50%, revolutionizing our customer support.',
       name: 'Sarah Lee',
       company: 'AIGENICS',
     },
@@ -40,7 +40,7 @@ export default function Clients() {
       img: '/salesforce/The-Complete-Guide-to-Drone-Inspection-scaled.jpg',
       title: 'Mastering Drone Inspection with AI',
       desc: 'Explore how AI-powered drones are revolutionizing safety and efficiency in industrial inspections.',
-      author: 'Folio3 Team',
+      author: 'Nova Bloom Team',
       date: 'June 13, 2025',
       cta: 'Read More',
     },
@@ -48,7 +48,7 @@ export default function Clients() {
       img: '/salesforce/drone-infrastructure-inspection .png',
       title: 'AI for Infrastructure: Key Innovations',
       desc: 'Discover the technologies transforming inspections of bridges, railways, and power lines with AI.',
-      author: 'Folio3 Team',
+      author: 'Nova Bloom Team',
       date: 'June 11, 2025',
       cta: 'Learn More',
     },
@@ -56,7 +56,7 @@ export default function Clients() {
       img: '/salesforce/drone-utility-inspection.png',
       title: 'AI-Driven Utility Inspections',
       desc: 'See how AI enhances precision and speed in utility inspections, from pipelines to power grids.',
-      author: 'Folio3 Team',
+      author: 'Nova Bloom Team',
       date: 'June 10, 2025',
       cta: 'Explore Now',
     },
