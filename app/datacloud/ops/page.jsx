@@ -557,17 +557,17 @@ export default function DevOpsConsulting() {
                 Partner with us to build scalable, secure, and automated DevOps solutions tailored to your needs.
               </p>
               <form className="flex flex-col sm:flex-row gap-4">
-               
-                <motion.button
-                  type="submit"
-                  variants={buttonVariants}
-                  whileHover="hover"
-                  whileTap="tap"
-                  className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/20 transition-all"
-                  aria-label="Request a consultation"
-                >
-                  Request Consultation
-                </motion.button>
+            <Link href="/contact" passHref>
+  <motion.a
+    variants={buttonVariants}
+    whileHover="hover"
+    whileTap="tap"
+    className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/20 transition-all"
+    aria-label="Go to Contact Us page"
+  >
+    Request Consultation
+  </motion.a>
+</Link>
               </form>
             </div>
             <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-700/50">
