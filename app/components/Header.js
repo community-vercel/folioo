@@ -49,7 +49,7 @@ const Navbar = () => {
         { name: "Cloud Migration", href: "/datacloud/cloud-migration" },
         // { name: "Managed Cloud", href: "#" },
         // { name: "Data Engineering Services", href: "#" },
-        // { name: "DevOps Consulting", href: "#" },
+        { name: "DevOps Consulting", href: "/datacloud/ops" },
         // { name: "Kubernetes Consulting", href: "#" },
         // { name: "Data Strategy Services", href: "#" },
         // { name: "Data Analytics Consulting Services", href: "#" },
@@ -62,9 +62,9 @@ const Navbar = () => {
       name: "Digital Health",
       href: "/digital-health",
       submenu: [
-        { name: "Medical Billing", href: "/data-cloud/medicalbilling" },
-        { name: "Services", href: "#" },
-        { name: "Solutions", href: "#" },
+        { name: "Medical Billing", href: "/digital-health/medicalbilling" },
+        { name: "EHR", href: "/digital-health/ehr" },
+        { name: "CDS", href: "/digital-health/cds" },
       ],
     },
     {
