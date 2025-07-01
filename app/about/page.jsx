@@ -321,7 +321,7 @@ export default function AppAboutUs() {
      
 
       {/* Team Section */}
-      <motion.section
+      {/* <motion.section
         ref={refs.team}
         initial="hidden"
         animate={inView.team ? 'visible' : 'hidden'}
@@ -357,7 +357,6 @@ export default function AppAboutUs() {
                   whileHover={{ rotateY: 180 }}
                   transition={{ duration: 0.6, ease: 'easeOut' }}
                 >
-                  {/* Front Face */}
                   <motion.div className="absolute inset-0 backface-hidden">
                     <div className="relative w-full h-full">
                       <Image
@@ -382,7 +381,6 @@ export default function AppAboutUs() {
                       </div>
                     </div>
                   </motion.div>
-                  {/* Back Face */}
                   <motion.div className="absolute inset-0 backface-hidden bg-gradient-to-br from-cyan-500/10 to-purple-500/10 flex items-center justify-center p-8 text-center rotate-y-180">
                     <div>
                       <h3 className="text-xl font-semibold text-white mb-3">{member.name}</h3>
@@ -414,7 +412,7 @@ export default function AppAboutUs() {
             </Link>
           </motion.div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Values Section */}
       <motion.section

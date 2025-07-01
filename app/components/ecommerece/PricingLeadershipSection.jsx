@@ -85,7 +85,7 @@ export default function PricingLeadershipSection() {
       </div>
 
       {/* Leadership Section */}
-      <div className="bg-gradient-to-b from-[#446f70] to-[#1c2526] text-white py-20 px-6 text-center">
+      {/* <div className="bg-gradient-to-b from-[#446f70] to-[#1c2526] text-white py-20 px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ export default function PricingLeadershipSection() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
