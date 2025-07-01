@@ -63,8 +63,9 @@ const CloudMigrationSection = () => {
                         <Link href='/contact'>
               
               Get Your Free Consultation
+                 </Link>
               <FiArrowRight className="ml-2 w-5 h-5" />
-              </Link>
+           
             </motion.a>
           </motion.div>
 

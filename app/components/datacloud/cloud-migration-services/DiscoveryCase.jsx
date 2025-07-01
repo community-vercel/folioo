@@ -78,7 +78,7 @@ export default function DiscoveryCase() {
                 Our clients achieve seamless integrations, reduced downtime, and lower costs through our tailored cloud migration solutions.
               </p>
               <motion.a
-                href="#reviews"
+                href="/portfolio"
                 className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
                 variants={buttonVariants}
                 whileHover="hover"

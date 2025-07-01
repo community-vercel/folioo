@@ -183,7 +183,7 @@ export default function AdataMigrationService() {
               Our consultants deliver secure, high-performance cloud strategies, focusing on cost efficiency and scalability.
             </p>
             <motion.a
-              href="#learn-more"
+              href="/portfolio"
               className="mt-6 inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               variants={buttonVariants}
               whileHover="hover"

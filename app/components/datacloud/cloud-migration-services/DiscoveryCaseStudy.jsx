@@ -73,7 +73,7 @@ export default function DiscoveryCaseStudy() {
               <li>Get a detailed strategy and cost proposal</li>
             </ul>
             <motion.a
-              href="#schedule"
+              href="/contact"
               className="mt-6 inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               variants={buttonVariants}
               whileHover="hover"
@@ -122,7 +122,7 @@ export default function DiscoveryCaseStudy() {
             </div>
 
             <motion.a
-              href="#success-stories"
+              href="/portfolio"
               className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               variants={buttonVariants}
               whileHover="hover"

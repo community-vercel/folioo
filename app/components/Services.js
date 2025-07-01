@@ -109,7 +109,7 @@ export default function WhatsNew() {
                     {slide.description}
                   </p>
                   <motion.a
-                    href="#learn-more"
+                    href="/portfolio"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="inline-block mt-4 px-6 py-3 bg-teal-500 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-teal-600 transition-colors duration-300"
@@ -185,18 +185,7 @@ export default function WhatsNew() {
           <p className="text-sm sm:text-base text-gray-600 font-medium max-w-md">
             From AI-driven insights to scalable cloud platforms, we deliver end-to-end solutions that drive growth and efficiency.
           </p>
-          <motion.a
-            href="/contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block mt-4 px-6 py-3 bg-teal-500 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-teal-600 transition-colors duration-300"
-            aria-label="Contact Nova Bloom to unlock your potential"
-          >
-                               
-
-            Get Started Today
-       
-          </motion.a>
+         
         </div>
 
         {/* Right Service List */}
@@ -217,39 +206,7 @@ export default function WhatsNew() {
         </div>
       </motion.div>
 
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          background: #d1d5db;
-          opacity: 0.4;
-          transition: all 0.3s ease;
-        }
-        .swiper-pagination-bullet-active {
-          width: 12px;
-          height: 12px;
-          background: #0f172a;
-          opacity: 1;
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-          outline: none;
-        }
-        .swiper-button-prev:after,
-        .swiper-button-next:after {
-          display: none;
-        }
-        @media (max-width: 639px) {
-          .swiper-pagination-bullet {
-            width: 8px;
-            height: 8px;
-          }
-          .swiper-pagination-bullet-active {
-            width: 10px;
-            height: 10px;
-          }
-        }
-      `}</style>
+     
     </section>
   );
 }
