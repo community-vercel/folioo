@@ -69,8 +69,9 @@ const Navbar = () => {
     },
     {
       name: "Company",
-      href: "/company",
+      href: "#",
       submenu: [
+        
         { name: "Blog", href: "/blog" },
         { name: "eLearning", href: "/elearning" },
         // { name: "Careers", href: "/careers" },
