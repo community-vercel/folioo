@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   FiLock,
   FiUsers,
@@ -80,7 +81,10 @@ export default function PricingLeadershipSection() {
           whileTap="tap"
           className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-gray-900 transition-all duration-300"
         >
+                    <Link href='/contact'>
+          
           Get Your Free Quote Now
+          </Link>
         </motion.button>
       </div>
 

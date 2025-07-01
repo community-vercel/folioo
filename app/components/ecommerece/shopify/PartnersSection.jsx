@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 export default function PartnersSection() {
   const partners = [
     { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/aws-partner-logo.webp?text=WooCommerce", alt: "Salesforce" },
@@ -139,7 +140,9 @@ const reasons = [
           transition={{ duration: 0.5, delay: 0.5 }}
           whileHover={{ scale: 1.05 }}
         >
+          <Link href='/contact'>
           Discover Your Need
+         </Link>
         </motion.button>
       </motion.div>
     </section>

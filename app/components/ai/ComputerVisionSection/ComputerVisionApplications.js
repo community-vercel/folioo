@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const applications = [
   {
@@ -119,6 +120,7 @@ export default function ComputerVisionApplications() {
 
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
+          <Link href='/contact'>
           <button
             className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setIsHovered(true)}
@@ -126,6 +128,7 @@ export default function ComputerVisionApplications() {
           >
             Launch Your Vision Project
           </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiCheckCircle, FiDollarSign, FiGrid, FiHeadphones, FiLayers, FiMessageSquare, FiPauseCircle, FiSettings, FiTrendingUp } from "react-icons/fi";
+import Link from "next/link";
 
 
 const benefits = [
@@ -120,9 +121,12 @@ When it comes to reliable and experienced Magento 2 development, Nova Bloom rise
         </motion.div>
 
         <motion.div variants={itemVariants}>
+                                <Link href='/contact'>
+
           <button className="mt-12 bg-gradient-to-r from-[#446f70] to-[#446f70] text-white font-semibold text-base px-12 py-4 rounded-full hover:from-amber-500 hover:to-[#446f70] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Get Started Today
           </button>
+          </Link>
         </motion.div>
       </motion.div>
 

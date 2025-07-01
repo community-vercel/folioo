@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const MachineSection = () => {
@@ -30,6 +31,8 @@ const MachineSection = () => {
             <p className="text-lg text-gray-200 leading-relaxed">
               Leverage our state-of-the-art machine learning services to uncover patterns, predict outcomes, and automate decisions. From predictive analytics to personalized recommendations, drive innovation with data.
             </p>
+                      <Link href='/contact'>
+
             <button
               className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               onMouseEnter={() => setIsHovered(true)}
@@ -37,6 +40,7 @@ const MachineSection = () => {
             >
               Schedule a Free Consultation
             </button>
+            </Link>
           </div>
         </div>
       </div>

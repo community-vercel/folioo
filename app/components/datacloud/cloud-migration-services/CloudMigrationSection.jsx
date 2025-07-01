@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
+import Link from 'next/link';
 
 const cloudFeatures = [
   {
@@ -138,8 +139,11 @@ export default function CloudMigrationSection7() {
             variants={buttonVariants}
             whileHover="hover"
           >
+                                  <Link href='/contact'>
+
             Talk to Our Cloud Experts
             <FiArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </motion.a>
         </motion.div>
       </div>

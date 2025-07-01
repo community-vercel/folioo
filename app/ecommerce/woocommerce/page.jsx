@@ -11,6 +11,7 @@ import WooCommerceServices from '@/app/components/ecommerece/woocommerce/WooComm
 import WooCommerceWhy from '@/app/components/ecommerece/woocommerce/woocommercewhy';
 import Header from '@/app/components/ecommerece/Header';
 import Footer from '@/app/components/ecommerece/Footer';
+import Link from 'next/link';
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -233,9 +234,12 @@ export default function Woocommerce() {
               </li>
             ))}
           </ul>
+                        <Link href="/contact">
+
           <button className="bg-white text-[#446f70] font-semibold px-6 py-3 rounded-full hover:bg-purple-100 transition">
             Book A Free Consultation
           </button>
+          </Link>
         </div>
 
         {/* Right Section */}

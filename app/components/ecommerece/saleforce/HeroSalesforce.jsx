@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSalesforce() {
   return (
@@ -29,10 +30,12 @@ export default function HeroSalesforce() {
               <span className="text-blue-600 text-xl">✔</span> Dedicated Salesforce experts that work closely with you
             </li>
           </ul>
+              <Link href="/contact">
 
           <button className="mt-8 px-6 py-3 bg-[#446f70] hover:bg-[#001e49] text-white text-lg rounded-full font-semibold transition">
             Book a Free Consultation
           </button>
+          </Link>
         </div>
 
         {/* Right Column - Badges */}

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { FiLock, FiCalendar, FiUsers, FiSend, FiGitPullRequest, FiPower, FiPenTool, FiBriefcase, FiCode } from "react-icons/fi";
+import Link from "next/link";
 
 export default function ShopifyServicesSection() {
   const serviceModels = [
@@ -181,7 +182,9 @@ export default function ShopifyServicesSection() {
             whileHover="hover"
             aria-label="Request a free quote"
           >
+            <Link href='/contact'>
             Request a Free Quote Today
+            </Link>
           </motion.button>
         </motion.div>
       </motion.div>
@@ -266,7 +269,10 @@ export default function ShopifyServicesSection() {
             whileHover="hover"
             aria-label="Discuss your Shopify needs"
           >
+                      <Link href='/contact'>
+            
             Discuss Your Need
+            </Link>
           </motion.button>
         </motion.div>
       </motion.div>

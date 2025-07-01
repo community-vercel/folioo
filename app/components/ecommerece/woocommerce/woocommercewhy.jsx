@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiCheckCircle, FiStar, FiUsers,  FiAward, FiRotateCcw, FiCpu, FiTarget, FiShield, FiUserPlus, FiTrendingUp } from 'react-icons/fi';
 import { FiLayers, FiGlobe, FiCode, FiUsers as FiCommunity, FiGlobe as FiMulti, FiLink } from 'react-icons/fi';
@@ -161,6 +162,7 @@ export default function ECommerceWhy() {
               </div>
             ))}
           </div>
+                      <Link href='/contact'>
 
           <button
             className="mt-12 bg-gradient-to-r from-[#446f70] to-[#446f70] text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 mx-auto hover:from-gray-700 hover:to-purple-700 hover:scale-105 transition-all duration-300"
@@ -168,6 +170,7 @@ export default function ECommerceWhy() {
           >
             Get Started Now <FiCheckCircle />
           </button>
+          </Link>
         </div>
       </section>
     </main>

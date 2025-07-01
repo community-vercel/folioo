@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const TrustedEcommercecustomer = () => {
   // Animation variants for staggered entrance
@@ -37,9 +38,12 @@ const TrustedEcommercecustomer = () => {
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6 max-w-md">
             Our expert team delivers tailored Magento solutions, from bespoke themes and storefronts to seamless integrations, perfectly aligned with your business goals.
           </p>
+                                <Link href='/contact'>
+
           <button className="bg-[#446f70] text-white font-semibold text-sm px-8 py-3 rounded-full hover:bg-amber-500 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
             Start Your Project
           </button>
+          </Link>
         </motion.div>
 
         {/* Stats */}
@@ -84,9 +88,12 @@ const TrustedEcommercecustomer = () => {
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6 max-w-md">
             Stay ahead of the competition with our innovative Magento AI integrations. Contact us for a free consultation to transform your eCommerce business.
           </p>
+                                <Link href='/contact'>
+
           <button className="bg-[#446f70] text-white font-semibold text-sm px-8 py-3 rounded-full hover:bg-amber-500 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
             Talk to Us Now
           </button>
+          </Link>
         </motion.div>
 
         {/* Right Image */}

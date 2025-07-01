@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const ComputerVisionSection = () => {
@@ -31,6 +32,7 @@ const ComputerVisionSection = () => {
           <p className="text-lg text-gray-200 leading-relaxed">
             Transform raw images and videos into actionable intelligence with our cutting-edge computer vision services. Detect objects, analyze patterns, and track movements to drive smarter decisions.
           </p>
+          <Link href='/contact'>
           <button
             className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setIsHovered(true)}
@@ -38,6 +40,7 @@ const ComputerVisionSection = () => {
           >
             Schedule a Free Consultation
           </button>
+          </Link>
         </div>
    </div>
         {/* Image Section */}

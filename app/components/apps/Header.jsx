@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   const headlineRef = useRef(null);
@@ -67,9 +68,12 @@ export default function Header() {
             </span>
             <div className="flex items-center space-x-4">
               <span className="text-xs lg:text-sm text-white hidden lg:block">US: 408 365 4638</span>
+                                    <Link href='/contact'>
+
               <button className="bg-blue-500 text-white px-4 lg:px-6 py-2 rounded text-xs lg:text-sm font-medium hover:bg-blue-600">
                 START YOUR PROJECT
               </button>
+              </Link>
               <button className="lg:hidden text-white focus:outline-none" onClick={toggleMenu}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16m-7 6h7'}></path>

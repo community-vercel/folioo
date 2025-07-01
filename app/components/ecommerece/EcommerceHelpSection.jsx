@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function EcommerceHelpSection() {
   return (
     <div className="bg-[#f9f9f9] py-16 px-4">
@@ -43,9 +45,12 @@ export default function EcommerceHelpSection() {
 
       {/* CTA Button */}
       <div className="flex justify-center mt-16">
+                               <Link href='/contact'>
+
         <button className="bg-[#446f70] text-white px-8 py-4 rounded-full font-semibold text-lg transition">
           Partner with Us to Scale 3X!
         </button>
+        </Link>
       </div>
     </div>
   );

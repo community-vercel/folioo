@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
@@ -110,9 +111,13 @@ export default function FaqAndContactSection() {
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center">
           {/* Left Text */}
           <div className="flex-1 text-white space-y-4">
+                       <Link href='/contact'>
+
             <h3 className="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight">
+              
               Launch Your <span className="text-[#e6f4f1]">BigCommerce</span> Journey
             </h3>
+            </Link>
             <p className="text-lg leading-relaxed">
               Connect with our certified BigCommerce experts to start building your dream store today!
             </p>

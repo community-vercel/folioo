@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import {
   FiTarget,
@@ -78,6 +79,8 @@ export default function ComputerVisionServices() {
           </div>
 
           <div className="mt-12">
+                      <Link href='/contact'>
+
             <button
               className="bg-transparent border-2 border-cyan-500 text-cyan-500 font-semibold px-8 py-3 rounded-full hover:bg-cyan-500 hover:text-white transition-all duration-300"
               onMouseEnter={() => setIsHovered('project')}
@@ -85,6 +88,7 @@ export default function ComputerVisionServices() {
             >
               Start Your Project Today
             </button>
+            </Link>
           </div>
         </div>
       </div>

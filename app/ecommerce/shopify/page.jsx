@@ -10,6 +10,7 @@ import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Footer from '@/app/components/ecommerece/Footer';
 import Header from '@/app/components/ecommerece/Header';
+import Link from 'next/link';
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -280,7 +281,12 @@ export default function Shopify() {
                   ))}
                 </motion.ul>
                 <motion.div variants={fadeInLeft}>
-                  <GlowingButton>Schedule a Free Consultation</GlowingButton>
+                  <GlowingButton>
+                              <Link href='/contact'>
+
+                    Schedule a Free Consultation
+                    </Link>
+                    </GlowingButton>
                 </motion.div>
               </motion.div>
 

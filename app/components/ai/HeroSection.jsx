@@ -44,9 +44,12 @@ export default function HeroSection() {
               <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 Explore AI Solutions
               </button>
+                                    <Link href='/contact'>
+
               <button className="bg-transparent border-2 border-cyan-300 text-cyan-300 font-semibold px-8 py-3 rounded-full hover:bg-cyan-300 hover:text-white transition-all duration-300">
                 Get Started
               </button>
+              </Link>
             </div>
           </div>
           <div className="mt-12 md:mt-0 md:ml-12 animate-slide-in delay-300">

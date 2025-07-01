@@ -146,12 +146,12 @@ export default function CaseStudies() {
                     ))}
                   </div>
 
-                  <button
+                  {/* <button
                     className="mt-auto border-2 border-lime-400 text-white rounded-full px-6 py-2 text-sm font-semibold hover:bg-[] hover:text-teal-800 transition-all duration-300"
                     aria-label={`Read more about ${item.title}`}
                   >
                     Read More
-                  </button>
+                  </button> */}
                 </div>
               </motion.div>
             </SwiperSlide>

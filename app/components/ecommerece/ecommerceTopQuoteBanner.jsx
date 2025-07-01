@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const modules = [
   {
@@ -81,15 +82,21 @@ export default function TopQuoteBanner() {
           variants={containerVariants}
         >
           <motion.div className="max-w-lg space-y-6" variants={itemVariants}>
+                      <Link href='/contact'>
+            
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
               Get Your Free Quote Today!
             </h2>
+            </Link>
             <p className="text-lg text-white/90 leading-relaxed">
               At Nova Bloom, we empower your eCommerce journey with tailored Magento 2 solutions. Request a complimentary quote to experience our expertise.
             </p>
+                                  <Link href='/contact'>
+
             <button className="bg-[#446f70] text-white font-semibold px-8 py-3 rounded-full hover:bg-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               Talk to Our Experts
             </button>
+            </Link>
           </motion.div>
           <motion.div className="mt-10 md:mt-0" variants={itemVariants}>
             <img
@@ -153,7 +160,9 @@ export default function TopQuoteBanner() {
             className="mt-12 bg-[#446f70] text-white font-semibold px-10 py-3 rounded-full hover:bg-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             variants={itemVariants}
           >
+            <Link href='/contact'>
             Hire Magento Developers
+            </Link>
           </motion.button>
         </motion.div>
       </section>
@@ -225,8 +234,11 @@ export default function TopQuoteBanner() {
             className="mt-12 bg-[#446f70] text-white font-semibold px-10 py-3 rounded-full hover:bg-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             variants={itemVariants}
           >
+            <Link href='/contact'>
             Explore Integrations
+              </Link>
           </motion.button>
+        
         </motion.div>
       </section>
     </>

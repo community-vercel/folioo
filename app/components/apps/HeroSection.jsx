@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AppHeroSections() {
   const [isHovered, setIsHovered] = useState(false);
@@ -39,9 +40,11 @@ export default function AppHeroSections() {
               >
                 Start Your App Journey →
               </button>
+              <Link href="/contact">
               <button className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
                 Book a Free Consultation
               </button>
+              </Link>
             </div>
           </div>
         </div>

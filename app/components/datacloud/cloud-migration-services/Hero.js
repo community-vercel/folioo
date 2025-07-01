@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
+import Link from 'next/link';
 
 const CloudMigrationSection = () => {
   // Animation variants for text content
@@ -59,8 +60,11 @@ const CloudMigrationSection = () => {
               variants={buttonVariants}
               whileHover="hover"
             >
+                        <Link href='/contact'>
+              
               Get Your Free Consultation
               <FiArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </motion.a>
           </motion.div>
 

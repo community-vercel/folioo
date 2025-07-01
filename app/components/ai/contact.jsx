@@ -4,9 +4,60 @@ import { useState } from 'react';
 
 const ContactForm = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validateForm = () => {
+    if (!formData.name.trim()) return 'Name is required';
+    if (!formData.email.trim()) return 'Email is required';
+    if (!/\S+@\S+\.\S+/.test(formData.email)) return 'Invalid email format';
+    if (!formData.message.trim()) return 'Message is required';
+    return null;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ type: '', message: '' });
+    const error = validateForm();
+    if (error) {
+      setStatus({ type: 'error', message: error });
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setStatus({ type: 'success', message: 'Message sent successfully!' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setStatus({ type: 'error', message: data.message || 'Failed to send message' });
+      }
+    } catch (err) {
+      setStatus({ type: 'error', message: 'An error occurred. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
-    <div className=" bg-gradient-to-b from-gray-50 to-white px-6 py-16 flex flex-col items-center justify-center">
+    <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-16 flex flex-col items-center justify-center">
       {/* Header */}
       <h1 className="text-4xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 animate-fade-in mb-12">
         Bring Your Vision to Life with AI
@@ -34,11 +85,17 @@ const ContactForm = () => {
         </div>
 
         {/* Right: Contact Form */}
-        <form className="w-full md:w-1/2 bg-gradient-to-br from-blue-900 to-cyan-800 text-white p-8 rounded-2xl shadow-lg space-y-6 animate-slide-in">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full md:w-1/2 bg-gradient-to-br from-blue-900 to-cyan-800 text-white p-8 rounded-2xl shadow-lg space-y-6 animate-slide-in"
+        >
           <div>
             <input
               type="text"
+              name="name"
               placeholder="Your Name*"
+              value={formData.name}
+              onChange={handleChange}
               className="w-full p-3 rounded-lg bg-white/10 border border-gray-300/50 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-300"
               required
             />
@@ -46,32 +103,53 @@ const ContactForm = () => {
           <div className="flex gap-4">
             <input
               type="email"
+              name="email"
               placeholder="Your Email*"
+              value={formData.email}
+              onChange={handleChange}
               className="w-1/2 p-3 rounded-lg bg-white/10 border border-gray-300/50 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-300"
               required
             />
             <input
               type="tel"
+              name="phone"
               placeholder="Your Phone*"
+              value={formData.phone}
+              onChange={handleChange}
               className="w-1/2 p-3 rounded-lg bg-white/10 border border-gray-300/50 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-300"
               required
             />
           </div>
           <div>
             <textarea
+              name="message"
               placeholder="Tell Us About Your Project*"
+              value={formData.message}
+              onChange={handleChange}
               className="w-full p-3 h-36 rounded-lg bg-white/10 border border-gray-300/50 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-300"
               required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            disabled={isSubmitting}
+            className={`w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 rounded-full shadow-lg transition-all duration-300 ${
+              isHovered ? 'scale-105 shadow-xl' : ''
+            } ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-xl hover:scale-105'}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            Connect Now
+            {isSubmitting ? 'Sending...' : 'Connect Now'}
           </button>
+          {status.message && (
+            <p
+              className={`text-sm text-center ${
+                status.type === 'success' ? 'text-green-400' : 'text-red-400'
+              }`}
+            >
+              {status.message}
+            </p>
+          )}
           <p className="text-xs text-gray-300 text-center">
             By submitting, you agree to our{' '}
             <a href="#" className="underline text-cyan-400 hover:text-cyan-300 transition-colors duration-200">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { FiShoppingBag, FiZap, FiGlobe } from "react-icons/fi"; // Feather Icons
+import Link from "next/link";
 
 // Mock AnimatedText component (adjust based on your actual implementation)
 const AnimatedText = ({ text, className }) => {
@@ -158,12 +159,14 @@ className="bg-gradient-to-r from-teal-800 to-teal-600 max-w-6xl mx-auto text-cen
         <p className="mb-6 text-gray-100 leading-relaxed max-w-6xl relative z-10">
           Connect with us for a free consultation to explore the ideal Shopify development solution for your unique business needs and goals.
         </p>
+        <Link href='/contact'>
         <button
           className="bg-lime-400 text-teal-900 font-semibold py-3 px-8 rounded-full hover:bg-lime-500 hover:shadow-lg transition-all duration-300 relative z-10"
           aria-label="Request a free consultation"
         >
           Let’s Build & Scale Your eCommerce Store
         </button>
+        </Link>
       </motion.div>
 
       {/* Features Grid */}

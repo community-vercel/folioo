@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion'; // Optional: for animations
 import { useInView } from 'react-intersection-observer'; // For scroll-based animations
+import Link from 'next/link';
 
 export default function BigCommerceHero() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -53,7 +54,12 @@ export default function BigCommerceHero() {
             whileTap={{ scale: 0.95 }}
             className="inline-block bg-[#446f70] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-[#446f70] transition-all duration-300"
           >
+                      <Link href='/contact'>
+            
             Get Your Free Strategy Session
+
+            </Link>
+
           </motion.a>
         </motion.div>
 

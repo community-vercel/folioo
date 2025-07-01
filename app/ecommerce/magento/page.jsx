@@ -9,6 +9,7 @@ import Header from "@/app/components/ecommerece/Header";
 import MagentoProjects from "@/app/components/ecommerece/MagentoProjects";
 import MagentoServices from "@/app/components/ecommerece/MagentoServices";
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 // import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -42,12 +43,17 @@ export default function Home() {
                 With over a decade of expertise, Nova Bloom is a leading Magento development agency. We craft fully customized eCommerce stores with seamless ERP integrations for platforms like NetSuite and Dynamics 365, delivering cost-effective, high-impact solutions.
               </p>
               <div className="flex space-x-4">
+                <Link href="/contact">
                 <button className="bg-[#446f70] text-white-900 font-semibold text-sm px-8 py-3 rounded-full hover:bg-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                   Get Free Consultancy
                 </button>
+                </Link>
+                       <Link href='/portfolio'>
+             
                 <button className="bg-[#446f70] border border-white/80 text-white font-semibold text-sm px-8 py-3 rounded-full hover:bg-white/10 transition-all duration-300">
                   Learn More
                 </button>
+                </Link>
               </div>
             </div>
 

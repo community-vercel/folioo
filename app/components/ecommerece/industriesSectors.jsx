@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { BsFillTabletLandscapeFill } from 'react-icons/bs';
 import { FaChessBishop } from 'react-icons/fa';
 import {
@@ -96,7 +97,9 @@ export default function IndustriesSectors() {
           className="bg-gradient-to-r from-[#446f70] to-[#446f70] hover:from-blue-700 hover:to-blue-900 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
           aria-label="Discuss your eCommerce needs"
         >
+          <Link href='/contact'>
           Discuss Your Need
+          </Link>
         </motion.button>
       </div>
     </div>

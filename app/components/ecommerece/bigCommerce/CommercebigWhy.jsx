@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { BsFillRocketFill } from 'react-icons/bs';
 import { FiUsers, FiCheckCircle, FiCode, FiAward, FiTarget, FiShield, FiUserPlus, FiTrendingUp, FiLayers, FiGlobe, FiLink } from 'react-icons/fi';
@@ -181,6 +182,7 @@ export default function WhyBigCommerce() {
               </div>
             ))}
           </div>
+           <Link href='/contact'>
 
           <button
             className="mt-12 bg-gradient-to-r from-[#099f70] to-[#446f70] text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 mx-auto hover:from-[#077f50] hover:to-[#2a6b54] hover:scale-105 transition-all duration-300"
@@ -188,6 +190,7 @@ export default function WhyBigCommerce() {
           >
             Launch Your Store Now <BsFillRocketFill />
           </button>
+          </Link>
         </div>
       </section>
     </main>

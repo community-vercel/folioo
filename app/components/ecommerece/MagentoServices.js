@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { FiAtSign, FiAward, FiCode, FiFilePlus, FiLayout, FiPower, FiRotateCw, FiSettings, FiShare, FiTrendingUp } from "react-icons/fi";
+import Link from "next/link";
 
 const services = [
   {
@@ -120,9 +121,11 @@ export default function MagentoServices() {
         </motion.div>
 
         <motion.div className="text-center mt-12" variants={itemVariants}>
+          <Link href="/contact">
           <button className="bg-gradient-to-r from-[#446f70] to-[#446f70] text-white font-semibold text-base px-10 py-3 rounded-full hover:from-amber-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Start Your eCommerce Journey
           </button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

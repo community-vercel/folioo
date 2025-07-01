@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -202,7 +203,10 @@ export default function TestimonialSliderEcommerce() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
+                           <Link href='/contact'>
+                
                 Launch Your eCommerce Success
+                </Link>
               </motion.h2>
               <motion.p
                 className="text-xl sm:text-2xl text-blue-500 font-semibold mb-3"
@@ -273,7 +277,10 @@ export default function TestimonialSliderEcommerce() {
                 transition={{ duration: 0.3, delay: 1 }}
                 aria-label="Submit form"
               >
+                                      <Link href='/contact'>
+
                 GET STARTED NOW
+                </Link>
               </motion.button>
             </motion.form>
           </div>

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { FiPenTool, FiCode, FiGlobe, FiBarChart2, FiZap } from 'react-icons/fi';
+import Link from 'next/link';
 
 const features = [
   {
@@ -90,9 +91,12 @@ export default function AppInnovationSection() {
 
       {/* CTA Button */}
       <div className="mt-16 flex justify-center gap-4 animate-slide-up delay-300">
+                     <Link href="/contact">
+       
         <button className="bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
           Start Your App Journey
         </button>
+        </Link>
         <button className="border-2 border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white px-10 py-4 rounded-full font-semibold transition-all duration-300">
           Explore Our Expertise
         </button>

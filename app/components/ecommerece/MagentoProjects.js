@@ -1,5 +1,7 @@
 // components/MagentoProjects.js
 
+import Link from "next/link";
+
 const projects = [
   {
     image: "https://ecommerce.folio3.com/wp-content/uploads/2019/07/tjm-portfolio-600x400-new.webp",
@@ -87,9 +89,11 @@ export default function MagentoProjects() {
 
         {/* Button */}
         <div className="text-center mt-10">
+          <Link href='/portfolio'>
           <button className="text-sm font-semibold text-[#446f70] border border-[#446f70] px-6 py-2 rounded hover:bg-orange-500 hover:text-white transition-colors">
             See Our Work
           </button>
+          </Link>
         </div>
       </div>
     </section>

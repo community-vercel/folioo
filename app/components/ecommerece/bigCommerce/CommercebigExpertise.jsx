@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { FiCheckCircle } from 'react-icons/fi';
 
 const features = [
@@ -45,12 +46,15 @@ export default function BigCommerceExpertise() {
           <p className="text-lg text-gray-600 max-w-md leading-relaxed">
             With over 50 BigCommerce-certified experts, we deliver tailored, high-performance stores that drive growth and conversions.
           </p>
+                                <Link href='/contact'>
+
           <button
             className="mt-6 px-8 py-3 bg-gradient-to-r from-[#099f70] to-[#446f70] text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:from-[#077f50] hover:to-[#2a6b54] transition-all duration-300"
             aria-label="Get Started with BigCommerce"
           >
             Start Your Project
           </button>
+          </Link>
         </div>
 
         {/* Right Column */}

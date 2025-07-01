@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { FiArrowRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function EcommerceGrowth() {
   const containerVariants = {
@@ -93,6 +94,7 @@ export default function EcommerceGrowth() {
                 </motion.li>
               ))}
             </ul>
+           <Link href='/contact'>
 
             <motion.button
               className="mt-8 inline-flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-full bg-gradient-to-r from-[#446f70] to-[#446f70] hover:from-[#1e40af] hover:to-[#2563eb] shadow-lg hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transform hover:scale-105 transition-all duration-300"
@@ -103,6 +105,7 @@ export default function EcommerceGrowth() {
             >
               Launch Your Store Now <FiArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </motion.button>
+            </Link>
           </motion.div>
 
           {/* Right Logos Section */}
