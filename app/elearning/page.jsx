@@ -349,6 +349,7 @@ const [formData, setFormData] = useState({
           </motion.div>
         </section>
 
+
         {/* Testimonials Section */}
         <section className="py-16 bg-gray-900 text-center">
           <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
@@ -380,6 +381,7 @@ const [formData, setFormData] = useState({
             </div>
           </motion.div>
         </section>
+
 
 
         {/* Contact Form Section */}
