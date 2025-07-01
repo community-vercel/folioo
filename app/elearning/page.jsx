@@ -381,6 +381,7 @@ const [formData, setFormData] = useState({
           </motion.div>
         </section>
 
+
         {/* Contact Form Section */}
         <section id="contact" className="py-16 bg-gray-950 text-center">
                 {/* Background Decorative Elements */}
@@ -466,6 +467,8 @@ const [formData, setFormData] = useState({
                
               </section>
    
+
+
       </div>
       <Footer />
     </>
