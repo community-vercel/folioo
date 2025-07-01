@@ -138,12 +138,12 @@ export default function BigCommerceHero() {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="fixed top-1/3 right-0 z-20"
       >
-        <a
-          href="#quote"
+        <Link
+          href="/contact"
           className="bg-[#446f70] text-white px-6 py-3 rounded-l-full text-sm font-semibold shadow-lg hover:bg-blue-700 transition-all duration-300 transform -rotate-90 origin-right"
         >
           Request a Quote
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

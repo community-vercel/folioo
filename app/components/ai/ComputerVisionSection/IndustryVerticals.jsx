@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import { BsCarFront } from 'react-icons/bs';
 import { FaStore } from 'react-icons/fa';
@@ -111,6 +112,7 @@ export default function IndustryVerticals() {
 
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
+          <Link href='/portfolio'>
           <button
             className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setIsHovered('cta')}
@@ -119,6 +121,7 @@ export default function IndustryVerticals() {
           >
             Discover Your Solution
           </button>
+          </Link>
         </div>
       </div>
     </section>

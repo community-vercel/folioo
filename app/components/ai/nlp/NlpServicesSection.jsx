@@ -12,6 +12,7 @@ import {
   FiTrendingUp,
   FiCpu,
 } from 'react-icons/fi';
+import Link from 'next/link';
 export default function NlpSolutionsSection() {
   const industries = [
   { name: 'Healthcare', icon: FiHeart },
@@ -112,9 +113,12 @@ export default function NlpSolutionsSection() {
             </div>
           ))}
         </div>
+                  <Link href='/contact'>
+
         <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-in">
           Connect with Our Experts
         </button>
+        </Link>
       </div>
 
       {/* Industry Section */}

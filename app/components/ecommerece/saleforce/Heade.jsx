@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiChevronDown, FiPhone } from 'react-icons/fi';
 
 export default function Header() {
@@ -45,9 +46,11 @@ export default function Header() {
           <div className="hidden md:flex items-center text-sm text-blue-600 font-medium">
             <FiPhone className="w-4 h-4 mr-1" /> 1 (408) 365-4638
           </div>
-          <button className="bg-[#446f70] hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-full">
+          <Link href='/contact'>         <button className="bg-[#446f70] hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-full">
             SCHEDULE A CALL
           </button>
+          </Link>
+ 
         </div>
       </div>
     </header>

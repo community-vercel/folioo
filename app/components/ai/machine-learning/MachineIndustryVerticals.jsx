@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { FiCode, FiDatabase, FiCloud, FiBarChart2, FiCpu, FiLayers } from 'react-icons/fi';
+import Link from 'next/link';
 
 const leftItems = [
   {
@@ -132,9 +133,11 @@ const MachineLearningTechStack = () => {
 
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
+          <Link href='/contact'>
           <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
             Build Your ML Solution Now
           </button>
+          </Link>
         </div>
       </div>
     </section>

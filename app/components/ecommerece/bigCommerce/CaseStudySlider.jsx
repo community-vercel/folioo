@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const caseStudies = [
   {
@@ -130,12 +131,14 @@ export default function CaseStudySlider() {
                     </div>
                     <p className="text-sm text-gray-700 mb-6 leading-relaxed">{caseItem.description}</p>
                   </div>
+                  <Link href='/portfolio'>
                   <button
                     className="px-6 py-3 bg-gradient-to-r from-[#099f70] to-[#446f70] text-white font-semibold rounded-full hover:scale-105 hover:from-[#077f50] hover:to-[#2a6b54] transition-all duration-300"
                     aria-label={`View ${caseItem.title} Case Study`}
                   >
                     Explore Case Study
                   </button>
+                        </Link>
                 </div>
               </div>
             </SwiperSlide>

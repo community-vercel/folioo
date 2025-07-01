@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FiCheckCircle } from 'react-icons/fi';
 
 const features = [
@@ -22,9 +23,11 @@ export default function WooCommerceExpertise() {
             <span className="text-purple-400">WooCommerce</span> <br />
             <span className="text-purple-400">Website Development</span>
           </h2>
+          <Link href='/contact'>
           <button className="mt-8 px-6 py-3 bg-[#446f70] text-white font-semibold rounded-full shadow hover:bg-gray-200 transition">
             Book A Call Now
           </button>
+          </Link>
         </div>
 
         {/* Right Column */}

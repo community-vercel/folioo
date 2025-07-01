@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiShoppingCart, FiCode, FiZap, FiTruck, FiUsers, FiGlobe, FiArrowRight, FiStar } from 'react-icons/fi';
 import { FiAward, FiRepeat, FiShield } from 'react-icons/fi';
 
@@ -43,12 +44,14 @@ export default function ECommerceSolutions() {
               <li>Custom checkout with 3D secure payments</li>
             </ul>
           </div>
+          <Link href='/portfolio'>
           <button
             className="bg-gradient-to-r from-[#446f70] to-[#446f70] text-white px-6 py-2 rounded-full flex items-center gap-2 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300"
             aria-label="View Case Study"
           >
             Explore Case Study <FiArrowRight />
           </button>
+                </Link>
         </div>
       </div>
 
@@ -172,12 +175,14 @@ export default function ECommerceSolutions() {
 
       {/* --- CTA Section --- */}
       <div className="mt-16">
+        <Link href='/contact'>
         <button
           className="bg-gradient-to-r from-[#446f70] to-[#446f70] text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto hover:from-indigo-700 hover:to-purple-700 hover:scale-105 transition-all duration-300"
           aria-label="Start Your E-Commerce Journey"
         >
           Start Your E-Commerce Journey <FiArrowRight />
         </button>
+        </Link>
       </div>
     </section>
   );

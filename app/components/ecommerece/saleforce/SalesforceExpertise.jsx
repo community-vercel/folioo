@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const certifications = [
@@ -21,9 +22,12 @@ export default function SalesforceExpertise() {
             10+ Years of Salesforce <br />
             Expertise Under Our Belt
           </h2>
+          <Link href='/contact'>
           <button className="bg-[#446f70] hover:bg-[#002c5a] text-white font-semibold py-3 px-6 rounded-full transition">
             Schedule a Call
           </button>
+          </Link>
+ 
         </div>
 
         {/* Right */}

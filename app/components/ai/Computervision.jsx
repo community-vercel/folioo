@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function ComputerVision() {
   const industries = [
@@ -97,6 +98,7 @@ export default function ComputerVision() {
       </section>
 
       <div className="flex justify-center mb-16">
+        <Link href='/portfolio'>
         <button
           className={clsx(
             'bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold',
@@ -106,6 +108,7 @@ export default function ComputerVision() {
         >
           Explore AI Models
         </button>
+        </Link>
       </div>
 
       {/* Industry Services */}
@@ -146,6 +149,7 @@ export default function ComputerVision() {
       </section>
 
       <div className="flex justify-center">
+        <Link href='/contact'>
         <button
           className={clsx(
             'bg-transparent border-2 border-cyan-500 text-cyan-500 font-semibold',
@@ -155,6 +159,7 @@ export default function ComputerVision() {
         >
           Consult Our Experts
         </button>
+        </Link>
       </div>
     </div>
   );

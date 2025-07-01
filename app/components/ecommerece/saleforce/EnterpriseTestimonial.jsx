@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -48,9 +49,11 @@ export default function SalesforceSuccessSlider() {
                   <div>
                     <img src={slide.logo} alt={`${slide.title} logo`} className="h-10 mb-6" />
                     <p className="text-gray-700 mb-6 text-lg">{slide.description}</p>
+                    <Link href='/contact'>
                     <button className="bg-[#446f70] text-white px-6 py-3 rounded-full font-medium shadow hover:bg-[#001d3a] transition">
                       Speak With A Salesforce Specialist
                     </button>
+                    </Link>
                   </div>
                   <div className="flex justify-center items-end relative">
                     <img src={slide.laptopImg} alt="Laptop view" className="z-10 w-[90%] max-w-[500px]" />

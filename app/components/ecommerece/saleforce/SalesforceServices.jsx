@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FaCloud,
   FaHeadset,
@@ -149,9 +150,12 @@ export default function SalesforceServices() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
+                    <Link href='/contact'>
+          
           <button className="bg-[#446f70] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-800 transition-colors duration-300 shadow-md">
             Connect with Our Experts
           </button>
+          </Link>
         </motion.div>
 
         {/* Product Expertise */}
@@ -199,9 +203,11 @@ export default function SalesforceServices() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          <Link href='/contact'>
           <button className="bg-[#446f70] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-800 transition-colors duration-300 shadow-md">
             Explore Cloud Solutions
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>

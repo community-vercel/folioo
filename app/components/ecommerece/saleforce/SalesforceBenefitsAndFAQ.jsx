@@ -9,6 +9,7 @@ import {
   FiMinus,
   FiPlus,
 } from "react-icons/fi"; // Imported Fi icons for benefits and FAQs
+import Link from "next/link";
 
 const benefits = [
   {
@@ -71,9 +72,11 @@ export default function SalesforceBenefitsAndFAQ() {
           <p className="text-gray-600 max-w-3xl mx-auto text-lg mb-8">
             Leverage Salesforce’s powerful tools and our expertise to automate, connect, and personalize, driving growth and customer success.
           </p>
+          <Link href='/contact'>
           <button className="bg-[#446f70] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-800 transition-colors duration-300 shadow-md">
             Hire Our Experts
           </button>
+          </Link>
         </motion.div>
 
         <div className="grid md:grid-cols-4 gap-8 mt-12 text-left">

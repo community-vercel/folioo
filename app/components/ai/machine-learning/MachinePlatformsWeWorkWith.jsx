@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const platformSections = [
@@ -88,6 +89,8 @@ export default function MachinePlatformsWeWorkWith() {
 
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
+                    <Link href='/contact'>
+          
           <button
             className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setIsHovered('cta')}
@@ -96,6 +99,7 @@ export default function MachinePlatformsWeWorkWith() {
           >
             Connect with Our Experts
           </button>
+          </Link>
         </div>
       </div>
     </section>

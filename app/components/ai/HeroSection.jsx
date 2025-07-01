@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const logos = [
@@ -41,9 +42,11 @@ export default function HeroSection() {
               Transform your business with bespoke AI solutions tailored for startups and global enterprises.
             </p>
             <div className="flex space-x-6 animate-fade-in delay-200">
+              <Link href='/portfolio'>
               <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 Explore AI Solutions
               </button>
+              </Link>
                                     <Link href='/contact'>
 
               <button className="bg-transparent border-2 border-cyan-300 text-cyan-300 font-semibold px-8 py-3 rounded-full hover:bg-cyan-300 hover:text-white transition-all duration-300">

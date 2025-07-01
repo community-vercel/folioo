@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function WooCommerceHero() {
   return (
     <section className="bg-gradient-to-r from-[#099f70] to-black text-white py-20 px-8">
@@ -9,9 +11,11 @@ export default function WooCommerceHero() {
             <span className="text-white">WooCommerce</span> <br />
             <span className="text-purple-400">Development Services</span>
           </h1>
+          <Link href='/contact'>
           <button className="mt-8 px-6 py-3 bg-[#446f70] text-white font-semibold rounded-full shadow hover:bg-gray-200 transition">
             Book A Call Now
           </button>
+          </Link>
         </div>
 
         {/* Right Content */}

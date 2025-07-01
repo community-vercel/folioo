@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiTarget, FiZap, FiClock, FiUsers, FiStar } from 'react-icons/fi';
 
@@ -77,6 +78,7 @@ export default function MachineLearningWhyChooseUs() {
 
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
+          <Link href='/contact'>
           <button
             className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setHoveredFeature('cta')}
@@ -85,6 +87,7 @@ export default function MachineLearningWhyChooseUs() {
           >
             Discover Our ML Solutions
           </button>
+          </Link>
         </div>
       </div>
     </section>

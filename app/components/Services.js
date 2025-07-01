@@ -192,10 +192,10 @@ export default function WhatsNew() {
             className="inline-block mt-4 px-6 py-3 bg-teal-500 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-teal-600 transition-colors duration-300"
             aria-label="Contact Nova Bloom to unlock your potential"
           >
-                                  <Link href='/contact'>
+                               
 
             Get Started Today
-            </Link>
+       
           </motion.a>
         </div>
 

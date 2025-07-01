@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { BsFillRocketFill } from 'react-icons/bs';
 import { FiUsers, FiDatabase, FiCpu,  FiZap, FiCode, FiSettings } from 'react-icons/fi';
@@ -76,9 +77,11 @@ const MachineLearningSection = () => {
               <strong>Industry:</strong> Retail & Fashion<br />
               <strong>Region:</strong> North America
             </div>
+            <Link href='/portfolio'>
             <button className="mt-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
               Explore the Case Study
             </button>
+            </Link>
           </div>
 
           {/* Image */}
@@ -129,10 +132,12 @@ const MachineLearningSection = () => {
             </div>
           ))}
         </div>
+          <Link href='/contact'>
 
         <button className="bg-gradient-to-r from-blue-700 to-cyan-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
           Connect with Our Experts
         </button>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { BsFillRocketFill } from 'react-icons/bs';
 import { FiPackage, FiTool, FiCreditCard, FiUserCheck, FiMonitor, FiArrowRight, FiStar, FiTarget, FiLock, FiRefreshCw } from 'react-icons/fi';
 
@@ -147,7 +148,11 @@ export default function BigCommerceSolutions() {
             className="bg-gradient-to-r from-[#099f70] to-[#446f70] text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto hover:from-[#077f50] hover:to-[#2a6b54] hover:scale-105 transition-all duration-300"
             aria-label="Elevate Your BigCommerce Store"
           >
-            Elevate Your BigCommerce Store <FiArrowRight />
+                      <Link href='/contact'>
+
+            Elevate Your BigCommerce Store      </Link> <FiArrowRight />
+
+      
           </button>
         </div>
       </div>

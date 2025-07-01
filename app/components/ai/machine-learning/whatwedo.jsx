@@ -65,9 +65,11 @@ export default function MachineLearningWhatWeDo() {
             </div>
           ))}
         </div>
+        <Link href='/contact'>
         <button className="mt-12 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-in">
           Start Your ML Journey
         </button>
+        </Link>
       </section>
 
       {/* Our Customers Section with Swiper */}

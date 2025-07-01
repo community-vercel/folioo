@@ -1,6 +1,7 @@
 
 
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import {
   FiTarget,
@@ -81,6 +82,7 @@ export default function WhyChooseUs() {
 
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
+          <Link href="/portfolio">
           <button
             className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setIsHovered('cta')}
@@ -89,6 +91,7 @@ export default function WhyChooseUs() {
           >
             See Our Solutions in Action
           </button>
+          </Link>
         </div>
       </div>
     </section>

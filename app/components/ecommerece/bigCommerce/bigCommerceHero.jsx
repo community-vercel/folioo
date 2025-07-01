@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function WooCommerceHero() {
   return (
     <section className="relative bg-gradient-to-br from-[#1a3c34] via-[#0a6e4f] to-[#000000] text-white py-6 px-6 overflow-hidden">
@@ -32,9 +34,11 @@ export default function WooCommerceHero() {
           <p className="text-lg text-gray-200 max-w-md">
             As certified WooCommerce specialists, we craft high-performance, scalable online stores tailored to your business goals.
           </p>
+          <Link href='/contact'>
           <button className="mt-6 px-8 py-4 bg-[#34d399] text-white font-semibold rounded-full shadow-lg hover:bg-[#a7f3d0] hover:scale-105 transition-transform duration-300">
             Start Your Project Today
           </button>
+          </Link>
         </div>
 
         {/* Right Content */}

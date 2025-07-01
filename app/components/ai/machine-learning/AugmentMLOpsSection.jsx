@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiCode, FiSettings, FiBarChart2, FiLayers } from 'react-icons/fi';
 
@@ -42,10 +43,11 @@ const AugmentMLOpsSection = () => {
             </div>
           ))}
         </div>
-
+<Link href='/contact'>
         <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
           Start Building Your Dream Team
         </button>
+        </Link>
       </div>
     </section>
   );

@@ -11,6 +11,7 @@ import {
   FiSettings,
   FiShield,
 } from 'react-icons/fi';
+import Link from 'next/link';
 
 const migrationSteps = [
   {
@@ -122,7 +123,10 @@ export default function MultiCloudAndProcess() {
               whileHover="hover"
               aria-label="Contact our cloud experts"
             >
+                        <Link href='/contact'>
+
               Connect with Our Experts
+              </Link>
               <FiArrowRight className="ml-2 w-5 h-5" />
             </motion.a>
           </motion.div>
