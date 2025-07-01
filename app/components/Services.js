@@ -69,7 +69,7 @@ export default function WhatsNew() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="text-5xl sm:text-5xl md:text-5xl font-extrabold text-navy-900 text-center mb-8 sm:mb-16 lg:mb-8"
       >
-        What’s New at Nova Bloom
+        What’s New at Nova Bloom 
       </motion.h1>
 
 
