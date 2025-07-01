@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FaBrain } from 'react-icons/fa';
 import { BsRocket } from 'react-icons/bs';
+import Link from 'next/link';
 
 export default function MachineLearningWhatWeDo() {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -71,7 +72,7 @@ export default function MachineLearningWhatWeDo() {
         </button>
         </Link>
       </section>
-      
+
 
       {/* Our Customers Section with Swiper */}
       <section className="py-20 bg-gray-50 text-center">

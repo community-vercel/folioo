@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiMessageSquare, FiMic, FiBarChart2 } from 'react-icons/fi';
 
@@ -50,9 +51,11 @@ export default function NlpSolutions() {
             </div>
           ))}
         </div>
+        <Link href='/portfolio'>
         <button className="mt-12 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-in">
           Explore NLP Use Cases
         </button>
+        </Link>
       </section>
     </main>
   )}
