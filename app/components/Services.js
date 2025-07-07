@@ -109,11 +109,12 @@ export default function WhatsNew() {
                   <p className="text-sm sm:text-base lg:text-lg text-gray-600">
                     {slide.description}
                   </p>
+                  
                   <motion.a
                     href="/portfolio"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-block mt-4 px-6 py-3 bg-teal-500 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-teal-600 transition-colors duration-300"
+                    className="inline-block mt-4 px-6 py-3 bg-[#446f70] text-white text-sm sm:text-base font-semibold rounded-full hover:bg-teal-600 transition-colors duration-300"
                     aria-label={`Learn more about ${slide.title}`}
                   >
                     Discover More
