@@ -102,7 +102,7 @@ export default function WhoWeWorkWith() {
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-6 inline-block bg-teal-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-teal-600 transition-colors duration-200"
+                className="mt-6 inline-block bg-[#446f70] text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-teal-600 transition-colors duration-200"
                 aria-label={`Learn more about ${item.title}`}
               >
                 Learn More
