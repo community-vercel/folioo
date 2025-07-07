@@ -25,7 +25,7 @@ export default function BigCommerceSolutions() {
       {/* Services Grid */}
       <div className="relative">
         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-          Transform Your <span className="text-[#099f70]">BigCommerce Success</span>
+          Transform Your <span className="text-gray-800">BigCommerce Success</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
           As certified BigCommerce partners, we empower your store with cutting-edge solutions, from custom designs to seamless integrations, ensuring growth and performance.
@@ -34,7 +34,7 @@ export default function BigCommerceSolutions() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
           {[
             {
-              icon: <FiPackage className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiPackage className="text-gray-800 text-3xl mb-3" />,
               title: 'Custom BigCommerce Stores',
               desc: 'Build stunning, high-converting stores with unique designs and seamless functionality.',
               items: [
@@ -44,7 +44,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiTool className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiTool className="text-gray-800 text-3xl mb-3" />,
               title: 'BigCommerce App & API Solutions',
               desc: 'Extend your store with custom apps and integrations for CRM, ERP, or payment systems.',
               items: [
@@ -54,7 +54,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <BsFillRocketFill className="text-[#099f70] text-3xl mb-3" />,
+              icon: <BsFillRocketFill className="text-gray-800 text-3xl mb-3" />,
               title: 'Performance & Scalability',
               desc: 'Optimize your store for speed and growth with BigCommerce’s robust infrastructure.',
               items: [
@@ -64,7 +64,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiCreditCard className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiCreditCard className="text-gray-800 text-3xl mb-3" />,
               title: 'Checkout Optimization',
               desc: 'Boost conversions with streamlined checkouts and secure payment flows.',
               items: [
@@ -74,7 +74,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiUserCheck className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiUserCheck className="text-gray-800 text-3xl mb-3" />,
               title: 'B2B & B2C Expertise',
               desc: 'Tailor your store for B2B or B2C with advanced pricing and customer tools.',
               items: [
@@ -84,7 +84,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiMonitor className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiMonitor className="text-gray-800 text-3xl mb-3" />,
               title: 'Headless & Multi-Channel',
               desc: 'Leverage BigCommerce’s headless capabilities for multi-platform selling.',
               items: [
@@ -94,7 +94,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiTarget className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiTarget className="text-gray-800 text-3xl mb-3" />,
               title: 'AI-Powered Commerce',
               desc: 'Drive engagement with personalized experiences powered by AI tools.',
               items: [
@@ -104,7 +104,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiRefreshCw className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiRefreshCw className="text-gray-800 text-3xl mb-3" />,
               title: 'Subscriptions & Loyalty',
               desc: 'Build recurring revenue with subscription models and loyalty programs.',
               items: [
@@ -114,7 +114,7 @@ export default function BigCommerceSolutions() {
               ],
             },
             {
-              icon: <FiLock className="text-[#099f70] text-3xl mb-3" />,
+              icon: <FiLock className="text-gray-800 text-3xl mb-3" />,
               title: 'Security & Compliance',
               desc: 'Ensure your store is secure and compliant with industry standards.',
               items: [

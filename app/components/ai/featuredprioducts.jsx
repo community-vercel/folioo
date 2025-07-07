@@ -60,7 +60,7 @@ export default function FeaturedProducts() {
     <div className="px-6 py-16 max-w-6xl mx-auto bg-gradient-to-b from-gray-50 to-white py-20">
       {/* Header */}
       <section className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 animate-fade-in">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 bg-clip-text   animate-fade-in">
           Unleash Innovation with Our AI Solutions
         </h2>
         <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto animate-fade-in delay-100">
@@ -89,7 +89,7 @@ export default function FeaturedProducts() {
           <div className="md:w-1/2 px-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">{product.title}</h3>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">{product.description}</p>
-            <button className="bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <button className="bg-[#446f70] text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
               {product.cta}
             </button>
           </div>
@@ -141,10 +141,10 @@ export default function FeaturedProducts() {
                     className="rounded-lg w-full object-cover mb-4"
                   />
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">{story.client}</h4>
-                  <h5 className="text-sm font-semibold text-cyan-600 mb-2">{story.title}</h5>
+                  <h5 className="text-sm font-semibold text-white mb-2">{story.title}</h5>
                   {/* <p className="text-gray-600 text-sm leading-relaxed">{story.description}</p> */}
                 </div>
-                {/* <button className="text-cyan-600 font-medium underline hover:text-cyan-700 transition-colors duration-200 mt-4">
+                {/* <button className="text-white font-medium underline hover:text-white transition-colors duration-200 mt-4">
                   {story.cta}
                 </button> */}
               </div>

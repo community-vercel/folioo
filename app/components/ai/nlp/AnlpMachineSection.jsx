@@ -22,10 +22,10 @@ const NlpSection = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative z-10">
           {/* Text Section */}
           <div className="space-y-6 animate-slide-in">
-            <p className="text-sm font-semibold uppercase text-cyan-300 tracking-wider">
+            <p className="text-sm font-semibold uppercase text-white tracking-wider">
               Advanced NLP Solutions
             </p>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <h2 className="text-4xl md:text-5xl font-extrabold  text-white">
               Transform Your Business with NLP
             </h2>
             <p className="text-lg text-gray-200 leading-relaxed">
@@ -34,7 +34,7 @@ const NlpSection = () => {
                       <Link href='/contact'>
 
             <button
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="bg-[#446f70]  text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >

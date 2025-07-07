@@ -187,9 +187,9 @@ export default function TechBlogsPage() {
       <Header />
       <div className="relative bg-white text-black overflow-hidden">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-gray-900 to-indigo-900 overflow-hidden">
+        <section className="relative bg-[#446f70] overflow-hidden">
           <ParticleBackground />
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/60 to-emerald-500/40 z-0"></div>
+          <div className="absolute inset-0 bg-[#446f70] z-0"></div>
           <motion.div
             initial="hidden"
             animate="visible"
@@ -197,7 +197,7 @@ export default function TechBlogsPage() {
             className="relative z-10 max-w-7xl mx-auto px-4 py-20 text-center"
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400 mb-6 leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400 mb-6 leading-tight"
               variants={textVariants}
             >
               {headline.map((letter, idx) => (
@@ -212,7 +212,7 @@ export default function TechBlogsPage() {
             <motion.div variants={buttonVariants}>
               <Link
                 href="#blogs"
-                className="inline-block bg-emerald-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-600 transition-all"
+                className="inline-block bg-[#446f40] text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-600 transition-all"
                 aria-label="Explore Blogs"
               >
                 Explore Insights
@@ -238,7 +238,7 @@ export default function TechBlogsPage() {
                 }}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   category === cat
-                    ? 'bg-emerald-500 text-white'
+                    ? 'bg-[#446f70] text-white'
                     : 'bg-gray-100 text-gray-800 hover:bg-emerald-100 hover:text-emerald-600'
                 }`}
                 whileHover={{ scale: 1.1 }}
@@ -308,7 +308,7 @@ export default function TechBlogsPage() {
                 onClick={() => setCurrentPage(page)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   currentPage === page
-                    ? 'bg-emerald-500 text-white'
+                    ? 'bg-[#446f70] text-white'
                     : 'bg-gray-100 text-gray-800 hover:bg-emerald-100 hover:text-emerald-600'
                 }`}
                 whileHover={{ scale: 1.1 }}
@@ -330,7 +330,7 @@ export default function TechBlogsPage() {
             className="max-w-7xl mx-auto text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-emerald-500">Our Tech Expertise</span>
+              Why Choose <span className="text-gray bg-clip-text bg-gradient-to-r from-indigo-600 to-emerald-500">Our Tech Expertise</span>
             </h2>
             <div className="relative overflow-hidden">
               <motion.div

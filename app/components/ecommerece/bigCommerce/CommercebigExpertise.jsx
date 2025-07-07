@@ -40,7 +40,7 @@ export default function BigCommerceExpertise() {
         <div className="space-y-6 z-10">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight tracking-tight">
             Our Expertise in <br />
-            <span className="text-[#099f70]">BigCommerce</span> <br />
+            <span className="text-gray-800">BigCommerce</span> <br />
             Development
           </h2>
           <p className="text-lg text-gray-600 max-w-md leading-relaxed">
@@ -68,7 +68,7 @@ export default function BigCommerceExpertise() {
                 key={idx}
                 className="group flex items-center space-x-3 hover:bg-[#e6f4f1] p-2 rounded-lg transition-all duration-300"
               >
-                <FiCheckCircle className="text-[#099f70] w-6 h-6 flex-shrink-0" />
+                <FiCheckCircle className="text-gray-800 w-6 h-6 flex-shrink-0" />
                 <span className="text-gray-700 group-hover:text-gray-900 font-medium">{feature}</span>
               </div>
             ))}

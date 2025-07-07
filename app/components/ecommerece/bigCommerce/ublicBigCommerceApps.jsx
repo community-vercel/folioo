@@ -44,7 +44,7 @@ export default function PublicWooCommerceApps() {
 
       <div className="relative max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          Power Up Your <span className="text-[#34d399]">BigCommerce Store</span>
+          Power Up Your <span className="text-gray-800">BigCommerce Store</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
           Discover our custom-built WooCommerce apps designed to enhance your store’s performance, streamline operations, and drive more sales. Simplify your eCommerce journey with tools crafted for success.

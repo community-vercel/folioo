@@ -23,12 +23,12 @@ const AnimatedText = ({ text, className }) => {
 
 export default function ShopifyDevelopmentSection() {
   const logos = [
-    "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/growing-brands-bird-b-gone.webp",
-    "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/growing-brands-easilocks.webp",
-    "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/growing-brands-vudoo-gun-works.webp",
-    "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/growing-brands-cp-lighting.webp",
-    "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/growing-brands-bird-b-gone.webp",
-    "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/growing-brands-cp-lighting.webp",
+    "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-bird-b-gone.webp",
+    "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-easilocks.webp",
+    "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-vudoo-gun-works.webp",
+    "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-cp-lighting.webp",
+    "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-bird-b-gone.webp",
+    "https://ecommerce.folio3.com/wp-content/uploads/2024/11/growing-brands-cp-lighting.webp",
   ];
 
 
@@ -107,7 +107,7 @@ const cardVariants = {
               height={60}
               className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               loading="lazy"
-              onError={(e) => (e.currentTarget.src = "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/purelife-testimonial-video-thumb-300x181.webp")}
+              onError={(e) => (e.currentTarget.src = "https://ecommerce.folio3.com/wp-content/uploads/2024/11/purelife-testimonial-video-thumb-300x181.webp")}
             />
           </motion.div>
         ))}
@@ -116,8 +116,8 @@ const cardVariants = {
       {/* Testimonial Videos */}
       <div className="flex justify-center gap-8 flex-wrap mb-16">
         {[
-          { src: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/facereality-testimonial-video-thumb-300x181.webp", alt: "Face Reality Testimonial" },
-          { src: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/11/purelife-testimonial-video-thumb-300x181.webp", alt: "Purelife Testimonial" },
+          { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/11/facereality-testimonial-video-thumb-300x181.webp", alt: "Face Reality Testimonial" },
+          { src: "https://ecommerce.folio3.com/wp-content/uploads/2024/11/purelife-testimonial-video-thumb-300x181.webp", alt: "Purelife Testimonial" },
         ].map((video, idx) => (
           <motion.div
             key={idx}

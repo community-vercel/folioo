@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { FiCode, FiSettings, FiBarChart2, FiLayers } from 'react-icons/fi';
 
 const roles = [
-  { title: 'ML Engineers', icon: <FiCode className="text-cyan-400" size={48} />, desc: 'Build robust ML models with expertise in TensorFlow and PyTorch.' },
-  { title: 'MLOps Specialists', icon: <FiSettings className="text-cyan-400" size={48} />, desc: 'Streamline pipelines for seamless deployment and scalability.' },
-  { title: 'Data Scientists', icon: <FiBarChart2 className="text-cyan-400" size={48} />, desc: 'Uncover insights with advanced analytics and modeling.' },
-  { title: 'ML Architects', icon: <FiLayers className="text-cyan-400" size={48} />, desc: 'Design scalable AI systems for enterprise success.' },
+  { title: 'ML Engineers', icon: <FiCode className="text-white" size={48} />, desc: 'Build robust ML models with expertise in TensorFlow and PyTorch.' },
+  { title: 'MLOps Specialists', icon: <FiSettings className="text-white" size={48} />, desc: 'Streamline pipelines for seamless deployment and scalability.' },
+  { title: 'Data Scientists', icon: <FiBarChart2 className="text-white" size={48} />, desc: 'Uncover insights with advanced analytics and modeling.' },
+  { title: 'ML Architects', icon: <FiLayers className="text-white" size={48} />, desc: 'Design scalable AI systems for enterprise success.' },
 ];
 
 const AugmentMLOpsSection = () => {
@@ -16,7 +16,7 @@ const AugmentMLOpsSection = () => {
   return (
     <section className="bg-gradient-to-b from-[#0a1a4f] to-[#1f3b57] text-white py-20 px-6 text-center">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 mb-6">
+        <h2 className="text-3xl md:text-4xl font-extrabold bg-clip-text text-gray bg-gradient-to-r from-cyan-400 to-blue-500 mb-6">
           Supercharge Your ML Team with Top-Tier Talent
         </h2>
         <p className="text-gray-200 text-lg max-w-3xl mx-auto mb-4 leading-relaxed">
@@ -44,7 +44,7 @@ const AugmentMLOpsSection = () => {
           ))}
         </div>
 <Link href='/contact'>
-        <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+        <button className=" bg-[#446f70] text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
           Start Building Your Dream Team
         </button>
         </Link>

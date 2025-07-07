@@ -82,7 +82,7 @@ export default function CloudMigrationSection7() {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900">
             Why Choose Nova Bloom for{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-purple-600">
               Cloud Migration?
             </span>
           </h2>
@@ -120,7 +120,7 @@ export default function CloudMigrationSection7() {
                 </p>
               </div>
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-[#446f70]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </div>
@@ -135,7 +135,7 @@ export default function CloudMigrationSection7() {
         >
           <motion.a
             href="#contact" // Replace with your actual link
-            className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="inline-flex items-center bg-[#446f70] text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
             variants={buttonVariants}
             whileHover="hover"
           >

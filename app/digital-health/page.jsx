@@ -162,7 +162,7 @@ export default function DigitalHealth() {
   return (
     <>
       <Header />
-      <div className="relative bg-gradient-to-b from-[#2e6b6e] to-gray-800 min-h-screen overflow-hidden">
+      <div className="relative bg-[#446f70] min-h-screen overflow-hidden">
         {/* Particle Background */}
         <ParticleBackground />
         
@@ -179,7 +179,7 @@ export default function DigitalHealth() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-8 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-8 leading-tight"
                 variants={textVariants}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}
@@ -209,7 +209,7 @@ export default function DigitalHealth() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="Start your digital health project"
                   >
                     <span>Start Your Project</span>
@@ -222,7 +222,7 @@ export default function DigitalHealth() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3"
+                    className=" text-white font-semibold px-8 py-4 rounded-xl bg-[#446f70] backdrop-blur-sm hover:bg-[#446f70]/10 transition-all duration-300 flex items-center gap-3"
                     aria-label="View our digital health portfolio"
                   >
                     <span>View Our Work</span>
@@ -270,7 +270,7 @@ export default function DigitalHealth() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Digital Health</span>?
+              Why Choose <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Digital Health</span>?
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Transform healthcare delivery with secure, patient-focused, and efficient digital solutions.
@@ -288,7 +288,7 @@ export default function DigitalHealth() {
                 className="bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-md rounded-xl p-8 text-center border border-gray-700/50 hover:border-cyan-400/30 transition-all duration-300 shadow-xl"
               >
                 <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-green-600/10 rounded-xl">
-                  <benefit.icon className="w-8 h-8 text-cyan-400" />
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
                 <p className="text-gray-300">{benefit.desc}</p>
@@ -310,19 +310,19 @@ export default function DigitalHealth() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">80% increase in patient engagement</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">50% reduction in administrative overhead</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">100% HIPAA-compliant data security</span>
                   </li>
@@ -338,7 +338,7 @@ export default function DigitalHealth() {
                 <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                      <FaChartLine className="text-cyan-400 text-2xl" />
+                      <FaChartLine className="text-white text-2xl" />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Healthcare Efficiency</h4>
                     <p className="text-sm text-gray-300">Digital vs. Traditional Healthcare Delivery</p>
@@ -358,7 +358,7 @@ export default function DigitalHealth() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Health Tech</span> Stack
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Health Tech</span> Stack
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Cutting-edge technologies for secure, scalable, and interoperable healthcare solutions.
@@ -393,7 +393,7 @@ export default function DigitalHealth() {
                     <h4 className="text-sm font-semibold text-gray-300 mb-3">KEY FEATURES</h4>
                     <div className="flex flex-wrap gap-2">
                       {tech.features.map((feature, i) => (
-                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                           {feature}
                         </span>
                       ))}
@@ -448,7 +448,7 @@ export default function DigitalHealth() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Health Tech</span> Process
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Health Tech</span> Process
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               A proven approach to building secure and scalable digital health applications.
@@ -501,7 +501,7 @@ export default function DigitalHealth() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Digital Health</span> Projects
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Digital Health</span> Projects
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Selected case studies of our innovative digital health solutions.
@@ -533,7 +533,7 @@ export default function DigitalHealth() {
                 <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
                   <div className="mb-3 flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-200">
+                      <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                         {tag}
                       </span>
                     ))}
@@ -543,7 +543,7 @@ export default function DigitalHealth() {
                   
                   <Link
                     href="/portfolio"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors"
                     aria-label={`View case study for ${project.title}`}
                   >
                     View Case Study
@@ -564,7 +564,7 @@ export default function DigitalHealth() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
               aria-label="Explore full digital health portfolio"
             >
               Explore Full Portfolio
@@ -587,7 +587,7 @@ export default function DigitalHealth() {
             
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Digital Health Solution</span>?
+                Ready to Build Your <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Digital Health Solution</span>?
               </h2>
               
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
@@ -598,7 +598,7 @@ export default function DigitalHealth() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
                     aria-label="Get started with your digital health project"
                   >
                     Get Started
@@ -611,7 +611,7 @@ export default function DigitalHealth() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all"
+                    className="inline-flex items-center gap-3 px-8 py-4  text-white font-semibold rounded-xl bg-[#446f70] transition-all"
                     aria-label="Book a consultation for digital health solutions"
                   >
                     Book a Consultation

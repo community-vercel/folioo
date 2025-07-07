@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FaGlobe, FaUsers, FaMobileAlt, FaSmile, FaFlag } from 'react-icons/fa';
 
 const stats = [
-  { value: '15+', label: 'Years Crafting Apps', icon: <FaMobileAlt />, color: 'text-cyan-500' },
+  { value: '15+', label: 'Years Crafting Apps', icon: <FaMobileAlt />, color: 'text-white' },
   { value: '900+', label: 'App Experts', icon: <FaUsers />, color: 'text-blue-600' },
   { value: '2500+', label: 'Apps Delivered', icon: <FaGlobe />, color: 'text-purple-600' },
   { value: '1800+', label: 'Happy Clients', icon: <FaSmile />, color: 'text-yellow-400' },
@@ -18,18 +18,18 @@ export default function AppGlobalReach() {
     <section className="relative bg-gradient-to-b from-white to-blue-50 py-24 px-6 md:px-16 overflow-hidden">
       {/* Background Circles */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-400 opacity-20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#446f70] opacity-20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Header */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight leading-tight">
-          Novabloom’s <span className="text-blue-600">Global App Impact</span>
+          Novabloom’s <span className="text-gray-800">Global App Impact</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
           Powering innovation with custom mobile and web apps across{' '}
-          <span className="text-cyan-600 font-semibold">10+ Countries</span>
+          <span className="text-white font-semibold">10+ Countries</span>
         </p>
 
         {/* World Map Image */}

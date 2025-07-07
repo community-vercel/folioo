@@ -70,7 +70,7 @@ export default function Header() {
               <span className="text-xs lg:text-sm text-white hidden lg:block">US: 408 365 4638</span>
                                     <Link href='/contact'>
 
-              <button className="bg-blue-500 text-white px-4 lg:px-6 py-2 rounded text-xs lg:text-sm font-medium hover:bg-blue-600">
+              <button className="bg-blue-500 text-white px-4 lg:px-6 py-2 rounded text-xs lg:text-sm font-medium hover:bg-[#446f70]">
                 START YOUR PROJECT
               </button>
               </Link>

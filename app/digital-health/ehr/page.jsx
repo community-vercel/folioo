@@ -171,7 +171,7 @@ export default function EHR() {
   return (
     <>
       <Header />
-      <div className="relative bg-gradient-to-b from-[#2e6b6e] to-gray-800 min-h-screen overflow-hidden">
+      <div className="relative bg-[#446f70] min-h-screen overflow-hidden">
         {/* Particle Background */}
         <ParticleBackground />
 
@@ -187,7 +187,7 @@ export default function EHR() {
               variants={sectionVariants}
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-6 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-6 leading-tight"
                 variants={textVariants}
               >
                 {headline.map((letter, idx) => (
@@ -213,7 +213,7 @@ export default function EHR() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="Start your EHR/EMR project"
                   >
                     <span>Start Your Project</span>
@@ -225,7 +225,7 @@ export default function EHR() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="View our EHR/EMR portfolio"
                   >
                     <span>View Our Work</span>
@@ -275,7 +275,7 @@ export default function EHR() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">EHR/EMR</span> Solutions?
+              Why Choose Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">EHR/EMR</span> Solutions?
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Enhance patient care with secure, interoperable, and intuitive EHR/EMR systems designed for healthcare providers.
@@ -294,7 +294,7 @@ export default function EHR() {
                 <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10">
                   <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-green-600/10 rounded-full">
-                    <benefit.icon className="w-7 h-7 text-cyan-400" />
+                    <benefit.icon className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
                   <p className="text-gray-300 text-sm">{benefit.desc}</p>
@@ -322,19 +322,19 @@ export default function EHR() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">50% faster patient data access</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">80% reduction in documentation errors</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">100% FHIR-compliant interoperability</span>
                   </li>
@@ -349,7 +349,7 @@ export default function EHR() {
                 <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                      <FaChartPie className="text-cyan-400 text-2xl" />
+                      <FaChartPie className="text-white text-2xl" />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Clinical Insights</h4>
                     <p className="text-sm text-gray-300">Data-driven decision-making with EHR analytics</p>
@@ -369,7 +369,7 @@ export default function EHR() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">EHR Tech</span> Stack
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">EHR Tech</span> Stack
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Cutting-edge technologies for secure, interoperable, and scalable EHR solutions.
@@ -399,7 +399,7 @@ export default function EHR() {
                 <p className="text-gray-300 text-sm">{tech.desc}</p>
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
                   {tech.features.map((feature, i) => (
-                    <span key={i} className="text-xs px-2 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                    <span key={i} className="text-xs px-2 py-1 bg-gray-800/50 rounded-full text-white">
                       {feature}
                     </span>
                   ))}
@@ -451,7 +451,7 @@ export default function EHR() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">EHR Development</span> Process
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">EHR Development</span> Process
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               A clear, phased approach to building secure and efficient EHR/EMR systems.
@@ -488,7 +488,7 @@ export default function EHR() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">EHR/EMR</span> Projects
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">EHR/EMR</span> Projects
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Discover our innovative EHR/EMR solutions transforming healthcare delivery.
@@ -525,7 +525,7 @@ export default function EHR() {
                       <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
                         <div className="mb-3 flex flex-wrap gap-2">
                           {project.tags.map((tag, i) => (
-                            <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-200">
+                            <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                               {tag}
                             </span>
                           ))}
@@ -534,7 +534,7 @@ export default function EHR() {
                         <p className="text-gray-300 text-sm mb-4">{project.desc}</p>
                         <Link
                           href="/portfolio"
-                          className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors"
                           aria-label={`View case study for ${project.title}`}
                         >
                           View Case Study
@@ -551,7 +551,7 @@ export default function EHR() {
             <div className="flex justify-between mt-6">
               <button
                 onClick={prevProject}
-                className="p-2 bg-gray-800/50 rounded-full text-cyan-400 hover:bg-cyan-400/20 transition-all"
+                className="p-2 bg-gray-800/50 rounded-full text-white hover:bg-[#446f70]/20 transition-all"
                 aria-label="Previous project"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -560,7 +560,7 @@ export default function EHR() {
               </button>
               <button
                 onClick={nextProject}
-                className="p-2 bg-gray-800/50 rounded-full text-cyan-400 hover:bg-cyan-400/20 transition-all"
+                className="p-2 bg-gray-800/50 rounded-full text-white hover:bg-[#446f70]/20 transition-all"
                 aria-label="Next project"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -577,7 +577,7 @@ export default function EHR() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
               aria-label="Explore full EHR/EMR portfolio"
             >
               Explore Full Portfolio
@@ -600,7 +600,7 @@ export default function EHR() {
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 p-12 sm:p-16">
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                  Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">EHR/EMR Solution</span>?
+                  Ready to Build Your <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">EHR/EMR Solution</span>?
                 </h2>
                 <p className="text-xl text-gray-300 mb-8">
                   Let’s create a secure, interoperable EHR system to enhance patient care and streamline operations.
@@ -609,7 +609,7 @@ export default function EHR() {
                   <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+                      className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
                       aria-label="Get started with your EHR/EMR project"
                     >
                       Get Started
@@ -621,7 +621,7 @@ export default function EHR() {
                   <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                       aria-label="Book a consultation for EHR/EMR solutions"
                     >
                       Book a Consultation
@@ -637,7 +637,7 @@ export default function EHR() {
                   <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                     <div className="text-center p-6">
                       <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                        <FaStethoscope className="text-cyan-400 text-2xl" />
+                        <FaStethoscope className="text-white text-2xl" />
                       </div>
                       <p className="text-sm text-gray-300 italic">
                         "Our EHR system transformed patient care with real-time data access and seamless integrations." - Dr. Jane Smith, Clinic Director

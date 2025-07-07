@@ -172,7 +172,7 @@ export default function AppCrossPlatform() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 mb-8 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text  mb-8 leading-tight"
                 variants={textVariants}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}
@@ -202,7 +202,7 @@ export default function AppCrossPlatform() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-[#446f70]  text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                   >
                     <span>Start Your Project</span>
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -214,7 +214,7 @@ export default function AppCrossPlatform() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3"
+                    className=" text-white font-semibold px-8 py-4 rounded-xl bg-[#446f70] backdrop-blur-sm hover:bg-[#446f70]/10 transition-all duration-300 flex items-center gap-3"
                   >
                     <span>View Our Work</span>
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -263,7 +263,7 @@ export default function AppCrossPlatform() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Cross-Platform</span>?
+              Why Choose <span className="text-white">Cross-Platform</span>?
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Get the best of both worlds - native performance with cross-platform efficiency.
@@ -281,7 +281,7 @@ export default function AppCrossPlatform() {
                 className="bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-md rounded-xl p-8 text-center border border-gray-700/50 hover:border-cyan-400/30 transition-all duration-300 shadow-xl"
               >
                 <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-blue-600/10 rounded-xl">
-                  <benefit.icon className="w-8 h-8 text-cyan-400" />
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
                 <p className="text-gray-400">{benefit.desc}</p>
@@ -303,19 +303,19 @@ export default function AppCrossPlatform() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">50-70% cost savings compared to native development</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">30-40% faster time-to-market</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">90% code reuse between platforms</span>
                   </li>
@@ -331,7 +331,7 @@ export default function AppCrossPlatform() {
                 <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                      <FaChartLine className="text-cyan-400 text-2xl" />
+                      <FaChartLine className="text-white text-2xl" />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Cost Comparison</h4>
                     <p className="text-sm text-gray-400">Cross-Platform vs Native Development</p>
@@ -351,7 +351,7 @@ export default function AppCrossPlatform() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">Technology</span> Stack
+              Our <span className="text-white">Technology</span> Stack
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               We use the most advanced cross-platform frameworks to build high-performance applications.
@@ -385,7 +385,7 @@ export default function AppCrossPlatform() {
                     <h4 className="text-sm font-semibold text-gray-300 mb-3">KEY FEATURES</h4>
                     <div className="flex flex-wrap gap-2">
                       {framework.features.map((feature, i) => (
-                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                           {feature}
                         </span>
                       ))}
@@ -439,7 +439,7 @@ export default function AppCrossPlatform() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Development</span> Process
+              Our <span className=" text-white">Development</span> Process
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               A streamlined approach to building high-quality cross-platform applications.
@@ -490,7 +490,7 @@ export default function AppCrossPlatform() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">Cross-Platform</span> Projects
+              Our <span className=" text-white">Cross-Platform</span> Projects
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Selected case studies of our premium cross-platform applications.
@@ -520,7 +520,7 @@ export default function AppCrossPlatform() {
                 <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
                   <div className="mb-3 flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="text-xs px-3 py-1 bg-gray-222/20 rounded-full text-cyan-200">
+                      <span key={i} className="text-xs px-3 py-1 bg-gray-222/20 rounded-full text-white">
                         {tag}
                       </span>
                     ))}
@@ -530,7 +530,7 @@ export default function AppCrossPlatform() {
                   
                   <Link
                     href="/portfolio"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors"
                   >
                     View Case Study
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -550,7 +550,7 @@ export default function AppCrossPlatform() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4   text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
             >
               Explore Full Portfolio
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -576,7 +576,7 @@ export default function AppCrossPlatform() {
             
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Cross-Platform App</span>?
+                Ready to Build Your <span className=" text-white">Cross-Platform App</span>?
               </h2>
               
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
@@ -587,7 +587,7 @@ export default function AppCrossPlatform() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+                    className="bg-[#446f70] inline-flex items-center gap-3 px-8 py-4 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
                   >
                     Get Started
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -599,7 +599,7 @@ export default function AppCrossPlatform() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all"
+                    className="bg-[#446f70] inline-flex items-center gap-3 px-8 py-4  text-white font-semibold rounded-xl  transition-all"
                   >
                     Book a Consultation
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

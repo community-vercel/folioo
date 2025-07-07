@@ -197,7 +197,7 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center space-x-4">
             <Link
               href="/contact"
-              className="bg-teal-600 text-white hover:bg-teal-700 text-sm font-medium px-4 py-2 rounded-full transition-colors duration-200"
+              className="bg-[#446f70] text-white hover:bg-teal-700 text-sm font-medium px-4 py-2 rounded-full transition-colors duration-200"
               onClick={closeAllDropdowns}
             >
               Contact Us

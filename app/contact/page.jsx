@@ -64,12 +64,12 @@ export default function AppContactUs() {
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full filter blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full filter blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full filter blur-4xl animate-pulse"></div>
       </div>
 
       {/* Header */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+        <h2 className="text-4xl md:text-6xl font-extrabold   animate-slide-up">
           Get in Touch
         </h2>
         <p className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -135,7 +135,7 @@ export default function AppContactUs() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${
+            className={`w-full bg-[#446f70] text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${
               isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
             }`}
           >

@@ -75,7 +75,7 @@ function HeroSection({ heroRef, heroInView }) {
         >
           <motion.h1
             aria-label="Data Cloud Solutions"
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 mb-8 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text mb-8 leading-tight"
             variants={textVariants}
             initial="hidden"
             animate={heroInView ? 'visible' : 'hidden'}
@@ -103,7 +103,7 @@ function HeroSection({ heroRef, heroInView }) {
             <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
               <Link
                 href="/contact"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group focus:outline focus:outline-2 focus:outline-cyan-400"
+                className="bg-[#446f70]  text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group focus:outline focus:outline-2 focus:outline-cyan-400"
               >
                 <span>Start Your Project</span>
                 <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +114,7 @@ function HeroSection({ heroRef, heroInView }) {
             <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
               <Link
                 href="/portfolio"
-                className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3 focus:outline focus:outline-2 focus:outline-cyan-400"
+                className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl  backdrop-blur-sm hover:bg-[#446f70]/10 transition-all duration-300 flex items-center gap-3 focus:outline focus:outline-2 focus:outline-cyan-400"
               >
                 <span>View Our Work</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,7 +169,7 @@ function BenefitsSection({ benefitsRef, benefitsInView }) {
         className="text-center mb-16"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Data Cloud</span>?
+          Why Choose <span className=" text-white">Data Cloud</span>?
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
           Transform your business with secure, scalable, and cost-efficient cloud data solutions.
@@ -187,7 +187,7 @@ function BenefitsSection({ benefitsRef, benefitsInView }) {
             tabIndex={0}
           >
             <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-blue-600/10 rounded-xl">
-              <benefit.icon className="w-8 h-8 text-cyan-400" aria-hidden="true" />
+              <benefit.icon className="w-8 h-8 text-white" aria-hidden="true" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
             <p className="text-gray-300">{benefit.desc}</p>
@@ -239,7 +239,7 @@ function TechStackSection({ frameworksRef, frameworksInView }) {
         className="text-center mb-16"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">Data Cloud</span> Stack
+          Our <span className=" text-white">Data Cloud</span> Stack
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
           Leverage cutting-edge cloud platforms for scalable and secure data management.
@@ -273,7 +273,7 @@ function TechStackSection({ frameworksRef, frameworksInView }) {
                 <h4 className="text-sm font-semibold text-gray-300 mb-3">KEY FEATURES</h4>
                 <div className="flex flex-wrap gap-2">
                   {framework.features.map((feature, i) => (
-                    <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                    <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                       {feature}
                     </span>
                   ))}
@@ -332,7 +332,7 @@ function ProcessSection({ approachRef, approachInView }) {
         className="text-center mb-16"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Data Cloud</span> Process
+          Our <span className=" text-white">Data Cloud</span> Process
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
           A streamlined approach to building scalable and secure data cloud solutions.
@@ -404,7 +404,7 @@ function PortfolioSection({ showcaseRef, showcaseInView }) {
         className="text-center mb-16"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">Data Cloud</span> Projects
+          Our <span className=" text-white">Data Cloud</span> Projects
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
           Explore our transformative data cloud solutions driving business success.
@@ -433,7 +433,7 @@ function PortfolioSection({ showcaseRef, showcaseInView }) {
             <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
               <div className="mb-3 flex flex-wrap gap-2">
                 {project.tags.map((tag, i) => (
-                  <span key={i} className="text-xs px-3 py-1 bg-gray-800/20 rounded-full text-cyan-200">
+                  <span key={i} className="text-xs px-3 py-1 bg-gray-800/20 rounded-full text-white">
                     {tag}
                   </span>
                 ))}
@@ -442,7 +442,7 @@ function PortfolioSection({ showcaseRef, showcaseInView }) {
               <p className="text-gray-300 text-sm mb-4">{project.desc}</p>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors focus:outline focus:outline-2 focus:outline-cyan-400"
+                className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors focus:outline focus:outline-2 focus:outline-cyan-400"
               >
                 View Case Study
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -461,7 +461,7 @@ function PortfolioSection({ showcaseRef, showcaseInView }) {
       >
         <Link
           href="/portfolio"
-          className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
+          className="inline-flex items-center gap-3 px-8 py-4   text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
         >
           Explore Full Portfolio
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -486,7 +486,7 @@ function CTASection({ ctaRef, ctaInView }) {
         <div className="absolute inset-0 bg-[url('/grid-pattern.png')] bg-[length:40px_40px] opacity-5"></div>
         <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Ready to Transform Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Data Strategy</span>?
+            Ready to Transform Your <span className=" text-white">Data Strategy</span>?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
             Let’s discuss how our data cloud solutions can drive insights and growth for your business.
@@ -495,7 +495,7 @@ function CTASection({ ctaRef, ctaInView }) {
             <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70]   text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
               >
                 Get Started
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -506,7 +506,7 @@ function CTASection({ ctaRef, ctaInView }) {
             <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
+                className="inline-flex items-center gap-3 px-8 py-4 text-white font-semibold rounded-xl bg-[#446f70] transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
               >
                 Book a Consultation
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

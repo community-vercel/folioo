@@ -16,7 +16,7 @@ const testimonials = [
  company: "BoardOfDecor",
  text: "We’ve been working with Nova Bloom since 2016...",
  stars: 5,
- image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
+ image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
  },
  {
  name: "Omar M. Al-Midani",
@@ -24,7 +24,7 @@ const testimonials = [
  company: "Purelife",
  text: "Nova Bloom helped us with multiple projects...",
  stars: 5,
- image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1711682403792-300x300.jpeg",
+ image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1711682403792-300x300.jpeg",
  },
  {
  name: "Dianne Fishman",
@@ -32,7 +32,7 @@ const testimonials = [
  company: "Zara",
  text: "The team at Nova Bloom is fantastic...",
  stars: 5,
- image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1517691942415.jpeg",
+ image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1517691942415.jpeg",
  },
  {
  name: "Terri Anne Meyer",
@@ -40,7 +40,7 @@ const testimonials = [
  company: "BoardOfDecor",
  text: "We’ve been working with Nova Bloom since 2016...",
  stars: 5,
- image: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
+ image: "https://ecommerce.folio3.com/wp-content/uploads/2024/12/1555613135006-150x150.jpeg",
  },
 ];
 

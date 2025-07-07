@@ -70,12 +70,12 @@ export default function AppClients() {
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full filter blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full filter blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full filter blur-4xl animate-pulse"></div>
       </div>
 
       {/* Testimonials Slider */}
       <section className="text-center mb-24 max-w-6xl mx-auto relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray animate-slide-up">
           Clients Love Our Apps
         </h2>
         <p className="text-lg text-gray-700 mt-4 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -127,7 +127,7 @@ export default function AppClients() {
 
       {/* App Insights and Updates */}
       <section className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 text-center mb-12 animate-slide-up">
+        <h2 className="text-4xl md:text-5xl font-extrabold  text-center mb-12 animate-slide-up">
           Latest App Development Insights
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -151,7 +151,7 @@ export default function AppClients() {
                   <span>By: {post.author}</span>
                   <span>{post.date}</span>
                 </div>
-                <button className="text-cyan-600 font-medium text-sm hover:text-cyan-700 transition-colors duration-200 mt-4">
+                <button className="text-white font-medium text-sm hover:text-white transition-colors duration-200 mt-4">
                   {post.cta}
                 </button>
               </div>

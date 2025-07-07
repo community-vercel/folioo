@@ -143,7 +143,7 @@ export default function NativeMobileApps() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-purple-500 to-pink-500 mb-8 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight"
                 variants={textVariants}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}
@@ -173,7 +173,7 @@ export default function NativeMobileApps() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-teal-500/30 transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-teal-500/30 transition-all duration-300 flex items-center gap-3 group"
                   >
                     <span>Start Your Project</span>
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -185,7 +185,7 @@ export default function NativeMobileApps() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-teal-400 text-teal-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-teal-400/10 transition-all duration-300 flex items-center gap-3"
+                    className="bg-[#446f70] font-semibold px-8 py-4 rounded-xl text-white backdrop-blur-sm  transition-all duration-300 flex items-center gap-3"
                   >
                     <span>View Our Work</span>
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -234,7 +234,7 @@ export default function NativeMobileApps() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-500">Native</span> Development?
+              Why <span className=" text-white">Native</span> Development?
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
               Native apps deliver superior performance, security, and user experience compared to cross-platform solutions.
@@ -322,7 +322,7 @@ export default function NativeMobileApps() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-teal-500">Technology</span> Stack
+              Our <span className="text-white">Technology</span> Stack
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
               We use the most advanced native technologies to build high-performance mobile applications.
@@ -410,7 +410,7 @@ export default function NativeMobileApps() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-500">Development</span> Process
+              Our <span className=" text-white">Development</span> Process
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
               A meticulous approach to building high-quality native mobile applications.
@@ -521,7 +521,7 @@ export default function NativeMobileApps() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-teal-500/20 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-teal-500/20 transition-all"
             >
               Explore Full Portfolio
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -543,7 +543,7 @@ export default function NativeMobileApps() {
             
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-500">Native App</span>?
+                Ready to Build Your <span className=" text-white">Native App</span>?
               </h2>
               
               <p className="text-xl text-white max-w-3xl mx-auto mb-10">
@@ -554,7 +554,7 @@ export default function NativeMobileApps() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-teal-500/20 transition-all"
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-teal-500/20 transition-all"
                   >
                     Get Started
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -566,7 +566,7 @@ export default function NativeMobileApps() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all"
+                    className="inline-flex items-center gap-3 px-8 py-4  text-white bg-[#446f70] font-semibold rounded-xl  transition-all"
                   >
                     Book a Consultation
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

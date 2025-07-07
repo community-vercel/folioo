@@ -99,7 +99,7 @@ const TrustedEcommercecustomer = () => {
         {/* Right Image */}
         <motion.div variants={itemVariants}>
           <img
-            src="https://ecommerce.Nova Bloom.com/wp-content/uploads/2023/09/Ecommerce-web-page-pana-1.png"
+            src="https://ecommerce.folio3.com/wp-content/uploads/2023/09/Ecommerce-web-page-pana-1.png"
             alt="AI-powered Magento Store Illustration"
             className="w-full h-auto rounded-xl shadow-lg"
           />

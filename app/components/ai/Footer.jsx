@@ -103,7 +103,7 @@ const Footer = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-24"
         >
-          <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text drop-shadow-xl mb-6">
+          <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl font-extrabold bg-gray-800 bg-clip-text drop-shadow-xl mb-6">
             Stay Ahead with AI Insights
           </motion.h2>
           <motion.p variants={itemVariants} className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
@@ -130,13 +130,13 @@ const Footer = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="group relative overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+              className="group relative overflow-hidden bg-[#446f70] px-8 py-4 rounded-lg font-semibold hover:[#446f70] hover:shadow-[#446f70] transition-all duration-300"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <span>Subscribe</span>
                 <FaPaperPlane className="transition-transform duration-300 group-hover:translate-x-1" />
               </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="absolute inset-0 bg-gradient-to-r from-[#446f70] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </motion.button>
           </motion.form>
 
@@ -166,7 +166,7 @@ const Footer = () => {
           {Object.entries(officeData).map(([region, countries]) => (
             <motion.div key={region} variants={itemVariants}>
               <h3 className="text-xl font-bold text-white mb-6 pb-2 border-b border-gray-700/50 flex items-center gap-2">
-                <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
@@ -187,7 +187,7 @@ const Footer = () => {
                   <ul className="space-y-3 text-gray-400">
                     {office.offices.map((line, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <span className="text-cyan-400 mt-1 flex-shrink-0">{line.icon}</span>
+                        <span className="text-white mt-1 flex-shrink-0">{line.icon}</span>
                         <span className="text-gray-300 hover:text-white transition-colors">{line.text}</span>
                       </li>
                     ))}
@@ -200,7 +200,7 @@ const Footer = () => {
           {/* About Us */}
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-bold text-white mb-6 pb-2 border-b border-gray-700/50 flex items-center gap-2">
-              <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               About Novabloom
@@ -211,7 +211,7 @@ const Footer = () => {
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                <svg className="w-5 h-5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
                 <span>contact@novabloom.com</span>
@@ -222,8 +222,8 @@ const Footer = () => {
               <h4 className="text-gray-300 mb-4">Connect With Us</h4>
               <div className="flex gap-4">
                 {[
-                  { Icon: FaFacebookF, color: 'text-blue-400', hover: 'hover:text-blue-500' },
-                  { Icon: FaTwitter, color: 'text-sky-400', hover: 'hover:text-sky-500' },
+                  { Icon: FaFacebookF, color: 'text-[#446f70]', hover: 'hover:text-blue-500' },
+                  { Icon: FaTwitter, color: 'text-[#446f70]', hover: 'hover:text-sky-500' },
                   { Icon: FaLinkedinIn, color: 'text-blue-500', hover: 'hover:text-blue-600' },
                   { Icon: FaInstagram, color: 'text-pink-400', hover: 'hover:text-pink-500' },
                 ].map(({ Icon, color, hover }, i) => (
@@ -257,10 +257,10 @@ const Footer = () => {
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Privacy Policy</Link>
-              <Link href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Terms of Service</Link>
-              <Link href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Cookies</Link>
-              <Link href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Careers</Link>
+              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookies</Link>
+              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Careers</Link>
             </div>
           </div>
         </motion.div>

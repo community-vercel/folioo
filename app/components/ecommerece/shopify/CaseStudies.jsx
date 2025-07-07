@@ -11,7 +11,7 @@ export default function CaseStudies() {
   const caseStudies = [
     {
       id: 1,
-      logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/zinco-2-1.webp",
+      logo: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/zinco-2-1.webp",
       category: "RETAIL",
       label: "SHOPIFY",
       title: "Upgrading to Shopify 2.0 for Better Performance & Usability",
@@ -19,11 +19,11 @@ export default function CaseStudies() {
         { value: "25%", label: "Increase in Conversion Rates" },
         { value: "40%", label: "Growth in Mobile App Engagement" },
       ],
-      background: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/Frame-2147223979-1.webp",
+      background: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/Frame-2147223979-1.webp",
     },
     {
       id: 2,
-      logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/ROSE-INC-1-1.webp",
+      logo: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/ROSE-INC-1-1.webp",
       category: "COSMETICS",
       label: "SHOPIFY",
       title: "Boosting Conversions & Upsells with Custom Product Bundles",
@@ -31,11 +31,11 @@ export default function CaseStudies() {
         { value: "15%", label: "Increase in Sales" },
         { value: "20%", label: "Improved User Engagement" },
       ],
-      background: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/Frame-2147223981-1.png",
+      background: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/Frame-2147223981-1.png",
     },
     {
       id: 3,
-      logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/Frame-2147223964-3-1.webp",
+      logo: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/Frame-2147223964-3-1.webp",
       category: "BEAUTY & HAIRCARE",
       label: "SHOPIFY PLUS",
       title: "Creating a Unified Platform for B2B and B2C Commerce",
@@ -43,11 +43,11 @@ export default function CaseStudies() {
         { value: "20%", label: "Growth in Conversions" },
         { value: "30%", label: "Lesser Operational Costs" },
       ],
-      background: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/Frame-2147223980-1.png",
+      background: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/Frame-2147223980-1.png",
     },
      {
       id: 3,
-      logo: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/Frame-2147223964-3-1.webp",
+      logo: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/Frame-2147223964-3-1.webp",
       category: "BEAUTY & HAIRCARE",
       label: "SHOPIFY PLUS",
       title: "Creating a Unified Platform for B2B and B2C Commerce",
@@ -55,7 +55,7 @@ export default function CaseStudies() {
         { value: "20%", label: "Growth in Conversions" },
         { value: "30%", label: "Lesser Operational Costs" },
       ],
-      background: "https://ecommerce.Nova Bloom.com/wp-content/uploads/2025/04/Frame-2147223980-1.png",
+      background: "https://ecommerce.folio3.com/wp-content/uploads/2025/04/Frame-2147223980-1.png",
     },
   ];
 

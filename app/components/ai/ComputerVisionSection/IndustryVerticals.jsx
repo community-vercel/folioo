@@ -76,13 +76,13 @@ export default function IndustryVerticals() {
     <section className="relative bg-gradient-to-b from-gray-50 to-white py-20 px-6 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-400 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#446f70] rounded-full filter blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
       </div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 animate-fade-in">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray bg-clip-text   animate-fade-in">
           AI Vision for Every Industry
         </h2>
         <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in delay-100">
@@ -99,9 +99,9 @@ export default function IndustryVerticals() {
                 className="relative bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-fade-in group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-t-2xl"></div>
-                <div className="flex items-center justify-center w-12 h-12 bg-cyan-100 rounded-full mb-4">
-                  <Icon className="w-6 h-6 text-cyan-600 group-hover:scale-110 transition-transform duration-300" />
+                <div className="absolute top-0 left-0 w-full h-1   rounded-t-2xl"></div>
+                <div className="flex items-center justify-center w-12 h-12 bg-[#446f70] rounded-full mb-4">
+                  <Icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{useCase.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{useCase.description}</p>
@@ -114,7 +114,7 @@ export default function IndustryVerticals() {
         <div className="mt-12 animate-slide-in">
           <Link href='/portfolio'>
           <button
-            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            className="bg-[#446f70]  text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             onMouseEnter={() => setIsHovered('cta')}
             onMouseLeave={() => setIsHovered(null)}
             aria-label="Explore industry solutions"

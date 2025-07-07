@@ -64,7 +64,7 @@ export default function Testimonials() {
         <div className="flex items-center justify-center gap-6 mb-12">
           <button
             onClick={scrollLeft}
-            className="text-blue-600 text-2xl p-3 rounded-full bg-white shadow-md hover:bg-blue-600 hover:text-white transition-colors duration-300"
+            className="text-blue-600 text-2xl p-3 rounded-full bg-white shadow-md hover:bg-[#446f70] hover:text-white transition-colors duration-300"
             aria-label="Scroll left"
           >
             <FaChevronLeft />
@@ -87,7 +87,7 @@ export default function Testimonials() {
           </div>
           <button
             onClick={scrollRight}
-            className="text-blue-600 text-2xl p-3 rounded-full bg-white shadow-md hover:bg-blue-600 hover:text-white transition-colors duration-300"
+            className="text-blue-600 text-2xl p-3 rounded-full bg-white shadow-md hover:bg-[#446f70] hover:text-white transition-colors duration-300"
             aria-label="Scroll right"
           >
             <FaChevronRight />

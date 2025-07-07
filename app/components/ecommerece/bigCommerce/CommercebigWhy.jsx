@@ -10,52 +10,52 @@ export default function WhyBigCommerce() {
 
   const reasons = [
     {
-      icon: <BsFillRocketFill className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <BsFillRocketFill className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'BigCommerce Expertise',
       desc: 'As certified BigCommerce partners, we deliver scalable, high-performance stores tailored to your business, from startups to global brands.',
     },
     {
-      icon: <FiUsers className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiUsers className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Your Growth Ally',
       desc: 'We’re more than developers—we’re strategic partners, crafting solutions to accelerate your BigCommerce store’s success.',
     },
     {
-      icon: <FiCheckCircle className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiCheckCircle className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Transparent Collaboration',
       desc: 'With clear communication and honest workflows, we keep you in the loop, building trust every step of the way.',
     },
     {
-      icon: <FiCode className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiCode className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Innovative BigCommerce Solutions',
       desc: 'Harness headless commerce, open APIs, and AI tools to create cutting-edge BigCommerce stores that stand out.',
     },
     {
-      icon: <FiAward className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiAward className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Proven Success',
       desc: 'Our track record of 200+ BigCommerce projects showcases our ability to deliver results that drive growth.',
     },
     {
-      icon: <FiTrendingUp className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiTrendingUp className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Growth-Focused Strategies',
       desc: 'We design BigCommerce solutions to fuel long-term growth and maximize your ROI.',
     },
     {
-      icon: <FiUserPlus className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiUserPlus className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Customer-First Approach',
       desc: 'Every BigCommerce store we build is tailored to your unique goals and customer needs.',
     },
     {
-      icon: <FiShield className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiShield className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Secure & Compliant Stores',
       desc: 'We prioritize PCI-DSS compliance and robust security for your BigCommerce platform.',
     },
     {
-      icon: <FiTarget className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiTarget className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'Performance-Driven Results',
       desc: 'Our focus on measurable outcomes ensures your BigCommerce store delivers impact.',
     },
     {
-      icon: <FiLayers className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+      icon: <FiLayers className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
       title: 'BigCommerce Mastery',
       desc: 'We leverage BigCommerce’s best-in-class features to build modern, efficient e-commerce solutions.',
     },
@@ -89,7 +89,7 @@ export default function WhyBigCommerce() {
 
         <div className="relative max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 tracking-tight">
-            Why Partner with Us for <span className="text-[#099f70]">BigCommerce</span> Success?
+            Why Partner with Us for <span className="text-gray-800">BigCommerce</span> Success?
           </h2>
           <div className="relative overflow-hidden">
             <div
@@ -131,7 +131,7 @@ export default function WhyBigCommerce() {
       <section className="bg-[#f9fafb] py-24 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            Unlock the Power of <span className="text-[#099f70]">BigCommerce</span>
+            Unlock the Power of <span className="text-gray-800">BigCommerce</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
             BigCommerce’s open SaaS platform delivers unmatched flexibility, scalability, and advanced features to help your business thrive in the global e-commerce market.
@@ -140,32 +140,32 @@ export default function WhyBigCommerce() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
               {
-                icon: <FiLayers className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+                icon: <FiLayers className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
                 title: 'Customizable Storefronts',
                 desc: 'Craft unique, responsive designs with BigCommerce’s Stencil framework to reflect your brand.',
               },
               {
-                icon: <FiGlobe className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+                icon: <FiGlobe className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
                 title: 'Global Scalability',
                 desc: 'Scale effortlessly with BigCommerce’s robust infrastructure, supporting multi-currency and multilingual stores.',
               },
               {
-                icon: <FiCode className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+                icon: <FiCode className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
                 title: 'Headless Commerce',
                 desc: 'Leverage open APIs for headless solutions, enabling custom front-ends with a powerful back-end.',
               },
               {
-                icon: <FiUsers className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+                icon: <FiUsers className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
                 title: 'Advanced B2B Features',
                 desc: 'Streamline B2B operations with custom pricing, bulk ordering, and quote management.',
               },
               {
-                icon: <FiLink className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+                icon: <FiLink className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
                 title: 'Seamless Integrations',
                 desc: 'Connect with CRMs, ERPs, and payment gateways for a unified e-commerce ecosystem.',
               },
               {
-                icon: <FiShield className="text-[#099f70] text-3xl mb-3" aria-hidden="true" />,
+                icon: <FiShield className="text-gray-800 text-3xl mb-3" aria-hidden="true" />,
                 title: 'PCI-DSS Compliance',
                 desc: 'Ensure secure transactions and data protection with BigCommerce’s built-in compliance.',
               },

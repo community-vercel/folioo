@@ -41,7 +41,7 @@ export default function Header() {
             <Link
               key={i}
               href={href}
-              className="relative font-medium text-gray-900 text-base hover:text-[#099f70] transition-colors duration-200 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#099f70] hover:after:w-full after:transition-all after:duration-300"
+              className="relative font-medium text-gray-900 text-base hover:text-gray-800 transition-colors duration-200 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#099f70] hover:after:w-full after:transition-all after:duration-300"
               aria-label={name}
             >
               {name}
@@ -52,10 +52,10 @@ export default function Header() {
         {/* CTA and Phone */}
         <div className="hidden lg:flex items-center space-x-6">
           <div className="flex items-center gap-2 text-gray-900">
-            <FiPhone className="text-[#099f70] w-5 h-5" />
+            <FiPhone className="text-gray-800 w-5 h-5" />
             <a
               href="tel:+1234567890" // Replace with your actual phone number
-              className="text-sm font-medium hover:text-[#099f70] transition-colors duration-200"
+              className="text-sm font-medium hover:text-gray-800 transition-colors duration-200"
               aria-label="Call us at +1 (234) 567-890"
             >
               +1 (234) 567-890
@@ -73,7 +73,7 @@ export default function Header() {
         {/* Mobile Toggle */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-gray-900 hover:text-[#099f70] transition-colors duration-200 focus:outline-none"
+          className="lg:hidden text-gray-900 hover:text-gray-800 transition-colors duration-200 focus:outline-none"
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         >
           {isMenuOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
@@ -107,17 +107,17 @@ export default function Header() {
               key={i}
               href={href}
               onClick={toggleMenu}
-              className="text-lg font-medium text-gray-900 hover:text-[#099f70] transition-colors duration-200 py-2"
+              className="text-lg font-medium text-gray-900 hover:text-gray-800 transition-colors duration-200 py-2"
               aria-label={name}
             >
               {name}
             </Link>
           ))}
           <div className="flex items-center gap-2 pt-4">
-            <FiPhone className="text-[#099f70] w-5 h-5" />
+            <FiPhone className="text-gray-800 w-5 h-5" />
             <a
               href="tel:+1234567890" // Replace with your actual phone number
-              className="text-base font-medium text-gray-900 hover:text-[#099f70] transition-colors duration-200"
+              className="text-base font-medium text-gray-900 hover:text-gray-800 transition-colors duration-200"
               aria-label="Call us at +1 (234) 567-890"
             >
               +1 (234) 567-890

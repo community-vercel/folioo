@@ -56,7 +56,7 @@ export default function CaseStudySlider() {
 
       <div className="relative text-center">
         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          Our <span className="text-[#099f70]">BigCommerce</span> Success Stories
+          Our <span className="text-gray-800">BigCommerce</span> Success Stories
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
           As certified BigCommerce partners, we’ve empowered 50+ businesses with transformative solutions. Explore our case studies showcasing expertise and results.

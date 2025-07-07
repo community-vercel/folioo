@@ -13,27 +13,27 @@ import {
 
 const methodologySteps = [
   {
-    icon: <FiSearch className="text-cyan-600 text-3xl" />,
+    icon: <FiSearch className="text-white text-3xl" />,
     title: 'Discovery & Planning',
     description: 'Aligning with your vision to create a strategic app roadmap.',
   },
   {
-    icon: <FiLayout className="text-cyan-600 text-3xl" />,
+    icon: <FiLayout className="text-white text-3xl" />,
     title: 'UI/UX Design',
     description: 'Designing intuitive, visually stunning app interfaces.',
   },
   {
-    icon: <FiCode className="text-cyan-600 text-3xl" />,
+    icon: <FiCode className="text-white text-3xl" />,
     title: 'App Development',
     description: 'Building robust, scalable apps with cutting-edge tech.',
   },
   {
-    icon: <FiCheckCircle className="text-cyan-600 text-3xl" />,
+    icon: <FiCheckCircle className="text-white text-3xl" />,
     title: 'Testing & QA',
     description: 'Ensuring flawless performance through rigorous testing.',
   },
   {
-    icon: <FiUploadCloud className="text-cyan-600 text-3xl" />,
+    icon: <FiUploadCloud className="text-white text-3xl" />,
     title: 'Launch & Maintenance',
     description: 'Deploying your app with ongoing support for success.',
   },
@@ -66,12 +66,12 @@ export default function MethodologyAndEngagement() {
       {/* Decorative Background */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full filter blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full filter blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full filter blur-4xl animate-pulse"></div>
       </div>
 
       {/* Methodology Section */}
       <section className="text-center mb-24 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+        <h2 className="text-4xl md:text-5xl font-extrabold animate-slide-up">
           Our App Development Process
         </h2>
         <p className="text-lg text-gray-700 mt-4 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -89,8 +89,8 @@ export default function MethodologyAndEngagement() {
               onMouseEnter={() => setHoveredStep(index)}
               onMouseLeave={() => setHoveredStep(null)}
             >
-              <span className="text-2xl font-bold text-cyan-600 mb-2">{`0${index + 1}`}</span>
-              <div className="w-12 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mb-4 rounded-full" />
+              <span className="text-2xl font-bold text-white mb-2">{`0${index + 1}`}</span>
+              <div className="w-12 h-1   mb-4 rounded-full" />
               <div className="mb-4 hover:scale-110 transition-transform duration-300">
                 {step.icon}
               </div>
@@ -103,7 +103,7 @@ export default function MethodologyAndEngagement() {
 
       {/* Engagement Models */}
       <section className="text-center relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+        <h2 className="text-4xl md:text-5xl font-extrabold  animate-slide-up">
           Flexible Engagement Models
         </h2>
         <p className="text-lg text-gray-700 mt-4 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -124,7 +124,7 @@ export default function MethodologyAndEngagement() {
               <div className="mb-4 hover:scale-110 transition-transform duration-300">
                 {model.icon}
               </div>
-              <h4 className="text-lg font-semibold text-cyan-700 mb-2">{model.title}</h4>
+              <h4 className="text-lg font-semibold text-white mb-2">{model.title}</h4>
               <p className="text-sm text-gray-600 max-w-[220px]">{model.description}</p>
             </div>
           ))}

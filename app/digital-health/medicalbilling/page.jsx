@@ -162,7 +162,7 @@ export default function MedicalBilling() {
         <ParticleBackground />
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/30 via-green-900/20 to-teal-900/10 z-0"></div>
+        <div className="absolute inset-0 bg-[#446f70] z-0"></div>
 
         {/* Hero Section */}
         <section ref={heroRef} className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 py-24 sm:py-36">
@@ -174,7 +174,7 @@ export default function MedicalBilling() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-8 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-8 leading-tight"
                 variants={textVariants}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}
@@ -204,7 +204,7 @@ export default function MedicalBilling() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="Start your medical billing project"
                   >
                     <span>Start Your Project</span>
@@ -217,7 +217,7 @@ export default function MedicalBilling() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="View our medical billing portfolio"
                   >
                     <span>View Our Work</span>
@@ -265,7 +265,7 @@ export default function MedicalBilling() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Medical Billing</span> Solutions?
+              Why Choose Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Medical Billing</span> Solutions?
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Optimize billing processes with secure, efficient, and compliant software tailored for healthcare providers.
@@ -283,7 +283,7 @@ export default function MedicalBilling() {
                 className="bg-gradient-to-b from-gray-800/50 to-gray-900/50 backdrop-blur-md rounded-xl p-8 text-center border border-gray-700/50 hover:border-cyan-400/30 transition-all duration-300 shadow-xl"
               >
                 <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-green-600/10 rounded-xl">
-                  <benefit.icon className="w-8 h-8 text-cyan-400" />
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
                 <p className="text-gray-300">{benefit.desc}</p>
@@ -305,19 +305,19 @@ export default function MedicalBilling() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">70% reduction in claim denials</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">40% faster reimbursement cycles</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">100% HIPAA-compliant security</span>
                   </li>
@@ -333,7 +333,7 @@ export default function MedicalBilling() {
                 <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                      <FaChartLine className="text-cyan-400 text-2xl" />
+                      <FaChartLine className="text-white text-2xl" />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Billing Performance</h4>
                     <p className="text-sm text-gray-300">Automated vs. Manual Billing Processes</p>
@@ -353,7 +353,7 @@ export default function MedicalBilling() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Billing Tech</span> Stack
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Billing Tech</span> Stack
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Advanced technologies for secure, scalable, and interoperable medical billing solutions.
@@ -388,7 +388,7 @@ export default function MedicalBilling() {
                     <h4 className="text-sm font-semibold text-gray-300 mb-3">KEY FEATURES</h4>
                     <div className="flex flex-wrap gap-2">
                       {tech.features.map((feature, i) => (
-                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                           {feature}
                         </span>
                       ))}
@@ -443,7 +443,7 @@ export default function MedicalBilling() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Billing Development</span> Process
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Billing Development</span> Process
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               A streamlined approach to building secure and efficient medical billing solutions.
@@ -494,7 +494,7 @@ export default function MedicalBilling() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Medical Billing</span> Projects
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Medical Billing</span> Projects
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Selected case studies of our innovative medical billing solutions.
@@ -527,7 +527,7 @@ export default function MedicalBilling() {
                 <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
                   <div className="mb-3 flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-200">
+                      <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                         {tag}
                       </span>
                     ))}
@@ -537,7 +537,7 @@ export default function MedicalBilling() {
                   
                   <Link
                     href="/portfolio"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors"
                     aria-label={`View case study for ${project.title}`}
                   >
                     View Case Study
@@ -558,7 +558,7 @@ export default function MedicalBilling() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
               aria-label="Explore full medical billing portfolio"
             >
               Explore Full Portfolio
@@ -581,7 +581,7 @@ export default function MedicalBilling() {
             
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Medical Billing Solution</span>?
+                Ready to Build Your <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">Medical Billing Solution</span>?
               </h2>
               
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
@@ -592,7 +592,7 @@ export default function MedicalBilling() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
                     aria-label="Get started with your medical billing project"
                   >
                     Get Started
@@ -605,7 +605,7 @@ export default function MedicalBilling() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="Book a consultation for medical billing solutions"
                   >
                     Book a Consultation

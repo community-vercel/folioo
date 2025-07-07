@@ -153,7 +153,7 @@ export default function EmergingTechnologiesPage() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 mb-8 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text mb-8 leading-tight"
                 variants={animations.text}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}
@@ -181,7 +181,7 @@ export default function EmergingTechnologiesPage() {
                 <motion.div variants={animations.button} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group focus:outline focus:outline-2 focus:outline-cyan-400"
+                    className=" bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group focus:outline focus:outline-2 focus:outline-cyan-400"
                     aria-label="Start your emerging tech project"
                   >
                     <span>Start Your Project</span>
@@ -193,7 +193,7 @@ export default function EmergingTechnologiesPage() {
                 <motion.div variants={animations.button} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3 focus:outline focus:outline-2 focus:outline-cyan-400"
+                    className="text-white font-semibold px-8 py-4 rounded-xl bg-[#446f70] backdrop-blur-sm  transition-all duration-300 flex items-center gap-3 "
                     aria-label="View our emerging tech portfolio"
                   >
                     <span>View Our Work</span>
@@ -238,7 +238,7 @@ export default function EmergingTechnologiesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Emerging Tech</span>?
+              Why <span className=" text-white">Emerging Tech</span>?
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Unlock innovation with technologies shaping the future.
@@ -260,7 +260,7 @@ export default function EmergingTechnologiesPage() {
                 aria-label={`Benefit: ${benefit.title}`}
               >
                 <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-blue-600/10 rounded-xl">
-                  <benefit.icon className="w-8 h-8 text-cyan-400" />
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
                 <p className="text-gray-400">{benefit.desc}</p>
@@ -281,19 +281,19 @@ export default function EmergingTechnologiesPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">30-50% efficiency gains with AI automation</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">99.9% transaction security with Blockchain</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">Real-time insights with IoT connectivity</span>
                   </li>
@@ -308,7 +308,7 @@ export default function EmergingTechnologiesPage() {
                 <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                      <FaChartLine className="text-cyan-400 text-2xl" />
+                      <FaChartLine className="text-white text-2xl" />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Innovation Metrics</h4>
                     <p className="text-sm text-gray-400">Impact of Emerging Tech Adoption</p>
@@ -328,7 +328,7 @@ export default function EmergingTechnologiesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">Technology</span> Stack
+              Our <span className=" text-white">Technology</span> Stack
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Cutting-edge tools and frameworks for next-gen solutions.
@@ -366,7 +366,7 @@ export default function EmergingTechnologiesPage() {
                     <h4 className="text-sm font-semibold text-gray-300 mb-3">KEY FEATURES</h4>
                     <div className="flex flex-wrap gap-2">
                       {tech.features.map((feature, i) => (
-                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                        <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                           {feature}
                         </span>
                       ))}
@@ -420,7 +420,7 @@ export default function EmergingTechnologiesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Innovation</span> Process
+              Our <span className=" text-white">Innovation</span> Process
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               A structured approach to deploying emerging tech solutions.
@@ -467,7 +467,7 @@ export default function EmergingTechnologiesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">Emerging Tech</span> Projects
+              Our <span className=" text-white">Emerging Tech</span> Projects
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Showcase of our innovative technology solutions.
@@ -501,7 +501,7 @@ export default function EmergingTechnologiesPage() {
                 <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
                   <div className="mb-3 flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="text-xs px-3 py-1 bg-gray-800/20 rounded-full text-cyan-200">
+                      <span key={i} className="text-xs px-3 py-1 bg-gray-800/20 rounded-full text-white">
                         {tag}
                       </span>
                     ))}
@@ -510,7 +510,7 @@ export default function EmergingTechnologiesPage() {
                   <p className="text-gray-300 text-sm mb-4">{project.desc}</p>
                   <Link
                     href="/portfolio"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors focus:outline focus:outline-2 focus:outline-cyan-400"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors focus:outline focus:outline-2 focus:outline-cyan-400"
                     aria-label={`View case study for ${project.title}`}
                   >
                     View Case Study
@@ -530,7 +530,7 @@ export default function EmergingTechnologiesPage() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
+              className="inline-flex items-center gap-3 px-8 py-4   text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
               aria-label="Explore our full emerging tech portfolio"
             >
               Explore Full Portfolio
@@ -552,7 +552,7 @@ export default function EmergingTechnologiesPage() {
             <div className="absolute inset-0 bg-[url('/grid-pattern.png')] bg-[length:40px_40px] opacity-5"></div>
             <div className="relative z-10 p-12 sm:p-16 lg:p-20 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Innovate with <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Emerging Tech</span>?
+                Ready to Innovate with <span className=" text-white">Emerging Tech</span>?
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
                 Let’s build transformative solutions using AI, Blockchain, IoT, and more.
@@ -561,7 +561,7 @@ export default function EmergingTechnologiesPage() {
                 <motion.div variants={animations.button} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
+                    className="bg-[#446f70] inline-flex items-center gap-3 px-8 py-4   text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
                     aria-label="Get started with emerging tech solutions"
                   >
                     Get Started
@@ -573,7 +573,7 @@ export default function EmergingTechnologiesPage() {
                 <motion.div variants={animations.button} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 text-white font-semibold rounded-xl border border-gray-700 hover:bg-gray-700/50 transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
+                    className="bg-[#446f70] inline-flex items-center gap-3 px-8 py-4  text-white font-semibold rounded-xl  transition-all focus:outline focus:outline-2 focus:outline-cyan-400"
                     aria-label="Book a consultation for emerging tech"
                   >
                     Book a Consultation

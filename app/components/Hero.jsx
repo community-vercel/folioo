@@ -130,7 +130,7 @@ export default function HeroSlider() {
                   : index === 1 && index === activeIndex
                   ? 'bg-yellow-600'
                   : index === 2 && index === activeIndex
-                  ? 'bg-blue-600'
+                  ? 'bg-[#446f70]'
                   : index === 3 && index === activeIndex
                   ? 'bg-green-600'
                   : 'bg-gray-400'

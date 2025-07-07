@@ -181,7 +181,7 @@ export default function DevOpsConsulting() {
   return (
     <>
       <Header />
-      <div className="relative bg-gradient-to-b from-[#2e6b6e] to-gray-800 min-h-screen overflow-hidden">
+      <div className="relative bg-[#446f70] min-h-screen overflow-hidden">
         {/* Particle Background */}
         <ParticleBackground />
 
@@ -192,7 +192,7 @@ export default function DevOpsConsulting() {
         <section ref={heroRef} className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 py-24 sm:py-32">
           <div className="flex flex-col items-center text-center">
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-6 leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-6 leading-tight"
               variants={textVariants}
               initial="hidden"
               animate={heroInView ? 'visible' : 'hidden'}
@@ -220,7 +220,7 @@ export default function DevOpsConsulting() {
               <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+                  className="bg-[#446f70] inline-flex items-center gap-3 px-8 py-4  text-white font-semibold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
                   aria-label="Start your DevOps project"
                 >
                   <span>Start Your Project</span>
@@ -232,7 +232,7 @@ export default function DevOpsConsulting() {
               <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center gap-3 px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-xl bg-gray-800/20 hover:bg-blue-400/10 transition-all duration-300"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl  transition-all duration-300"
                   aria-label="View our DevOps portfolio"
                 >
                   <span>View Portfolio</span>
@@ -279,7 +279,7 @@ export default function DevOpsConsulting() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Services</span>
+              Why Choose Our <span className="text-gray bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Services</span>
             </h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               Streamline your operations with expert DevOps solutions for automation, security, and scalability.
@@ -325,7 +325,7 @@ export default function DevOpsConsulting() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Tech</span> Stack
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Tech</span> Stack
             </h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               Cutting-edge tools for building efficient and scalable DevOps solutions.
@@ -410,7 +410,7 @@ export default function DevOpsConsulting() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Process</span>
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Process</span>
             </h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               A dynamic approach to delivering scalable and efficient DevOps solutions.
@@ -457,7 +457,7 @@ export default function DevOpsConsulting() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Projects</span>
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Projects</span>
             </h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               Discover our transformative DevOps solutions in action.
@@ -551,7 +551,7 @@ export default function DevOpsConsulting() {
           >
             <div className="text-center lg:text-left">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Transform Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Pipeline</span>?
+                Ready to Transform Your <span className="text-gray bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DevOps Pipeline</span>?
               </h2>
               <p className="text-lg text-gray-200 mb-6">
                 Partner with us to build scalable, secure, and automated DevOps solutions tailored to your needs.
@@ -562,7 +562,7 @@ export default function DevOpsConsulting() {
     variants={buttonVariants}
     whileHover="hover"
     whileTap="tap"
-    className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/20 transition-all"
+    className="px-8 py-3 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/20 transition-all"
     aria-label="Go to Contact Us page"
   >
     Request Consultation

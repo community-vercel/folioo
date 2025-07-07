@@ -78,7 +78,7 @@ export default function FaqAndContactSection() {
 
         <div className="relative">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 text-center tracking-tight">
-            Your <span className="text-[#099f70]">BigCommerce</span> Questions Answered
+            Your <span className="text-gray-800">BigCommerce</span> Questions Answered
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
@@ -92,8 +92,8 @@ export default function FaqAndContactSection() {
                   onClick={() => toggle(i)}
                   className="flex justify-between items-center w-full text-left font-semibold text-gray-900"
                 >
-                  <span className="text-lg group-hover:text-[#099f70] transition-colors">{faq.q}</span>
-                  <span className="text-[#099f70] text-2xl">
+                  <span className="text-lg group-hover:text-gray-800 transition-colors">{faq.q}</span>
+                  <span className="text-gray-800 text-2xl">
                     {openIndex === i ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                 </button>

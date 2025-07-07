@@ -33,7 +33,7 @@ export default function ComputerVision() {
         <h2
           className={clsx(
             'text-4xl md:text-5xl font-extrabold text-gray-900',
-            'bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 animate-fade-in'
+            'bg-clip-text   animate-fade-in'
           )}
         >
           Transform Industries with Cutting-Edge Computer Vision
@@ -101,7 +101,7 @@ export default function ComputerVision() {
         <Link href='/portfolio'>
         <button
           className={clsx(
-            'bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold',
+            'bg-[#446f70]  text-white font-semibold',
             'px-8 py-3 rounded-full shadow-lg',
             'hover:shadow-xl hover:scale-105 transition-all duration-300'
           )}
@@ -142,7 +142,7 @@ export default function ComputerVision() {
             )}
             style={{ animationDelay: `${index * 100}ms` }}
           >
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-t-lg"></div>
+            <div className="absolute top-0 left-0 w-full h-1   rounded-t-lg"></div>
             {industry}
           </div>
         ))}
@@ -152,9 +152,9 @@ export default function ComputerVision() {
         <Link href='/contact'>
         <button
           className={clsx(
-            'bg-transparent border-2 border-cyan-500 text-cyan-500 font-semibold',
+            'bg-[#446f70]  text-white font-semibold',
             'px-8 py-3 rounded-full',
-            'hover:bg-cyan-500 hover:text-white transition-all duration-300'
+            ' hover:text-white transition-all duration-300'
           )}
         >
           Consult Our Experts

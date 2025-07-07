@@ -42,12 +42,12 @@ export default function AppPortfolio() {
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full filter blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full filter blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full filter blur-4xl animate-pulse"></div>
       </div>
 
       {/* Header */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+        <h2 className="text-4xl md:text-6xl font-extrabold   animate-slide-up">
           Our  Development Portfolio
         </h2>
         <p className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -81,7 +81,7 @@ export default function AppPortfolio() {
                   <p className="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">{item.description}</p>
                   {/* <Link
                     href={`/portfolio/${item.slug}`}
-                    className="inline-block bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
+                    className="inline-block bg-[#446f70] text-white font-semibold px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
                   >
                     {item.buttonText || 'Case Study'}
                   </Link> */}
@@ -96,7 +96,7 @@ export default function AppPortfolio() {
       <div className="relative z-10 mt-16 text-center animate-slide-up delay-300">
         <Link
           href="/contact"
-          className="inline-block bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          className="inline-block bg-[#446f70] text-white font-semibold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
         >
           Start Your App Project
         </Link>

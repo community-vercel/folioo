@@ -26,7 +26,7 @@ export default function WooCommerceHero() {
         <div className="space-y-6 z-10">
           <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight tracking-tight">
             Elevate Your <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#34d399] to-[#a7f3d0]">
+            <span className="text-gray bg-clip-text bg-gradient-to-r from-[#34d399] to-[#a7f3d0]">
               WooCommerce Store
             </span> <br />
             with Expert Solutions

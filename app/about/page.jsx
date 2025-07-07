@@ -114,7 +114,7 @@ export default function AppAboutUs() {
     <>
       <Header />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#446f70] via-[#1a1a3d] to-[#2a2a5e] py-32 overflow-hidden">
+      <section className="relative bg-[#446f70] py-32 overflow-hidden">
         {/* Animated Background Particles */}
         <div className="absolute inset-0 overflow-hidden opacity-15">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('/particles.svg')] opacity-20 animate-float"></div>
@@ -142,7 +142,7 @@ export default function AppAboutUs() {
               animate="pulse"
               className="inline-block mb-8"
             >
-              <span className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-white/5 text-cyan-300 border border-cyan-500/30 backdrop-blur-lg glow-effect">
+              <span className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-white/5 text-white border border-cyan-500/30 backdrop-blur-lg glow-effect">
                 <span className="relative flex h-3 w-3 mr-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
@@ -151,7 +151,7 @@ export default function AppAboutUs() {
               </span>
             </motion.div>
 
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 tracking-tight">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 tracking-tight">
               Novabloom
             </h1>
 
@@ -172,15 +172,15 @@ export default function AppAboutUs() {
             >
               <Link
                 href="/contact"
-                className="relative overflow-hidden group inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold rounded-full shadow-2xl hover:shadow-[0_0_25px_rgba(6,182,212,0.5)] transition-all duration-300 ripple-effect"
+                className="relative overflow-hidden group inline-flex items-center justify-center px-10 py-4 bg-[#446f70] text-white font-semibold rounded-full shadow-2xl hover:shadow-[0_0_25px_rgba(6,182,212,0.5)] transition-all duration-300 ripple-effect"
               >
                 <span className="relative z-10">Launch Your Project</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute inset-0  bg-[#446f70] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               </Link>
 
               <Link
                 href="/portfolio"
-                className="relative overflow-hidden group inline-flex items-center justify-center px-10 py-4 bg-white/5 text-cyan-300 font-semibold rounded-full border border-cyan-500/30 backdrop-blur-lg hover:bg-white/10 transition-all duration-300"
+                className="relative overflow-hidden group inline-flex items-center justify-center px-10 py-4 bg-white/5 text-white font-semibold rounded-full border border-cyan-500/30 backdrop-blur-lg hover:bg-white/10 transition-all duration-300"
               >
                 <span className="relative z-10">Explore Our Galaxy</span>
               </Link>
@@ -199,10 +199,10 @@ export default function AppAboutUs() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div variants={itemVariants} className="text-center mb-20">
-            <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 mb-6">
+            <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-cyan-500/10 text-white border border-cyan-500/30 mb-6">
               Our Cosmic Journey
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
               From Stardust to Supernova
             </h2>
             <div className="max-w-3xl mx-auto">
@@ -272,7 +272,7 @@ export default function AppAboutUs() {
             <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/30 mb-6">
               Our Purpose
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
               Mission & Vision
             </h2>
             <div className="max-w-3xl mx-auto">
@@ -287,7 +287,7 @@ export default function AppAboutUs() {
               {
                 title: 'Our Mission',
                 desc: 'To empower businesses with innovative apps that drive growth and connect with audiences on a cosmic scale.',
-                icon: <FaRocket className="w-8 h-8 text-cyan-400" />,
+                icon: <FaRocket className="w-8 h-8 text-white" />,
               },
               {
                 title: 'Our Vision',
@@ -330,10 +330,10 @@ export default function AppAboutUs() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div variants={itemVariants} className="text-center mb-20">
-            <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 mb-6">
+            <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-cyan-500/10 text-white border border-cyan-500/30 mb-6">
               Our Crew
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
               Meet the Stargazers
             </h2>
             <div className="max-w-3xl mx-auto">
@@ -386,10 +386,10 @@ export default function AppAboutUs() {
                       <h3 className="text-xl font-semibold text-white mb-3">{member.name}</h3>
                       <p className="text-gray-300 mb-4">{member.bio}</p>
                       <div className="flex justify-center space-x-4">
-                        <a href="#" className="text-cyan-400 hover:text-cyan-300">
+                        <a href="#" className="text-white hover:text-white">
                           <FaRocket className="w-5 h-5" />
                         </a>
-                        <a href="#" className="text-cyan-400 hover:text-cyan-300">
+                        <a href="#" className="text-white hover:text-white">
                           <FaUsers className="w-5 h-5" />
                         </a>
                       </div>
@@ -424,10 +424,10 @@ export default function AppAboutUs() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div variants={itemVariants} className="text-center mb-20">
-            <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 mb-6">
+            <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-cyan-500/10 text-white border border-cyan-500/30 mb-6">
               Our Core
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
               Guiding Stars
             </h2>
             <div className="max-w-3xl mx-auto">
@@ -447,7 +447,7 @@ export default function AppAboutUs() {
               >
                 <div className="p-8 text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-purple-500/20 mb-6">
-                    <val.icon className="w-8 h-8 text-cyan-400" />
+                    <val.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">{val.title}</h3>
                   <p className="text-gray-300">{val.desc}</p>
@@ -471,7 +471,7 @@ export default function AppAboutUs() {
             <span className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/30 mb-6">
               Our Milestones
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
               Stellar Achievements
             </h2>
             <div className="max-w-3xl mx-auto">
@@ -489,7 +489,7 @@ export default function AppAboutUs() {
                 custom={a.stat}
                 className="bg-white/5 rounded-xl backdrop-blur-lg border border-cyan-500/20 p-10 glow-effect"
               >
-                <div className="text-5xl font-extrabold text-cyan-400 mb-3 flex items-center justify-center">
+                <div className="text-5xl font-extrabold text-white mb-3 flex items-center justify-center">
                   <a.icon className="mr-4 text-purple-400" />
                   <motion.span
                     initial={{ opacity: 0, textContent: 0 }}
@@ -513,7 +513,7 @@ export default function AppAboutUs() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-xl text-white bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 glow-effect"
+                className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-xl text-white bg-[#446f70] hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 glow-effect"
               >
                 Start Your Journey
               </Link>

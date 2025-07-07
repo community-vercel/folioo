@@ -49,12 +49,12 @@ export default function AppTechStack() {
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full filter blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full filter blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full filter blur-4xl animate-pulse"></div>
       </div>
 
       {/* Header */}
       <div className="relative z-10 max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+        <h2 className="text-4xl md:text-5xl font-extrabold  bg-clip-text text-gray animate-slide-up">
           Our App Development Tech Stack
         </h2>
         <p className="text-lg text-gray-700 mt-4 max-w-2xl mx-auto animate-slide-up delay-100">
@@ -68,7 +68,7 @@ export default function AppTechStack() {
               key={tab}
               className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                 activeTab === tab
-                  ? 'bg-gradient-to-r from-cyan-600 to-blue-700 text-white shadow-lg'
+                  ? 'bg-[#446f70] text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
               onClick={() => setActiveTab(tab)}

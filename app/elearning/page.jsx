@@ -191,9 +191,9 @@ export default function ElearningPage() {
     return (
         <>
             <Header />
-            <div className="relative bg-gray-950 text-white overflow-hidden font-sans">
+            <div className="relative bg-[#446f70] text-white overflow-hidden font-sans">
                 {/* Hero Section */}
-                <section className="relative bg-gradient-to-br from-indigo-950 to-emerald-900 py-28 overflow-hidden">
+                <section className="relative bg-[#446f70] py-28 overflow-hidden">
                     <ParticleBackground />
                     <motion.div
                         initial="hidden"
@@ -202,7 +202,7 @@ export default function ElearningPage() {
                         className="relative z-10 max-w-7xl mx-auto px-6 text-center"
                     >
                         <motion.h1
-                            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-emerald-300 mb-6"
+                            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-[#446f70] mb-6"
                             variants={textVariants}
                         >
                             {headline.map((letter, idx) => (
@@ -224,7 +224,7 @@ export default function ElearningPage() {
                             </Link>
                             <Link
                                 href="#case-studies"
-                                className="bg-transparent border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-white transition-all"
+                                className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all"
                                 aria-label="View Case Studies"
                             >
                                 Explore Successes
@@ -244,10 +244,10 @@ export default function ElearningPage() {
                 </section>
 
                 {/* Our Impact Section */}
-                <section className="py-16 bg-gray-900 text-center">
+                <section className="py-16 bg-[#446f70] text-center">
                     <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Impact</span>
+                            Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Impact</span>
                         </h2>
                         <div className="grid sm:grid-cols-3 gap-8 max-w-6xl mx-auto">
                             {impactStats.map((stat, idx) => (
@@ -256,7 +256,7 @@ export default function ElearningPage() {
                                     variants={cardVariants}
                                     className="p-6 bg-gray-800/50 backdrop-blur-md rounded-xl border border-gray-700"
                                 >
-                                    <h3 className="text-3xl font-bold text-cyan-400">{stat.value}</h3>
+                                    <h3 className="text-3xl font-bold text-white">{stat.value}</h3>
                                     <p className="text-sm text-gray-300 mt-2">{stat.label}</p>
                                 </motion.div>
                             ))}
@@ -265,10 +265,10 @@ export default function ElearningPage() {
                 </section>
 
                 {/* Services Section */}
-                <section className="py-16 bg-gray-950 text-center">
+                <section className="py-16 bg-[#446f70] text-center">
                     <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">eLearning Solutions</span>
+                            Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">eLearning Solutions</span>
                         </h2>
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                             {services.map((service, idx) => (
@@ -288,10 +288,10 @@ export default function ElearningPage() {
                 </section>
 
                 {/* Platforms Section */}
-                <section className="py-16 bg-gray-900 text-center">
+                <section className="py-16 bg-[#446f70] text-center">
                     <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
-                            Platforms We <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Support</span>
+                            Platforms We <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Support</span>
                         </h2>
                         <div className="flex flex-wrap justify-center gap-12">
                             {platforms.map((src, idx) => (
@@ -314,10 +314,10 @@ export default function ElearningPage() {
                 </section>
 
                 {/* Case Studies Section */}
-                <section id="case-studies" className="py-16 bg-gray-950 text-center">
+                <section id="case-studies" className="py-16 bg-[#446f70] text-center">
                     <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
-                            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Success Stories</span>
+                            Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Success Stories</span>
                         </h2>
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                             {caseStudies.map((study, idx) => (
@@ -350,10 +350,10 @@ export default function ElearningPage() {
                 </section>
 
                 {/* Testimonials Section */}
-                <section className="py-16 bg-gray-900 text-center">
+                <section className="py-16 bg-[#446f70] text-center">
                     <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
-                            What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Clients Say</span>
+                            What Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Clients Say</span>
                         </h2>
                         <div className="max-w-3xl mx-auto">
                             <Swiper
@@ -382,12 +382,12 @@ export default function ElearningPage() {
                 </section>
 
                 {/* Contact Form Section */}
-                <section id="contact" className="py-16 bg-gray-950 text-center">
+                <section id="contact" className="py-16 bg-[#446f70] text-center">
                     {/* Background Decorative Elements */}
 
                     {/* Header */}
                     <div className="relative z-10 max-w-6xl mx-auto text-center">
-                        <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+                        <h2 className="text-4xl md:text-6xl font-extrabold   animate-slide-up">
                             Get in Touch
                         </h2>
                         <p className="text-lg text-white mt-6 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -453,7 +453,7 @@ export default function ElearningPage() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className={`w-full bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                                className={`w-full bg-[#446f70] text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                                     }`}
                             >
                                 {isSubmitting ? 'Sending...' : 'Send Message'}

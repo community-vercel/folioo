@@ -70,7 +70,7 @@ export default function DiscoveryCase() {
               </h6>
               <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
                 Real Results from Our{' '}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">
+                <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-400 to-indigo-400">
                   Cloud Expertise
                 </span>
               </h2>
@@ -79,7 +79,7 @@ export default function DiscoveryCase() {
               </p>
               <motion.a
                 href="/portfolio"
-                className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+                className="inline-flex items-center bg-[#446f70] text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
                 variants={buttonVariants}
                 whileHover="hover"
                 aria-label="View client reviews"
@@ -132,7 +132,7 @@ export default function DiscoveryCase() {
           </h6>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
             Cloud Migration{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-indigo-600">
               FAQs
             </span>
           </h2>

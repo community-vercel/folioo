@@ -70,7 +70,7 @@ export default function EcommerceGrowth() {
               Unlock eCommerce Excellence
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-gray-900">
-              Scale Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6]">Online Store</span> to New Heights
+              Scale Your <span className="text-gray bg-clip-text bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6]">Online Store</span> to New Heights
             </h1>
             <p className="text-base sm:text-lg text-gray-700 max-w-lg leading-relaxed">
               Partner with us to build <strong>high-converting</strong> eCommerce stores, <strong>drive</strong> revenue with AI-powered insights, and <strong>captivate</strong> customers with seamless experiences.

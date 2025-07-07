@@ -46,7 +46,7 @@ const CloudMigrationSection = () => {
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-5 leading-tight">
               Seamless, Secure & <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+              <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-purple-600">
                 Cost-Effective Cloud Solutions
               </span>
             </h2>
@@ -56,7 +56,7 @@ const CloudMigrationSection = () => {
             </p>
             <motion.a
               href="#consultation" // Replace with your actual link
-              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="inline-flex items-center bg-[#446f70] text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               variants={buttonVariants}
               whileHover="hover"
             >

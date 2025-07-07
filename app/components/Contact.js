@@ -79,7 +79,7 @@ export default function AppContactUs() {
       {/* Background Decoration */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full blur-4xl animate-pulse"></div>
       </div>
 
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -92,7 +92,7 @@ export default function AppContactUs() {
             variants={containerVariants}
             className="w-full lg:w-1/2"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold   mb-6 leading-tight">
               Let’s Build Your App
             </h1>
             <p className="text-lg text-gray-700 max-w-lg mb-8">
@@ -100,11 +100,11 @@ export default function AppContactUs() {
             </p>
             <div className="space-y-4 text-gray-900 text-base">
               <div className="flex items-center">
-                <FaPhone className="text-cyan-600 mr-3" />
+                <FaPhone className="text-white mr-3" />
                 <span><strong>Tel:</strong> +1 (800) 123-4567</span>
               </div>
               <div className="flex items-center">
-                <FaHeadset className="text-cyan-600 mr-3" />
+                <FaHeadset className="text-white mr-3" />
                 <span><strong>Support:</strong> +1 (800) 123-7890</span>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function AppContactUs() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 disabled={isSubmitting}
-                className={`w-full bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all ${
+                className={`w-full bg-[#446f70] text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all ${
                   isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >

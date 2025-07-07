@@ -9,17 +9,17 @@ const leftItems = [
     title: 'Algorithms',
     content:
       'Supervised Learning (Regression, Classification) | Unsupervised Learning (Clustering, Dimensionality Reduction) | Deep Learning (CNNs, RNNs, Transformers) | Reinforcement Learning | Bayesian Methods | Optimization Techniques',
-    icon: <FiCpu className="text-cyan-500" size={24} />,
+    icon: <FiCpu className="text-white" size={24} />,
   },
   {
     title: 'Languages',
     content: 'Python | R | Julia | Scala | C++',
-    icon: <FiCode className="text-cyan-500" size={24} />,
+    icon: <FiCode className="text-white" size={24} />,
   },
   {
     title: 'ML Frameworks',
     content: 'TensorFlow | PyTorch | Scikit-learn | XGBoost | Hugging Face',
-    icon: <FiLayers className="text-cyan-500" size={24} />,
+    icon: <FiLayers className="text-white" size={24} />,
   },
 ];
 
@@ -27,17 +27,17 @@ const rightItems = [
   {
     title: 'Visualization Tools',
     content: 'Matplotlib | Seaborn | Plotly | Tableau | Power BI',
-    icon: <FiBarChart2 className="text-cyan-500" size={24} />,
+    icon: <FiBarChart2 className="text-white" size={24} />,
   },
   {
     title: 'Databases',
     content: 'MySQL | PostgreSQL | MongoDB | Snowflake | Redis',
-    icon: <FiDatabase className="text-cyan-500" size={24} />,
+    icon: <FiDatabase className="text-white" size={24} />,
   },
   {
     title: 'Cloud Platforms',
     content: 'AWS | Google Cloud | Azure | Databricks | IBM Cloud',
-    icon: <FiCloud className="text-cyan-500" size={24} />,
+    icon: <FiCloud className="text-white" size={24} />,
   },
 ];
 
@@ -52,12 +52,12 @@ const nlpTechStack = () => {
     <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6 text-center overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-400 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#446f70] rounded-full filter blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 mb-8 animate-fade-in">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray bg-clip-text   mb-8 animate-fade-in">
           Power Your ML Vision with Our Cutting-Edge Tech Stack
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 animate-fade-in delay-100">
@@ -134,7 +134,7 @@ const nlpTechStack = () => {
         {/* CTA */}
         <div className="mt-12 animate-slide-in">
           <Link href='/contact'>
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+          <button className="bg-[#446f70]  text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
             Build Your ML Solution Now
           </button>
           </Link>

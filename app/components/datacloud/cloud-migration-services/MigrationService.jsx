@@ -87,7 +87,7 @@ export default function AdataMigrationService() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
             Unrivaled <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-indigo-600">
               Cloud Migration Expertise
             </span>
           </h2>
@@ -104,7 +104,7 @@ export default function AdataMigrationService() {
               onClick={() => setActiveTab(tab)}
               className={`px-5 py-2 text-sm font-medium rounded-lg shadow-sm transition-all ${
                 activeTab === tab
-                  ? 'bg-blue-600 text-white shadow-lg'
+                  ? 'bg-[#446f70] text-white shadow-lg'
                   : 'bg-white text-gray-700 border border-gray-200 hover:bg-blue-50 hover:text-blue-600'
               }`}
               whileHover={{ scale: 1.05 }}
@@ -175,7 +175,7 @@ export default function AdataMigrationService() {
             </p>
             <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
               Elevate Your Business with <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+              <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-indigo-600">
                 Nova Bloom Cloud Experts
               </span>
             </h3>
@@ -184,7 +184,7 @@ export default function AdataMigrationService() {
             </p>
             <motion.a
               href="/portfolio"
-              className="mt-6 inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="mt-6 inline-flex items-center bg-[#446f70] text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               variants={buttonVariants}
               whileHover="hover"
               aria-label="Learn more about cloud migration services"
@@ -205,7 +205,7 @@ export default function AdataMigrationService() {
                 viewport={{ once: true }}
                 variants={cardVariants}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center text-white">
+                <div className="w-12 h-12 bg-[#446f70] rounded-lg flex items-center justify-center text-white">
                   <item.icon size={24} />
                 </div>
                 <div>

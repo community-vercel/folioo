@@ -68,7 +68,7 @@ export default function Clients() {
     <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-16">
       {/* Testimonials Slider */}
       <section className="text-center mb-20 max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 animate-fade-in">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 bg-clip-text   animate-fade-in">
           Our Clients Rave About Us
         </h2>
         <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto animate-fade-in delay-100">
@@ -144,7 +144,7 @@ export default function Clients() {
                   <span>By: {post.author}</span>
                   <span>{post.date}</span>
                 </div>
-                <button className="text-cyan-600 font-medium underline hover:text-cyan-700 transition-colors duration-200 mt-4">
+                <button className="text-white font-medium underline hover:text-white transition-colors duration-200 mt-4">
                   {post.cta}
                 </button>
               </div>

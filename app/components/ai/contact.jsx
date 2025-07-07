@@ -59,7 +59,7 @@ const ContactForm = () => {
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-16 flex flex-col items-center justify-center">
       {/* Header */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 animate-fade-in mb-12">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-gray    animate-fade-in mb-12">
         Bring Your Vision to Life with AI
       </h1>
 
@@ -133,7 +133,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 rounded-full shadow-lg transition-all duration-300 ${
+            className={`w-full   text-white font-semibold py-3 rounded-full shadow-lg transition-all duration-300 ${
               isHovered ? 'scale-105 shadow-xl' : ''
             } ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-xl hover:scale-105'}`}
             onMouseEnter={() => setIsHovered(true)}
@@ -152,11 +152,11 @@ const ContactForm = () => {
           )}
           <p className="text-xs text-gray-300 text-center">
             By submitting, you agree to our{' '}
-            <a href="#" className="underline text-cyan-400 hover:text-cyan-300 transition-colors duration-200">
+            <a href="#" className="underline text-white hover:text-white transition-colors duration-200">
               Privacy Policy
             </a>{' '}
             and{' '}
-            <a href="#" className="underline text-cyan-400 hover:text-cyan-300 transition-colors duration-200">
+            <a href="#" className="underline text-white hover:text-white transition-colors duration-200">
               Terms of Service
             </a>.
           </p>

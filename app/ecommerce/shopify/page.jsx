@@ -215,7 +215,7 @@ export default function Shopify() {
       >
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-[#071218]/80">
           <motion.img
-            src="https://ecommerce.Nova Bloom.com/wp-content/uploads/hero-bg.webp"
+            src="https://ecommerce.folio3.com/wp-content/uploads/hero-bg.webp"
             alt="Hero Background"
             className="w-full h-full object-cover opacity-20"
             loading="lazy"
@@ -237,7 +237,7 @@ export default function Shopify() {
               <AnimatedText text="Premier Shopify Experts" />
             </motion.p>
             <motion.h1
-              className="text-3xl lg:text-4xl font-extrabold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#6BE18F]"
+              className="text-3xl lg:text-4xl font-extrabold leading-tight mb-4 bg-clip-text text-gray bg-gradient-to-r from-white to-[#6BE18F]"
               variants={fadeInLeft}
             >
               <AnimatedText text="Elevate Your Shopify Store with Expert Solutions" />

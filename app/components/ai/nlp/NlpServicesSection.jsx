@@ -29,7 +29,7 @@ export default function NlpSolutionsSection() {
   return (
     <div className="bg-gradient-to-b from-[#0b1736] to-[#1a3558] text-white py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-6 animate-fade-in">
+        <h2 className="text-3xl md:text-4xl font-extrabold  text-white mb-6 animate-fade-in">
           Unleash Insights with Novabloom’s NLP Solutions
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6 animate-fade-in delay-100">
@@ -42,10 +42,10 @@ export default function NlpSolutionsSection() {
         {/* Icons Row */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 justify-center text-center mb-16">
           {[
-            { label: 'Conversational AI', icon: <FiMessageSquare className="text-cyan-400" size={40} /> },
-            { label: 'Speech Recognition', icon: <FiMic className="text-cyan-400" size={40} /> },
-            { label: 'Sentiment Analysis', icon: <FiBarChart2 className="text-cyan-400" size={40} /> },
-            { label: 'Audience Insights', icon: <FiUsers className="text-cyan-400" size={40} /> },
+            { label: 'Conversational AI', icon: <FiMessageSquare className="text-white" size={40} /> },
+            { label: 'Speech Recognition', icon: <FiMic className="text-white" size={40} /> },
+            { label: 'Sentiment Analysis', icon: <FiBarChart2 className="text-white" size={40} /> },
+            { label: 'Audience Insights', icon: <FiUsers className="text-white" size={40} /> },
           ].map((item, index) => (
             <div
               key={index}
@@ -55,7 +55,7 @@ export default function NlpSolutionsSection() {
               onMouseEnter={() => setHoveredItem(`icon-${index}`)}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              <div className="w-16 h-16 bg-cyan-900/30 rounded-full flex items-center justify-center mb-3">
+              <div className="w-16 h-16 bg-[#446f70]  rounded-full flex items-center justify-center mb-3">
                 {item.icon}
               </div>
               <p className="text-sm font-medium">{item.label}</p>
@@ -115,7 +115,7 @@ export default function NlpSolutionsSection() {
         </div>
                   <Link href='/contact'>
 
-        <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-in">
+        <button className="bg-[#446f70]  text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-in">
           Connect with Our Experts
         </button>
         </Link>
@@ -123,7 +123,7 @@ export default function NlpSolutionsSection() {
 
       {/* Industry Section */}
    <div className="bg-[#0a1a33] text-white py-16 text-center">
-      <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-8 animate-fade-in">
+      <h3 className="text-3xl font-extrabold  text-white mb-8 animate-fade-in">
         Empowering Diverse Industries with NLP
       </h3>
       <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12 animate-fade-in delay-100">
@@ -142,8 +142,8 @@ export default function NlpSolutionsSection() {
               onMouseEnter={() => setHoveredItem(`industry-${idx}`)}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              <div className="w-12 h-12 bg-cyan-900/30 rounded-full flex items-center justify-center mb-2">
-                <Icon className="text-cyan-400" size={24} />
+              <div className="w-12 h-12 bg-[#446f70]   rounded-full flex items-center justify-center mb-2">
+                <Icon className="text-white" size={24} />
               </div>
               <p className="text-sm font-medium">{industry.name}</p>
             </div>

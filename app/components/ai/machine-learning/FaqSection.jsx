@@ -55,13 +55,13 @@ export default function MachineLearningFaqSection() {
   return (
     <div className=" mx-auto px-4 py-12 relative bg-gradient-to-b from-gray-50 to-white py-20 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-400 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#446f70] rounded-full filter blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 text-center mb-12 animate-fade-in">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray bg-clip-text   text-center mb-12 animate-fade-in">
           Your Questions About Machine Learning, Answered
         </h2>
       <div className="space-y-3">

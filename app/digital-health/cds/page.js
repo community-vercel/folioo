@@ -162,7 +162,7 @@ export default function CDS() {
   return (
     <>
       <Header />
-      <div className="relative bg-gradient-to-b from-[#2e6b6e] to-gray-800 min-h-screen overflow-hidden">
+      <div className="relative bg-[#446f70] min-h-screen overflow-hidden">
         {/* Particle Background */}
         <ParticleBackground />
 
@@ -179,7 +179,7 @@ export default function CDS() {
               className="text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-6 leading-tight"
+                className=" text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-6 leading-tight"
                 variants={textVariants}
               >
                 {headline.map((letter, idx) => (
@@ -205,7 +205,7 @@ export default function CDS() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/contact"
-                    className="bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="Start your CDS project"
                   >
                     <span>Start Your Project</span>
@@ -217,7 +217,7 @@ export default function CDS() {
                 <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
                   <Link
                     href="/portfolio"
-                    className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-4 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 flex items-center gap-3"
+                    className="bg-[#446f70] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center gap-3 group"
                     aria-label="View our CDS portfolio"
                   >
                     <span>View Our Work</span>
@@ -283,7 +283,7 @@ export default function CDS() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">CDS</span> Solutions?
+              Why Choose Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">CDS</span> Solutions?
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Enhance clinical decision-making with AI-powered, secure, and interoperable CDS tools.
@@ -307,7 +307,7 @@ export default function CDS() {
                   transition={{ duration: 0.5 }}
                 >
                   <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-green-600/10 rounded-full">
-                    <benefit.icon className="w-7 h-7 text-cyan-400" />
+                    <benefit.icon className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
                   <p className="text-gray-300 text-sm">{benefit.desc}</p>
@@ -337,19 +337,19 @@ export default function CDS() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">60% faster diagnostic decisions</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">75% reduction in medication errors</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-5 h-5 mt-1 flex-shrink-0 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#446f70] rounded-full"></div>
                     </div>
                     <span className="text-gray-300">100% FHIR-compliant integrations</span>
                   </li>
@@ -364,7 +364,7 @@ export default function CDS() {
                 <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 bg-cyan-500/10 rounded-full flex items-center justify-center">
-                      <FaLightbulb className="text-cyan-400 text-2xl" />
+                      <FaLightbulb className="text-white text-2xl" />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Decision Analytics</h4>
                     <p className="text-sm text-gray-300">AI-powered insights for better clinical outcomes</p>
@@ -384,7 +384,7 @@ export default function CDS() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">CDS Tech</span> Stack
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">CDS Tech</span> Stack
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Advanced technologies for intelligent, secure, and interoperable CDS solutions.
@@ -415,7 +415,7 @@ export default function CDS() {
                   <p className="text-gray-300 text-sm">{tech.desc}</p>
                   <div className="mt-4 flex flex-wrap gap-2 justify-center">
                     {tech.features.map((feature, i) => (
-                      <span key={i} className="text-xs px-2 py-1 bg-gray-800/50 rounded-full text-cyan-300">
+                      <span key={i} className="text-xs px-2 py-1 bg-gray-800/50 rounded-full text-white">
                         {feature}
                       </span>
                     ))}
@@ -468,7 +468,7 @@ export default function CDS() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">CDS Development</span> Process
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">CDS Development</span> Process
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               A systematic approach to building intelligent and reliable CDS solutions.
@@ -514,7 +514,7 @@ export default function CDS() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">CDS</span> Projects
+              Our <span className="text-gray bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">CDS</span> Projects
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Explore our innovative CDS solutions enhancing clinical decision-making.
@@ -527,8 +527,8 @@ export default function CDS() {
                 onClick={() => setActiveTab(idx)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeTab === idx
-                    ? 'bg-gradient-to-r from-cyan-500 to-green-600 text-white'
-                    : 'bg-gray-800/50 text-cyan-400 hover:bg-cyan-400/20'
+                    ? 'bg-[#446f70] text-white'
+                    : 'bg-gray-800/50 text-white hover:bg-[#446f70]/20'
                 }`}
                 aria-label={`View ${showcaseProjects[idx].title}`}
               >
@@ -557,7 +557,7 @@ export default function CDS() {
             <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
               <div className="mb-3 flex flex-wrap gap-2">
                 {showcaseProjects[activeTab].tags.map((tag, i) => (
-                  <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-cyan-200">
+                  <span key={i} className="text-xs px-3 py-1 bg-gray-800/50 rounded-full text-white">
                     {tag}
                   </span>
                 ))}
@@ -566,7 +566,7 @@ export default function CDS() {
               <p className="text-gray-300 text-sm mb-4">{showcaseProjects[activeTab].desc}</p>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-400 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-white transition-colors"
                 aria-label={`View case study for ${showcaseProjects[activeTab].title}`}
               >
                 View Case Study
@@ -584,7 +584,7 @@ export default function CDS() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
               aria-label="Explore full CDS portfolio"
             >
               Explore Full Portfolio
@@ -606,7 +606,7 @@ export default function CDS() {
             <div className="absolute inset-0 bg-[url('/cds/grid-pattern-cds.webp')] bg-[length:40px_40px] opacity-5"></div>
             <div className="relative z-10 p-12 sm:p-16 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">CDS Solution</span>?
+                Ready to Build Your <span className="text-gray bg-clip-text bg-gradient-to-r from-cyan-400 to-green-500">CDS Solution</span>?
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
                 Empower your clinicians with intelligent CDS tools to improve patient outcomes.
@@ -623,7 +623,7 @@ export default function CDS() {
                   variants={buttonVariants}
                   whileHover="hover"
                   whileTap="tap"
-                  className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
+                  className="px-8 py-3 bg-[#446f70] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all"
                   aria-label="Request a CDS demo"
                 >
                   Request Demo

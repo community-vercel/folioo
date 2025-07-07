@@ -109,7 +109,7 @@ export default function MultiCloudAndProcess() {
             </h3>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-2 text-gray-900">
               Premier AWS Partner with{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+              <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-indigo-600">
                 Multi-Cloud Expertise
               </span>
             </h2>
@@ -118,7 +118,7 @@ export default function MultiCloudAndProcess() {
             </p>
             <motion.a
               href="#contact"
-              className="mt-6 inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="mt-6 inline-flex items-center bg-[#446f70] text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               variants={buttonVariants}
               whileHover="hover"
               aria-label="Contact our cloud experts"
@@ -154,7 +154,7 @@ export default function MultiCloudAndProcess() {
                   height={60}
                   className="object-contain transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                <div className="absolute inset-0 bg-[#446f70]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
               </motion.div>
             ))}
           </motion.div>
@@ -176,7 +176,7 @@ export default function MultiCloudAndProcess() {
             </h4>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-2 text-gray-900">
               Our Cloud{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+              <span className="bg-clip-text text-gray bg-gradient-to-r from-blue-600 to-indigo-600">
                 Migration Process
               </span>
             </h2>
@@ -192,7 +192,7 @@ export default function MultiCloudAndProcess() {
                 viewport={{ once: true }}
                 variants={cardVariants}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <div className="w-12 h-12 bg-[#446f70] rounded-lg flex items-center justify-center text-white flex-shrink-0">
                   <step.icon size={24} />
                 </div>
                 <div>

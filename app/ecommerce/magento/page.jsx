@@ -61,13 +61,13 @@ export default function Home() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
               {[
                 "/logos/shopify-hex-img.webp",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/01/adobe-commerce-hex-img.webp",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/01/woocommerce-hex-img.webp",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/04/shopware-logo-honeycomb-shape-updated.png",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/01/bigcommerce-hex-img.webp",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/01/dynamics-365-hex-img.webp",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/01/salesforce-hex-img.webp",
-                "https://ecommerce.Nova Bloom.com/wp-content/uploads/2024/01/netsuite-hex-img.webp",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/01/adobe-commerce-hex-img.webp",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/01/woocommerce-hex-img.webp",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/04/shopware-logo-honeycomb-shape-updated.png",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/01/bigcommerce-hex-img.webp",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/01/dynamics-365-hex-img.webp",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/01/salesforce-hex-img.webp",
+                "https://ecommerce.folio3.com/wp-content/uploads/2024/01/netsuite-hex-img.webp",
               ].map((logoUrl, i) => (
                 <div
                   key={i}

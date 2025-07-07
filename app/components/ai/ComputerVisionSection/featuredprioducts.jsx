@@ -91,10 +91,10 @@ export default function FeaturedProductsvison() {
                     className="rounded-lg w-full object-cover mb-4"
                   />
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">{story.client}</h4>
-                  <h5 className="text-sm font-semibold text-cyan-600 mb-2">{story.title}</h5>
+                  <h5 className="text-sm font-semibold text-white mb-2">{story.title}</h5>
                   {/* <p className="text-gray-600 text-sm leading-relaxed">{story.description}</p> */}
                 </div>
-                {/* <button className="text-cyan-600 font-medium underline hover:text-cyan-700 transition-colors duration-200 mt-4">
+                {/* <button className="text-white font-medium underline hover:text-white transition-colors duration-200 mt-4">
                   {story.cta}
                 </button> */}
               </div>

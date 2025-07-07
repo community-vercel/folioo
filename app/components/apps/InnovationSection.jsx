@@ -8,7 +8,7 @@ const features = [
   {
     title: 'Stunning UI/UX Design',
     desc: 'Creating visually captivating, user-friendly app interfaces that align with your brand and delight users.',
-    icon: <FiPenTool className="text-cyan-500 text-3xl" />,
+    icon: <FiPenTool className="text-white text-3xl" />,
     position: 'top-left',
   },
   {
@@ -45,11 +45,11 @@ export default function AppInnovationSection() {
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <div className="absolute top-0 left-10 w-[500px] h-[500px] bg-cyan-300 rounded-full filter blur-4xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600 rounded-full filter blur-4xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#446f70] rounded-full filter blur-4xl animate-pulse"></div>
       </div>
 
       {/* Header */}
-      <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-700 animate-slide-up">
+      <h2 className="text-4xl md:text-6xl font-extrabold  bg-clip-text bg-[#446f70] animate-slide-up">
         Revolutionizing App Development
       </h2>
       <p className="text-xl text-gray-700 mt-6 max-w-3xl mx-auto animate-slide-up delay-100">
@@ -93,11 +93,11 @@ export default function AppInnovationSection() {
       <div className="mt-16 flex justify-center gap-4 animate-slide-up delay-300">
                      <Link href="/contact">
        
-        <button className="bg-gradient-to-r from-cyan-600 to-blue-700 text-white font-semibold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <button className="bg-[#446f70] text-white font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
           Start Your App Journey
         </button>
         </Link>
-        <button className="border-2 border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white px-10 py-4 rounded-full font-semibold transition-all duration-300">
+        <button className="bg-[#446f70] text-white font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
           Explore Our Expertise
         </button>
       </div>
@@ -125,7 +125,7 @@ function FeatureCard({ feature, index, isHovered, setHovered, setUnhovered }) {
     >
       <div className="flex items-center gap-4 mb-4">
         {feature.icon}
-        <h4 className="text-lg font-bold text-cyan-700">{feature.title}</h4>
+        <h4 className="text-lg font-bold text-white">{feature.title}</h4>
       </div>
       <p className="text-sm text-gray-600 leading-relaxed">{feature.desc}</p>
     </div>

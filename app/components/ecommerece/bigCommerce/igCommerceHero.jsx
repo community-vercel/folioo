@@ -15,7 +15,7 @@ export default function BigCommerceHero() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#1a1f3a] via-[#0c1224] to-[#05152d] text-white py-20 px-6 md:px-12 lg:px-24 overflow-hidden">
+    <section className="relative bg-[#446f70] text-white py-20 px-6 md:px-12 lg:px-24 overflow-hidden">
       {/* Subtle Background Animation */}
       <div className="absolute inset-0 bg-[url('/salesforce/Frame-14101260s38.svg')] opacity-10 animate-pulse"></div>
 

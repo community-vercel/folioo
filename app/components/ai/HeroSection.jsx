@@ -26,16 +26,16 @@ export default function HeroSection() {
       <section className="relative bg-gradient-to-br from-[#0a1e3b] to-[#2a4b8c] text-white py-20 px-6 overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute top-0 left-0 w-80 h-80 bg-cyan-400 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-600 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute top-0 left-0 w-80 h-80 bg-[#446f70] rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#446f70] rounded-full filter blur-3xl animate-pulse"></div>
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
           <div className="max-w-lg space-y-8">
-            <h4 className="text-base uppercase text-cyan-300 font-semibold tracking-widest animate-fade-in">
+            <h4 className="text-base uppercase text-[#446f70] font-semibold tracking-widest animate-fade-in">
               Leading AI Innovation
             </h4>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400 animate-slide-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white bg-clip-text  animate-slide-in">
               Empowering the Future with Cutting-Edge AI
             </h1>
             <p className="text-xl text-gray-100 leading-relaxed animate-fade-in delay-100">
@@ -43,13 +43,13 @@ export default function HeroSection() {
             </p>
             <div className="flex space-x-6 animate-fade-in delay-200">
               <Link href='/portfolio'>
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+              <button className=" bg-[#446f70] text-white font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 Explore AI Solutions
               </button>
               </Link>
                                     <Link href='/contact'>
 
-              <button className="bg-transparent border-2 border-cyan-300 text-cyan-300 font-semibold px-8 py-3 rounded-full hover:bg-cyan-300 hover:text-white transition-all duration-300">
+              <button className="bg-[#446f70]  text-white font-semibold px-8 py-3 rounded-full  hover:text-white transition-all duration-300">
                 Get Started
               </button>
               </Link>
@@ -97,7 +97,7 @@ export default function HeroSection() {
                 key={index}
                 className="relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in delay-100"
               >
-                <p className="text-3xl font-extrabold text-cyan-600">{stat.value}</p>
+                <p className="text-3xl font-extrabold text-white">{stat.value}</p>
                 <p className="mt-2 text-sm font-medium text-gray-600 uppercase tracking-wide">{stat.label}</p>
               </div>
             ))}
