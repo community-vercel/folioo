@@ -42,6 +42,7 @@ const Navbar = () => {
         { name: "Salesforce Commerce Cloud", href: "/ecommerce/salesforce" },
       ],
     },
+    
     {
       name: "Data & Cloud",
       href: "/datacloud",
@@ -67,11 +68,10 @@ const Navbar = () => {
         { name: "CDS", href: "/digital-health/cds" },
       ],
     },
-        {
-name:"IT Solutions",
-href: "/itsolution",
-    submenu: [
-        
+    {
+      name: "IT Solutions",
+      href: "/itsolution",
+      submenu: [
         { name: "Hardware", href: "/itsolution/hardware" },
         { name: "Software", href: "/itsolution/software" },
         // { name: "Careers", href: "/careers" },
@@ -83,7 +83,7 @@ href: "/itsolution",
       name: "Company",
       href: "#",
       submenu: [
-        
+
         { name: "Blog", href: "/blog" },
         { name: "eLearning", href: "/elearning" },
         // { name: "Careers", href: "/careers" },
@@ -96,7 +96,7 @@ href: "/itsolution",
     {
       name: "Contact Us",
       href: "/contact",
-  
+
     },
   ];
 
@@ -148,9 +148,8 @@ href: "/itsolution",
                     >
                       {item.name}
                       <svg
-                        className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                          activeDropdown === item.name ? "rotate-180" : ""
-                        }`}
+                        className={`ml-1 h-4 w-4 transition-transform duration-200 ${activeDropdown === item.name ? "rotate-180" : ""
+                          }`}
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -193,11 +192,10 @@ href: "/itsolution",
                   <Link
                     href={item.href}
                     onClick={closeAllDropdowns}
-                    className={`${
-                      item.name === "Contact Us"
+                    className={`${item.name === "Contact Us"
                         ? "bg-teal-600 text-white hover:bg-teal-700 px-4 py-2 rounded-full"
                         : "text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md"
-                    } text-sm font-medium transition-colors duration-200`}
+                      } text-sm font-medium transition-colors duration-200`}
                   >
                     {item.name}
                   </Link>
@@ -249,9 +247,8 @@ href: "/itsolution",
                       >
                         {item.name}
                         <svg
-                          className={`h-5 w-5 transition-transform duration-200 ${
-                            activeDropdown === item.name ? "rotate-180" : ""
-                          }`}
+                          className={`h-5 w-5 transition-transform duration-200 ${activeDropdown === item.name ? "rotate-180" : ""
+                            }`}
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
