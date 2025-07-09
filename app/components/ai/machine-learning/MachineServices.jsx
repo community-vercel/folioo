@@ -14,27 +14,27 @@ const services = [
   {
     title: 'Machine Learning Strategy & Consulting',
     description: 'Collaborate with us to align advanced machine learning solutions with your business objectives, leveraging optimal datasets and algorithms.',
-    icon: <FiBarChart2 className="text-white" size={40} />,
+    icon: <FiBarChart2 className="text-[#446f70]" size={40} />,
   },
   {
     title: 'Custom ML Applications',
     description: 'Develop scalable, AI-driven machine learning applications that enhance user experiences, from ideation to seamless deployment.',
-    icon: <FiDatabase className="text-white" size={40} />,
+    icon: <FiDatabase className="text-[#446f70]" size={40} />,
   },
   {
     title: 'Advanced Model Development',
     description: 'Create high-performance ML models using TensorFlow, PyTorch, and GPU acceleration for predictive analytics and automation.',
-    icon: <FiCpu className="text-white" size={40} />,
+    icon: <FiCpu className="text-[#446f70]" size={40} />,
   },
   {
     title: 'Seamless System Integration',
     description: 'Integrate our ML solutions into your workflows and platforms to optimize operations and achieve strategic goals.',
-    icon: <FiLink className="text-white" size={40} />,
+    icon: <FiLink className="text-[#446f70]" size={40} />,
   },
   {
     title: 'ML Research & Innovation',
     description: 'Stay ahead with cutting-edge machine learning advancements, powered by the latest breakthroughs in AI research.',
-    icon: <FiTrendingUp className="text-white" size={40} />,
+    icon: <FiTrendingUp className="text-[#446f70]" size={40} />,
   },
 ];
 
@@ -66,8 +66,8 @@ export default function MachineServices() {
                 key={index}
                 className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
               >
-                <div className="absolute top-0 left-0 w-full h-1   rounded-t-2xl"></div>
-                <div className="mb-4">
+                <div className="absolute top-0 left-0 w-full h-1 bg-[#446f70]    rounded-t-2xl"></div>
+                <div className="mb-4   ">
                   {service.icon}
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h4>

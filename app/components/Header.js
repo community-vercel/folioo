@@ -81,9 +81,21 @@ const Navbar = () => {
       ],
     },
     {
+name:"IT Solutions",
+href: "/itsolution",
+    submenu: [
+        
+        { name: "Hardware", href: "/itsolution/hardware" },
+        { name: "Software", href: "/itsolution/software" },
+        // { name: "Careers", href: "/careers" },
+        { name: "Services", href: "/itsolution/services" },
+        // { name: "Clients", href: "/clients" },
+      ],
+    },
+    {
       name: "Contact Us",
       href: "/contact",
-      submenu: null,
+  
     },
   ];
 

@@ -67,7 +67,7 @@ export default function MachineLearningWhyChooseUs() {
               >
                 <div className="absolute top-0 left-0 w-full h-1   rounded-t-2xl"></div>
                 <div className="flex items-center justify-center w-14 h-14 bg-[#446f70] rounded-full mb-4 mx-auto group">
-                  <Icon className="w-7 h-7 text-[#446f70] group-hover:scale-110 transition-transform duration-300" />
+                  <Icon className="w-7 h-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
