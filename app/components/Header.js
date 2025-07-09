@@ -42,7 +42,6 @@ const Navbar = () => {
         { name: "Salesforce Commerce Cloud", href: "/ecommerce/salesforce" },
       ],
     },
-    
     {
       name: "Data & Cloud",
       href: "/datacloud",
