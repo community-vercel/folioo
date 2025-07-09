@@ -67,6 +67,18 @@ const Navbar = () => {
         { name: "CDS", href: "/digital-health/cds" },
       ],
     },
+        {
+name:"IT Solutions",
+href: "/itsolution",
+    submenu: [
+        
+        { name: "Hardware", href: "/itsolution/hardware" },
+        { name: "Software", href: "/itsolution/software" },
+        // { name: "Careers", href: "/careers" },
+        { name: "Services", href: "/itsolution/services" },
+        // { name: "Clients", href: "/clients" },
+      ],
+    },
     {
       name: "Company",
       href: "#",
@@ -80,18 +92,7 @@ const Navbar = () => {
         { name: "Portfolio", href: "/portfolio" },
       ],
     },
-    {
-name:"IT Solutions",
-href: "/itsolution",
-    submenu: [
-        
-        { name: "Hardware", href: "/itsolution/hardware" },
-        { name: "Software", href: "/itsolution/software" },
-        // { name: "Careers", href: "/careers" },
-        { name: "Services", href: "/itsolution/services" },
-        // { name: "Clients", href: "/clients" },
-      ],
-    },
+
     {
       name: "Contact Us",
       href: "/contact",
