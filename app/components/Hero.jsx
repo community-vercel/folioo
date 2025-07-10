@@ -140,6 +140,7 @@ export default function HeroSlider() {
           />
         ))}
       </div>
+      
 
 </section>
   )}
