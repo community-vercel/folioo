@@ -10,13 +10,15 @@ import WhoWeWorkWith from './components/WhoWeWorkWith';
 import ScrollingLogo from './components/CustomerCarousel';
 import WorldPresenceSection from './components/WorldPresenceSection';
 import MilestonesSection from './components/MilestonesSection'
+import Packages from './components/Packages';
 export default function Home() {
   return (
     <div>
       <Header />
       <Hero />
-      < PartnersAwards />
+      <PartnersAwards />
       <Services />
+      <Packages />
       <WhoWeWorkWith />
       <ScrollingLogo />
       {/* <Clients /> */}

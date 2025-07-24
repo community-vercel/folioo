@@ -172,13 +172,12 @@ export default function WhatsNew() {
       </motion.div>
 
       {/* Bottom Grid */}
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
         className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mt-12 sm:mt-16 lg:mt-20"
       >
-        {/* Left Content */}
         <div className="space-y-4 sm:space-y-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-900">
             Your Trusted Tech Partner
@@ -192,7 +191,6 @@ export default function WhatsNew() {
          
         </div>
 
-        {/* Right Service List */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {services.map((service, i) => (
             <motion.div
@@ -208,7 +206,7 @@ export default function WhatsNew() {
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </motion.div> */}
 
      
     </section>

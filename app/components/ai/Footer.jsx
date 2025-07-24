@@ -21,7 +21,7 @@ const officeData = {
       country: 'USA',
       flag: '/salesforce/USA.webp',
       offices: [
-        { icon: <FaMapMarkerAlt />, text: '2457 Lancaster Street East Meadow, NY 11554' },
+        { icon: <FaMapMarkerAlt />, text: '116-33,135th Street South Ozone Park,NY 11420' },
         { icon: <FaPhoneAlt />, text: '+1 (347) 716-9944 ' },
       ],
     },
@@ -184,14 +184,32 @@ const Footer = () => {
                     />
                     <span className="text-white font-semibold">{office.country}</span>
                   </div>
-                  <ul className="space-y-3 text-gray-400">
-                    {office.offices.map((line, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <span className="text-white mt-1 flex-shrink-0">{line.icon}</span>
-                        <span className="text-gray-300 hover:text-white transition-colors">{line.text}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <ul className="space-y-3 text-gray-400">
+  {office.offices.map((line, idx) => {
+    // Check if it's a phone number
+    const isPhone = line.text.includes('+');
+    const isAddress = !isPhone;
+
+    const link = isPhone
+      ? `tel:${line.text.replace(/\s+/g, '')}`
+      : `https://www.google.com/maps/search/${encodeURIComponent(line.text)}`;
+
+    return (
+      <li key={idx} className="flex items-start gap-3">
+        <span className="text-white mt-1 flex-shrink-0">{line.icon}</span>
+        <Link
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-white transition-colors"
+        >
+          {line.text}
+        </Link>
+      </li>
+    );
+  })}
+</ul>
+
                 </div>
               ))}
             </motion.div>
@@ -214,7 +232,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <span>contact@novabloom.com</span>
+<span><Link href="mailto:contact@novabloom.com">contact@novabloom.com</Link></span>
               </div>
             </div>
 

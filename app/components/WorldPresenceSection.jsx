@@ -6,13 +6,13 @@ import { motion, useInView } from 'framer-motion';
 const locations = [
   {
     name: 'United States',
-    image: '/locations/usa.jpg',
+    image: '/locations/usa2.jpg',
     address: (
       <>
-        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
-        1st Floor, Building Number 14,<br />
-        Premises 105, Dubai, UAE<br />
-        <strong>Tel:</strong> +971 (04) 575 7041
+        Nova Bloom 116-33,<br />
+        135th Street ,<br />
+        South Ozone Park,NY 11420<br />
+        <strong>Tel:</strong>+1 (347) 716-9944
       </>
     ),
   },
@@ -33,9 +33,9 @@ const locations = [
     image: '/locations/united-kingdom-new.jpg',
     address: (
       <>
-        Nova Bloom FZ LLC Dubai, UAE – Dubai Internet City,<br />
-        1st Floor, Building Number 14,<br />
-        Premises 105, Dubai, UAE<br />
+       Export House, ,<br />
+       Cawsey Way, Woking, Surrey, GU21 6QX,<br />
+        Surrey<br />
         <strong>Tel:</strong> +971 (04) 575 7041
       </>
     ),

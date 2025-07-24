@@ -11,6 +11,17 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const navItems = [
+      {
+      name: "IT Solutions",
+      href: "/itsolution",
+      submenu: [
+        { name: "Hardware", href: "/itsolution/hardware" },
+        { name: "Software", href: "/itsolution/software" },
+        // { name: "Careers", href: "/careers" },
+        { name: "Services", href: "/itsolution/services" },
+        // { name: "Clients", href: "/clients" },
+      ],
+    },
     {
       name: "App Development",
       href: "/apps",
@@ -67,17 +78,7 @@ const Navbar = () => {
         { name: "CDS", href: "/digital-health/cds" },
       ],
     },
-    {
-      name: "IT Solutions",
-      href: "/itsolution",
-      submenu: [
-        { name: "Hardware", href: "/itsolution/hardware" },
-        { name: "Software", href: "/itsolution/software" },
-        // { name: "Careers", href: "/careers" },
-        { name: "Services", href: "/itsolution/services" },
-        // { name: "Clients", href: "/clients" },
-      ],
-    },
+  
     {
       name: "Company",
       href: "#",

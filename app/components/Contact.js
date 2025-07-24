@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaPhone, FaHeadset } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function AppContactUs() {
   const ref = useRef(null);
@@ -98,16 +99,27 @@ export default function AppContactUs() {
             <p className="text-lg text-gray-700 max-w-lg mb-8">
               At Novabloom, we craft innovative mobile and web apps for startups, SMBs, and enterprises. Ready to transform your ideas into reality? Contact us today!
             </p>
-            <div className="space-y-4 text-gray-900 text-base">
-              <div className="flex items-center">
-                <FaPhone className="text-white mr-3" />
-                <span><strong>Tel:</strong> +1 (800) 123-4567</span>
-              </div>
-              <div className="flex items-center">
-                <FaHeadset className="text-white mr-3" />
-                <span><strong>Support:</strong> +1 (800) 123-7890</span>
-              </div>
-            </div>
+          <div className="space-y-4 text-base text-gray-900">
+  <div className="flex items-center">
+    <FaPhone className="text-[#446f70] mr-3" />
+    <Link
+      href="tel:+18001234567"
+      className="text-gray-900 hover:text-[#446f70] transition-colors"
+    >
+      <strong>Tel:</strong> +1 (347) 716-9944
+    </Link>
+  </div>
+  <div className="flex items-center">
+    <FaHeadset className="text-[#446f70] mr-3" />
+    <Link
+      href="tel:+18001237890"
+      className="text-gray-900 hover:text-[#446f70] transition-colors"
+    >
+      <strong>Support:</strong> +1 (347) 716-9944
+    </Link>
+  </div>
+</div>
+
           </motion.div>
 
           {/* Right Form */}

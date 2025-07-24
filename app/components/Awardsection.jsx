@@ -4,12 +4,21 @@ import { useEffect, useRef } from 'react';
 
 // Define arrays with metadata for better accessibility and management
 const partners = [
+    { src: '/logos/Dell-Logo.png', alt: 'Dell' },
+  { src: '/logos/hp.png', alt: 'HP' },
+  { src: '/gold-microsofe.webp', alt: 'Microsoft Gold Partner' },
+  { src: '/logos/s.png', alt: 'Scale Computing' },
+    { src: '/logos/barracuda-4.svg', alt: 'Barracuda' },
+      {src:'/logos/cisco.png', alt: 'Cisco'},
+  { src: '/logos/lenovo-logo.png', alt: 'Lenovo' },
+  
   { src: '/aws-partner-logo.webp', alt: 'AWS Partner' },
   { src: '/oracle-netsuite.webp', alt: 'Oracle NetSuite' },
   { src: '/oracle-netsuite-commerce.webp', alt: 'Oracle NetSuite Commerce' },
-  { src: '/aws-partner-logo.webp', alt: 'AWS Partner' },
+
+
   { src: '/silver-microsofe-1.webp', alt: 'Microsoft Silver Partner' },
-  { src: '/gold-microsofe.webp', alt: 'Microsoft Gold Partner' },
+
 ];
 
 const awards = [
@@ -67,14 +76,17 @@ function ScrollSection({ items, title, scrollDirection }) {
               key={`${item.src}-${index}`}
               className="min-w-[120px] sm:min-w-[200px] h-16 sm:h-24 relative flex-shrink-0"
             >
-              <Image
-                src={item.src}
-                alt={index < items.length ? item.alt : `${item.alt} (Repeat)`}
-                fill
-                sizes="(max-width: 640px) 120px, 200px"
-                className="object-contain transition-transform duration-300 hover:scale-105"
-                priority={index < 2}
-              />
+             <div className="image-container">
+  <Image
+    src={item.src}
+    alt={index < items.length ? item.alt : `${item.alt} (Repeat)`}
+    fill
+    sizes="(max-width: 640px) 100vw, 50vw" // Adjust for responsiveness
+    className="object-contain transition-transform duration-300 hover:scale-105"
+    priority={index < 2}
+    quality={85} // Improve quality
+  />
+</div>
             </div>
           ))}
         </div>
@@ -111,7 +123,7 @@ export default function PartnersAwards() {
         }
         @media (min-width: 640px) {
           .animate-scroll-right-to-left {
-            animation-duration: 20s;
+            animation-duration: 30s;
           }
           .animate-scroll-left-to-right {
             animation-duration: 20s;
