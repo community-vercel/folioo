@@ -5,6 +5,7 @@ import { FaDollarSign, FaRocket, FaUsers, FaPhone, FaTrophy } from 'react-icons/
 import { FaUsersCog, FaLaptopCode, FaShoppingCart, FaCogs, FaChartLine, FaQuoteRight } from 'react-icons/fa';
 
 export default function Packages() {
+    
   return (
     <main className="px-4 py-6 sm:px-6 md:px-8 md:py-6 max-w-7xl mx-auto text-gray-800 space-y-12 bg-white">
       {/* Hero Section */}
