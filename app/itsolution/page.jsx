@@ -17,6 +17,7 @@ import {
   FiBox,
 } from 'react-icons/fi';
 import Image from 'next/image';
+import PartnersAwards from '../components/Awardsection';
 
 const serviceCategories = [
   {
@@ -228,6 +229,7 @@ export default function ITResellerPage() {
             </div>
           </div>
         </div>
+      <PartnersAwards />
 
         {/* Categories Grid */}
         <div className="max-w-7xl mx-auto px-4 py-12">

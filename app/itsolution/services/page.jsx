@@ -200,6 +200,7 @@ export default function ServicesPage() {
               </Link>
             </motion.div>
           </div>
+          
           {/* Animated Background Elements */}
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-10 left-10 w-80 h-80 bg-teal-400 rounded-full mix-blend-multiply filter blur-2xl animate-blob"></div>
