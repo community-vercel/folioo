@@ -99,6 +99,7 @@ export default function Packages() {
         className="w-full max-w-md mx-auto rounded-lg shadow-lg border-2 border-[#446f70] hover:scale-105 transition-transform duration-300"
         priority
       />
+      
     </div>
   </div>
   <div className="absolute inset-0 opacity-20">
