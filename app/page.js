@@ -16,14 +16,15 @@ export default function Home() {
     <div>
       <Header />
       <Hero />
+         <Packages />
       <PartnersAwards />
       <Services />
-      <Packages />
+   
       <WhoWeWorkWith />
       <ScrollingLogo />
       {/* <Clients /> */}
       <Testimonials />
-      <WorldPresenceSection />
+      {/* <WorldPresenceSection /> */}
       <MilestonesSection />
       <Contact />
       <Footer />

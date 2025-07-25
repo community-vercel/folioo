@@ -153,7 +153,7 @@ export default function EmergingTechnologiesPage() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text mb-8 leading-tight"
+                className="text-3xl sm:text-5xl md:text-4xl font-extrabold text-white bg-clip-text mb-8 leading-tight"
                 variants={animations.text}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}

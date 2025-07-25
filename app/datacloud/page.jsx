@@ -75,7 +75,7 @@ function HeroSection({ heroRef, heroInView }) {
         >
           <motion.h1
             aria-label="Data Cloud Solutions"
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text mb-8 leading-tight"
+            className="text-3xl sm:text-5xl md:text-4xl font-extrabold text-white bg-clip-text mb-8 leading-tight"
             variants={textVariants}
             initial="hidden"
             animate={heroInView ? 'visible' : 'hidden'}

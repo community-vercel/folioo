@@ -179,7 +179,7 @@ export default function DigitalHealth() {
               className="lg:w-1/2 text-center lg:text-left"
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-8 leading-tight"
+                className="text-3xl sm:text-5xl md:text-4xl font-extrabold text-white bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-teal-500 mb-8 leading-tight"
                 variants={textVariants}
                 initial="hidden"
                 animate={heroInView ? 'visible' : 'hidden'}

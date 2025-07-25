@@ -6,12 +6,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 const slides = [
+   
+  {
+  label: 'Nova Bloom',
+  title: 'Accelerate Your Digital Growth',
+  subtitle: 'Innovative Solutions for a Smarter Tomorrow',
+  description: 'Partner with us to transform your ideas into powerful digital products. From strategy to execution, we deliver scalable and impactful software solutions.',
+  image: '/Digital Services.jpg',
+  ctaPrimary: 'Get Started Today',
+  ctaSecondary: 'Explore Our Services',
+},
+
   {
     label: 'Nova Bloom',
     title: 'Scale with Confidence',
     subtitle: 'Empowering Your Digital Future',
     description: 'Your trusted partner for comprehensive digital & software solutions tailored to your business needs.',
-    image: '/app/background-realistic-abstract-technology-particle_23-2148431735.avif',
+    image: '/309.jpg',
     ctaPrimary: 'Discover Solutions',
     ctaSecondary: 'Learn More',
   },
@@ -20,7 +31,7 @@ const slides = [
     title: 'Craft Your Vision',
     subtitle: 'Innovate with Precision',
     description: 'Custom digital solutions and innovative software to bring your boldest ideas to life.',
-    image: '/app/business-innovation-2-1.jpg',
+    image: '/AI.jpg',
     ctaPrimary: 'Start Building',
     ctaSecondary: 'View Case Studies',
   },
@@ -29,7 +40,7 @@ const slides = [
     title: 'Boost Your Sales',
     subtitle: 'Maximize Revenue Potential',
     description: 'High-performance ecommerce platforms designed to skyrocket your revenue and customer engagement.',
-    image: '/app/gradient-technology-futuristic-background_23-2149115236.avif',
+    image: '/ai-technology-microchip-background-digital-transformation-concept.jpg',
     ctaPrimary: 'Explore Ecommerce',
     ctaSecondary: 'See Success Stories',
   },
@@ -38,7 +49,7 @@ const slides = [
     title: 'Grow Smarter',
     subtitle: 'Future-Proof Your Business',
     description: 'Leverage AI, automation, and enterprise-grade solutions to scale efficiently and stay ahead.',
-    image: '/app/istockphoto-1435605327-612x612.jpg',
+    image: '/E Comerce.jpg',
     ctaPrimary: 'Scale Now',
     ctaSecondary: 'Get a Demo',
   },

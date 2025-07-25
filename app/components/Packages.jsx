@@ -5,11 +5,9 @@ import { FaDollarSign, FaRocket, FaUsers, FaPhone, FaTrophy } from 'react-icons/
 import { FaUsersCog, FaLaptopCode, FaShoppingCart, FaCogs, FaChartLine, FaQuoteRight } from 'react-icons/fa';
 
 export default function Packages() {
-    
   return (
-    <main className="px-4 py-6 sm:px-6 md:px-8 md:py-6 max-w-7xl mx-auto text-gray-800 space-y-12 bg-white">
+    <main className="px-4 py-12 sm:px-6 md:px-8 md:py-12 max-w-7xl mx-auto text-gray-800 space-y-12 bg-white text-center space-y-6 ">
       {/* Hero Section */}
-      <section className="text-center space-y-6  py-12 rounded-xl">
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,14 +33,13 @@ export default function Packages() {
     },
     {
       text: 'Explore Packages',
-      href: '/packages',
+      href: '/portfolio',
       className: 'border-2 border-teal-500 text-teal-500 hover:bg-teal-100 hover:border-teal-600',
     },
   ].map((btn, index) => (
     <Link key={index} href={btn.href}>
       <motion.button
-          type="button"
-
+      href={btn.href}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 + index * 0.1, ease: 'easeOut' }}
@@ -56,7 +53,6 @@ export default function Packages() {
   ))}
 </div>
 
-      </section>
  <section className="space-y-10">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900">
         Core Services
@@ -114,7 +110,7 @@ export default function Packages() {
     </section>
 
       {/* Packages Section */}
-      <section className="space-y-10 mt-16">
+      {/* <section className="space-y-10 mt-16"> */}
         <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900">
           Popular Packages
         </h2>
@@ -174,7 +170,7 @@ export default function Packages() {
               ))}
             </ul>
             <div className="mt-6 text-center">
-              <Link href="/custom-solutions">
+              <Link href="/contact">
                 <button className="text-sm md:text-base text-teal-500 hover:text-teal-600 underline font-medium">
                   Need Custom Solutions?
                 </button>
@@ -182,7 +178,7 @@ export default function Packages() {
             </div>
           </motion.div>
         </div>
-      </section>
+      {/* </section> */}
     
     </main>
   );
