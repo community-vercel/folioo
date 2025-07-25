@@ -62,7 +62,7 @@ export default function Packages() {
           {
           title: 'IT Solutions',
 
-            desc: 'Smart enterprises start with seamless IT and digital integration.',
+desc: 'Smart enterprises start with seamless IT and digital integration\n to drive efficiency and growth.',
             icon: <FaUsersCog className="text-teal-500 text-2xl" aria-label="IT Staff Augmentation Icon" />,
             link: '/itsolution',
           },
