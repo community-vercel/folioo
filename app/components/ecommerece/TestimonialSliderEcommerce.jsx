@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Link from "next/link";
+import Footer from "../ai/Footer";
 
 const testimonials = [
   {
@@ -182,110 +183,6 @@ export default function TestimonialSliderEcommerce() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-gradient-to-br from-[#446f70] to-gray-900 text-white relative">
-        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 animate-pulse"></div>
-        <motion.div
-          className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="bg-white/95 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0 md:space-x-8">
-            <motion.div
-              className="text-left w-full md:w-1/2"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <motion.h2
-                className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                           <Link href='/contact'>
-                
-                Launch Your eCommerce Success
-                </Link>
-              </motion.h2>
-              <motion.p
-                className="text-xl sm:text-2xl text-blue-500 font-semibold mb-3"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                Start with Nova Bloom Today!
-              </motion.p>
-              <motion.p
-                className="text-base text-gray-700"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-              >
-                Connect with our eCommerce experts to grow your online store.
-              </motion.p>
-            </motion.div>
-            <motion.form
-              className="w-full md:w-1/2 space-y-4"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <motion.input
-                type="text"
-                placeholder="Your Name"
-                className="w-full p-3 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.2 }}
-                required
-              />
-              <motion.input
-                type="email"
-                placeholder="Your Email"
-                className="w-full p-3 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.4 }}
-                required
-              />
-              <motion.input
-                type="tel"
-                placeholder="Your Phone"
-                className="w-full p-3 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.6 }}
-                required
-              />
-              <motion.textarea
-                placeholder="Tell Us About Your eCommerce Project"
-                rows="4"
-                className="w-full p-3 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.8 }}
-                required
-              />
-              <motion.button
-                type="submit"
-                className="w-full bg-[#446f70] text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition-all duration-300"
-                variants={buttonVariants}
-                whileHover="hover"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 1 }}
-                aria-label="Submit form"
-              >
-                                      <Link href='/contact'>
-
-                GET STARTED NOW
-                </Link>
-              </motion.button>
-            </motion.form>
-          </div>
-        </motion.div>
-      </section>
     </>
   );
 }

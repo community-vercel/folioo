@@ -60,7 +60,7 @@ const ContactForm = () => {
     <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-16 flex flex-col items-center justify-center">
       {/* Header */}
       <h1 className="text-4xl md:text-5xl font-extrabold text-center text-gray    animate-fade-in mb-12">
-        Bring Your Vision to Life with AI
+        Bring Your Vision to Life with Nova Bloom’s 
       </h1>
 
       <div className="flex flex-col md:flex-row items-center md:items-start gap-12 max-w-7xl w-full">

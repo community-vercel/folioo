@@ -10,8 +10,11 @@ import WooCommerceExpertise from '@/app/components/ecommerece/woocommerce/WooCom
 import WooCommerceServices from '@/app/components/ecommerece/woocommerce/WooCommerceServices';
 import WooCommerceWhy from '@/app/components/ecommerece/woocommerce/woocommercewhy';
 import Header from '@/app/components/ecommerece/Header';
-import Footer from '@/app/components/ecommerece/Footer';
+import Footer from '../../components/ai/Footer';
 import Link from 'next/link';
+import ContactForm from "../../components/ai/contact";
+
+
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -274,7 +277,7 @@ export default function Woocommerce() {
       <WooCommerceServices />
 <WooCommerceWhy />
                 
-
+<ContactForm />
 
 <Footer />
 

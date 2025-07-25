@@ -4,7 +4,7 @@ import TestimonialSlider from '@/app/components/ecommerece/woocommerce/Testimoni
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import Footer from '@/app/components/ecommerece/Footer';
+import Footer from '../../components/ai/Footer';
 
 import BigCommerceHero from '@/app/components/ecommerece/bigCommerce/igCommerceHero';
 import WoocommerceDevelopmentSection from '@/app/components/ecommerece/bigCommerce/igDevelopmentSection';

@@ -8,7 +8,7 @@ import TestimonialSlider from '@/app/components/ecommerece/shopify/TestimonialSl
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import Footer from '@/app/components/ecommerece/Footer';
+import Footer from '../../components/ai/Footer';
 import Header from '@/app/components/ecommerece/Header';
 import Link from 'next/link';
 // Animation variants

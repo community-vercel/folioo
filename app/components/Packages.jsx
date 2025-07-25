@@ -1,8 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { FaDollarSign, FaRocket, FaUsers, FaPhone, FaTrophy } from 'react-icons/fa';
 import { FaUsersCog, FaLaptopCode, FaShoppingCart, FaCogs, FaChartLine, FaQuoteRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Packages() {
   return (
@@ -53,61 +53,79 @@ export default function Packages() {
   ))}
 </div>
 
- <section className="space-y-10">
+ <div id="core-services" className="space-y-10">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900">
-        Core Services
+        Our Core Services
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
           {
-            title: 'IT Staff Augmentation',
-            desc: 'On-demand tech talent, cloud, and cybersecurity solutions.',
-            icon: <FaUsersCog className="text-teal-500 text-2xl" />,
+          title: 'IT Staff Augmentation',
+
+            desc: 'Access expert tech talent for cloud computing and cybersecurity solutions tailored to your business needs.',
+            icon: <FaUsersCog className="text-teal-500 text-2xl" aria-label="IT Staff Augmentation Icon" />,
+            link: '/itsolution',
           },
           {
-            title: 'Web & Mobile Apps',
-            desc: 'Scalable digital experiences with modern frameworks.',
-            icon: <FaLaptopCode className="text-teal-500 text-2xl" />,
+          title: 'Web & Mobile Apps',
+
+            desc: 'Build scalable, user-friendly web and mobile applications using modern frameworks like React and Flutter.',
+            icon: <FaLaptopCode className="text-teal-500 text-2xl" aria-label="Web and Mobile Apps Icon" />,
+            link: '/apps',
           },
           {
-            title: 'E-Commerce Development',
-            desc: 'Magento 2, WooCommerce, Shopify – optimized for growth.',
-            icon: <FaShoppingCart className="text-teal-500 text-2xl" />,
+          title: 'E-Commerce Development',
+
+            desc: 'Create high-performance online stores with Magento 2, WooCommerce, and Shopify for maximum growth.',
+            icon: <FaShoppingCart className="text-teal-500 text-2xl" aria-label="E-Commerce Development Icon" />,
+            link: '/ecommerce',
           },
           {
-            title: 'ERP Solutions (Odoo)',
-            desc: 'Streamlined ERP deployments for unified operations.',
-            icon: <FaCogs className="text-teal-500 text-2xl" />,
+          title: 'ERP Solutions (Odoo)',
+
+            desc: 'Streamline business operations with customized Odoo ERP deployments for seamless integration.',
+            icon: <FaCogs className="text-teal-500 text-2xl" aria-label="ERP Solutions Icon" />,
+            link: '/ecommerce/magento',
           },
           {
-            title: 'SEO & Digital Marketing',
-            desc: 'Boost visibility with data-driven campaigns.',
-            icon: <FaChartLine className="text-teal-500 text-2xl" />,
+          title: 'SEO & Digital Marketing',
+
+            desc: 'Enhance online visibility with data-driven SEO strategies and targeted digital marketing campaigns.',
+            icon: <FaChartLine className="text-teal-500 text-2xl" aria-label="SEO and Digital Marketing Icon" />,
+            link: '/elearning',
           },
-        
         ].map((service, index) => (
-          <motion.div
+          <Link
             key={index}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.03, backgroundColor: service.isTestimonial ? '#e6fffa' : '#f8fafc' }}
-            transition={{ duration: 0.4, delay: index * 0.1, ease: 'easeOut' }}
-            className={`p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-gray-100 ${
-              service.isTestimonial ? 'bg-teal-50' : 'bg-white'
-            }`}
+      href={service.link} // Changed from href to to for react-router-dom
+            className="block"
+            aria-label={`Learn more about ${service.title}`}
           >
-            <div className="flex items-center gap-3 mb-3">
-              {service.icon}
-              <h3 className="font-semibold text-lg md:text-xl text-gray-900">{service.title}</h3>
-            </div>
-            <p className="text-sm md:text-base text-gray-600 mt-3">{service.desc}</p>
-            {service.author && (
-              <p className="mt-4 text-sm font-medium text-gray-700 italic">{service.author}</p>
-            )}
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.03, backgroundColor: service.isTestimonial ? '#e6fffa' : '#f8fafc' }}
+              transition={{ duration: 0.4, delay: index * 0.1, ease: 'easeOut' }}
+              className={`p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-gray-100 ${
+                service.isTestimonial ? 'bg-teal-50' : 'bg-white'
+              }`}
+            >
+              <div className="flex items-center gap-3 mb-3">
+                {service.icon}
+                <h3 className="font-semibold text-lg md:text-xl text-gray-900">{service.title}</h3>
+              </div>
+              <p className="text-sm md:text-base text-gray-600 mt-3">{service.desc}</p>
+              {service.author && (
+                <p className="mt-4 text-sm font-medium text-gray-700 italic">{service.author}</p>
+              )}
+              <p className="mt-4 text-sm font-medium text-teal-500 hover:underline">
+                Explore {service.title}
+              </p>
+            </motion.div>
+          </Link>
         ))}
       </div>
-    </section>
+    </div>
 
       {/* Packages Section */}
       {/* <section className="space-y-10 mt-16"> */}

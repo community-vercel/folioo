@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import ContactForm from "../../../components/ai/contact";
 
 const testimonials = [
  {
@@ -189,104 +190,7 @@ export default function TestimonialSlider() {
  </section>
 
  {/* Contact Form Section */}
- <section className="py-20 bg-gradient-to-br from-teal-900 to-gray-800 text-white relative">
- <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5 animate-pulse"></div>
- <motion.div
- className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 z-10"
- initial={{ opacity: 0, y: 50 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.8 }}
- >
- <div className="bg-white/90 backdrop-blur-md p-6 md:p-8 lg:p-10 rounded-2xl shadow-2xl flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0 md:space-x-8">
- <motion.div
- className="text-left w-full md:w-1/2"
- initial={{ opacity: 0, x: -20 }}
- animate={{ opacity: 1, x: 0 }}
- transition={{ duration: 0.6 }}
- >
- <motion.h2
- className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
- initial={{ opacity: 0, y: 20 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.6, delay: 0.2 }}
- >
- Start Your Shopify
- </motion.h2>
- <motion.p
- className="text-2xl md:text-3xl text-lime-500 font-semibold mb-3"
- initial={{ opacity: 0, y: 20 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.6, delay: 0.4 }}
- >
- Development Journey Here!
- </motion.p>
- <motion.p
- className="text-base md:text-lg text-gray-700"
- initial={{ opacity: 0, y: 20 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.6, delay: 0.6 }}
- >
- Get in touch with our team
- </motion.p>
- </motion.div>
- <motion.form
- className="w-full md:w-1/2 space-y-4"
- initial={{ opacity: 0, x: 20 }}
- animate={{ opacity: 1, x: 0 }}
- transition={{ duration: 0.6 }}
- >
- <motion.input
- type="text"
- placeholder="Name"
- className="w-full p-3 text-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500 transition-all duration-300"
- initial={{ opacity: 0, y: 10 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.3, delay: 0.2 }}
- required
- />
- <motion.input
- type="email"
- placeholder="Email"
- className="w-full p-3 text-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500 transition-all duration-300"
- initial={{ opacity: 0, y: 10 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.3, delay: 0.4 }}
- required
- />
- <motion.input
- type="tel"
- placeholder="Phone"
- className="w-full p-3 text-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500 transition-all duration-300"
- initial={{ opacity: 0, y: 10 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.3, delay: 0.6 }}
- required
- />
- <motion.textarea
- placeholder="Project Details"
- rows="4"
- className="w-full p-3 text-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500 transition-all duration-300"
- initial={{ opacity: 0, y: 10 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.3, delay: 0.8 }}
- required
- />
- <motion.button
- type="submit"
- className="w-full bg-[#446f70] text-white font-semibold px-6 py-3 rounded-lg hover:bg-lime-600 transition-all duration-300"
- variants={buttonVariants}
- whileHover="hover"
- initial={{ opacity: 0, y: 10 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.3, delay: 1 }}
- aria-label="Submit form"
- >
- SUBMIT NOW
- </motion.button>
- </motion.form>
- </div>
- </motion.div>
- </section>
+<ContactForm />
  </>
  );
 }

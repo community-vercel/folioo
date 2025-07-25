@@ -202,7 +202,7 @@ export default function ElearningPage() {
                         className="relative z-10 max-w-7xl mx-auto px-6 text-center"
                     >
                         <motion.h1
-                            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white bg-[#446f70] mb-6"
+                            className="text-3xl sm:text-5xl md:text-4xl font-extrabold text-white bg-[#446f70] mb-6"
                             variants={textVariants}
                         >
                             {headline.map((letter, idx) => (

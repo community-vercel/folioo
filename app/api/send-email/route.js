@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request) {
   try {
-    const { name, email, phone, organization, message } = await request.json();
+    const { name, email, phone, message, organization = 'Not provided' } = await request.json();
 
     // Server-side validation
     if (!name || !email || !message) {
@@ -22,7 +22,7 @@ export async function POST(request) {
     const sanitizedName = name.trim().slice(0, 100);
     const sanitizedEmail = email.trim().slice(0, 100);
     const sanitizedPhone = phone ? phone.trim().slice(0, 20) : 'Not provided';
-    const sanitizedOrganization = organization ? organization.trim().slice(0, 100) : 'Not provided';
+    const sanitizedOrganization = organization.trim().slice(0, 100);
     const sanitizedMessage = message.trim().slice(0, 1000);
 
     // Configure Nodemailer

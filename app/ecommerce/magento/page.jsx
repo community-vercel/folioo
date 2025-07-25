@@ -4,7 +4,7 @@ import PixelPerfectSection from "@/app/components/ecommerece/ecommercefaqs";
 import TopQuoteBanner from "@/app/components/ecommerece/ecommerceTopQuoteBanner";
 import TrustedEcommercecustomer from "@/app/components/ecommerece/ecommerceTrustedcustomer";
 import WhyChooseUs from "@/app/components/ecommerece/ecommerceWhyChooseUs";
-import Footer from "@/app/components/ecommerece/Footer";
+import Footer from '../../components/ai/Footer';
 import Header from "@/app/components/ecommerece/Header";
 import MagentoProjects from "@/app/components/ecommerece/MagentoProjects";
 import MagentoServices from "@/app/components/ecommerece/MagentoServices";

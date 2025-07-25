@@ -107,9 +107,8 @@ export default function FaqAndContactSection() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="bg-gradient-to-r from-[#099f70] to-[#446f70] py-16">
+      {/* <section className="bg-gradient-to-r from-[#099f70] to-[#446f70] py-16">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center">
-          {/* Left Text */}
           <div className="flex-1 text-white space-y-4">
                        <Link href='/contact'>
 
@@ -123,7 +122,6 @@ export default function FaqAndContactSection() {
             </p>
           </div>
 
-          {/* Right Form */}
           <div className="flex-1 bg-white rounded-xl shadow-2xl p-8 max-w-md w-full">
             <form className="space-y-5">
               <input
@@ -158,7 +156,7 @@ export default function FaqAndContactSection() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

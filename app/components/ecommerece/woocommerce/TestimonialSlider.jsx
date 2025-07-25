@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import ContactForm from "../../../components/ai/contact";
 
 const testimonials = [
  {
@@ -189,7 +190,7 @@ export default function TestimonialSlider() {
  </section>
 
  {/* Contact Form Section */}
-
+<ContactForm />
  </>
  );
 }
