@@ -278,22 +278,7 @@ export default function ITResellerPage() {
         </div>
 
         {/* Call-to-Action Section */}
-        <div className="bg-[#446f70] text-white py-12 text-center">
-          <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4">
-              Transform Your IT with Our Expertise
-            </h2>
-            <p className="text-lg mb-6">
-              Partner with us to unlock the full potential of your IT infrastructure with our hardware, software, and managed service solutions.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-white text-[#446f70] font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-200"
-            >
-              Get Started Today
-            </Link>
-          </div>
-        </div>
+    
       </div>
       <ContactForm />
       <Footer />
