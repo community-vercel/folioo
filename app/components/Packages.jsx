@@ -154,9 +154,9 @@ export default function Packages() {
                 </li>
               ))}
             </ul>
-            <Link href="/quote">
+            <Link href="/contact">
               <motion.button
-              href="/quote"
+              href="/contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="mt-6 w-full bg-gradient-to-r from-teal-500 to-teal-600 text-white px-6 py-3 rounded-full font-semibold text-sm md:text-base shadow-md hover:shadow-xl transition-all"
