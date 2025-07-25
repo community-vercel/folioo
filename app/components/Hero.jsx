@@ -137,6 +137,8 @@ export default function HeroSlider() {
         </motion.div>
       </AnimatePresence>
 
+
+
       {/* Navigation Dots */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
         {slides.map((_, index) => (
