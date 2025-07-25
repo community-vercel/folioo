@@ -13,13 +13,13 @@ import MilestonesSection from './components/MilestonesSection'
 import Packages from './components/Packages';
 export default function Home() {
   return (
-    <div>
+   <>
+
       <Header />
       <Hero />
-         <Packages />
+      <Packages />
       <PartnersAwards />
       <Services />
-   
       <WhoWeWorkWith />
       <ScrollingLogo />
       {/* <Clients /> */}
@@ -28,6 +28,6 @@ export default function Home() {
       <MilestonesSection />
       <Contact />
       <Footer />
-    </div>
+  </>
   );
 }
