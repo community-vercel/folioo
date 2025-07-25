@@ -33,7 +33,7 @@ export default function Packages() {
     },
     {
       text: 'Explore Packages',
-      href: '/portfolio',
+      href: '/packages',
       className: 'border-2 border-teal-500 text-teal-500 hover:bg-teal-100 hover:border-teal-600',
     },
   ].map((btn, index) => (

@@ -18,6 +18,7 @@ import {
 } from 'react-icons/fi';
 import Image from 'next/image';
 import PartnersAwards from '../components/Awardsection';
+import ContactForm from '../components/ai/contact';
 
 const serviceCategories = [
   {
@@ -294,6 +295,7 @@ export default function ITResellerPage() {
           </div>
         </div>
       </div>
+      <ContactForm />
       <Footer />
     </>
   )}
