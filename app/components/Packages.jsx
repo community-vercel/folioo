@@ -60,9 +60,9 @@ export default function Packages() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
           {
-          title: 'IT Staff Augmentation',
+          title: 'IT Solutions',
 
-            desc: 'Access expert tech talent for cloud computing and cybersecurity solutions tailored to your business needs.',
+            desc: 'Smart enterprises start with seamless IT and digital integration.',
             icon: <FaUsersCog className="text-teal-500 text-2xl" aria-label="IT Staff Augmentation Icon" />,
             link: '/itsolution',
           },
